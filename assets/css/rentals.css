@@ -1,0 +1,312 @@
+/* ==========================================================
+   THE LOCBUSTERS — Rentals Page Styles
+   ========================================================== */
+
+/* ----------------------------------------------------------
+   HERO CTA ROW
+   ---------------------------------------------------------- */
+.pg-hero__ctas {
+  display: flex;
+  gap: var(--sp-2);
+  flex-wrap: wrap;
+  margin-top: var(--sp-2);
+}
+
+/* ----------------------------------------------------------
+   RENTAL CATEGORY BLOCKS
+   ---------------------------------------------------------- */
+.rnt-block {
+  padding: var(--sp-8) 0;
+  background-color: var(--c-bg);
+  border-top: 1px solid var(--c-border);
+}
+
+.rnt-block--alt {
+  background-color: var(--c-surface);
+}
+
+/* Header: number + title + desc */
+.rnt-block__header {
+  display: grid;
+  grid-template-columns: 4rem 1fr;
+  gap: var(--sp-4);
+  align-items: start;
+  margin-bottom: var(--sp-6);
+  padding-bottom: var(--sp-4);
+  border-bottom: 1px solid var(--c-border);
+}
+
+.rnt-block__num {
+  font-size: 0.6875rem;
+  font-weight: 600;
+  letter-spacing: 0.12em;
+  color: var(--c-accent);
+  padding-top: 0.5rem;
+  font-variant-numeric: tabular-nums;
+}
+
+.rnt-block__title {
+  font-size: clamp(1.5rem, 3vw, 2.75rem);
+  font-weight: 300;
+  letter-spacing: -0.03em;
+  line-height: 1.1;
+  color: var(--c-text);
+  margin-bottom: var(--sp-2);
+}
+
+.rnt-block__desc {
+  font-size: 0.9375rem;
+  color: var(--c-text-muted);
+  line-height: 1.65;
+  max-width: 640px;
+}
+
+/* Content: placeholder image + item groups */
+.rnt-block__content {
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  gap: var(--sp-7);
+  align-items: start;
+}
+
+.rnt-block__content--reversed {
+  grid-template-columns: 2fr 1fr;
+}
+
+/* ----------------------------------------------------------
+   PLACEHOLDER IMAGE
+   ---------------------------------------------------------- */
+.rnt-placeholder {
+  aspect-ratio: 4 / 3;
+  background-color: var(--c-surface-2);
+  border: 1px solid var(--c-border);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  overflow: hidden;
+}
+
+/* Subtle dot-grid texture */
+.rnt-placeholder::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background-image: radial-gradient(circle, rgba(240,237,230,0.06) 1px, transparent 1px);
+  background-size: 20px 20px;
+}
+
+.rnt-placeholder__inner {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: var(--sp-2);
+  position: relative;
+  z-index: 1;
+}
+
+.rnt-placeholder__inner span {
+  font-size: 0.625rem;
+  font-weight: 600;
+  letter-spacing: 0.2em;
+  text-transform: uppercase;
+  color: var(--c-text-muted);
+}
+
+/* ----------------------------------------------------------
+   ITEM GROUPS
+   ---------------------------------------------------------- */
+.rnt-block__groups {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: var(--sp-4);
+}
+
+.rnt-block__groups--wide {
+  grid-template-columns: repeat(2, 1fr);
+}
+
+.rnt-group {
+  display: flex;
+  flex-direction: column;
+  gap: var(--sp-2);
+  padding: var(--sp-4);
+  border: 1px solid var(--c-border);
+  transition: border-color var(--t-base);
+}
+
+.rnt-block--alt .rnt-group {
+  background-color: var(--c-surface-2);
+}
+
+.rnt-group:hover {
+  border-color: var(--c-border-med);
+}
+
+.rnt-group__title {
+  font-size: 0.625rem;
+  font-weight: 600;
+  letter-spacing: 0.18em;
+  text-transform: uppercase;
+  color: var(--c-accent);
+  padding-bottom: var(--sp-2);
+  border-bottom: 1px solid var(--c-border);
+}
+
+.rnt-group__list {
+  display: flex;
+  flex-direction: column;
+  gap: 0.45rem;
+}
+
+.rnt-group__list li {
+  font-size: 0.875rem;
+  color: var(--c-text-dim);
+  line-height: 1.5;
+  padding-left: var(--sp-2);
+  position: relative;
+}
+
+.rnt-group__list li::before {
+  content: '—';
+  position: absolute;
+  left: 0;
+  color: var(--c-text-muted);
+  font-size: 0.75rem;
+}
+
+/* ----------------------------------------------------------
+   HOW IT WORKS
+   ---------------------------------------------------------- */
+.how-it-works {
+  background-color: var(--c-dark);
+}
+
+.how-it-works .section-header {
+  border-bottom-color: var(--c-border);
+  margin-bottom: var(--sp-6);
+}
+
+.how-it-works__steps {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 1px;
+  background: var(--c-border);
+  border: 1px solid var(--c-border);
+}
+
+.hiw-step {
+  background: var(--c-dark);
+  padding: var(--sp-5) var(--sp-4);
+  display: flex;
+  flex-direction: column;
+  gap: var(--sp-3);
+  transition: background-color var(--t-base);
+}
+
+.hiw-step:hover {
+  background-color: var(--c-surface);
+}
+
+.hiw-step__num {
+  font-size: 0.6875rem;
+  font-weight: 600;
+  letter-spacing: 0.15em;
+  color: var(--c-accent);
+  font-variant-numeric: tabular-nums;
+}
+
+.hiw-step__title {
+  font-size: 1.0625rem;
+  font-weight: 500;
+  letter-spacing: -0.01em;
+  color: var(--c-text);
+  line-height: 1.25;
+}
+
+.hiw-step__desc {
+  font-size: 0.875rem;
+  color: var(--c-text-muted);
+  line-height: 1.65;
+}
+
+/* ----------------------------------------------------------
+   RESPONSIVE — TABLET (≤ 1024px)
+   ---------------------------------------------------------- */
+@media (max-width: 1024px) {
+
+  .rnt-block__content,
+  .rnt-block__content--reversed {
+    grid-template-columns: 1fr;
+    gap: var(--sp-5);
+  }
+
+  /* Move placeholder below header on tablet */
+  .rnt-block__content--reversed .rnt-block__groups {
+    order: -1;
+  }
+
+  .rnt-placeholder {
+    aspect-ratio: 16 / 6;
+    max-height: 220px;
+  }
+
+  .rnt-block__groups {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .how-it-works__steps {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .rnt-block__header {
+    grid-template-columns: 3rem 1fr;
+  }
+}
+
+/* ----------------------------------------------------------
+   RESPONSIVE — MOBILE (≤ 768px)
+   ---------------------------------------------------------- */
+@media (max-width: 768px) {
+
+  .rnt-block {
+    padding: var(--sp-6) 0;
+  }
+
+  .rnt-block__header {
+    grid-template-columns: 2.5rem 1fr;
+    gap: var(--sp-2);
+    margin-bottom: var(--sp-4);
+  }
+
+  .rnt-block__groups {
+    grid-template-columns: 1fr;
+  }
+
+  .rnt-placeholder {
+    aspect-ratio: 16 / 7;
+  }
+
+  .how-it-works__steps {
+    grid-template-columns: 1fr;
+  }
+
+  .pg-hero__ctas {
+    flex-direction: column;
+  }
+
+  .pg-hero__ctas .btn {
+    width: 100%;
+    justify-content: center;
+  }
+}
+
+/* ----------------------------------------------------------
+   RESPONSIVE — SMALL MOBILE (≤ 480px)
+   ---------------------------------------------------------- */
+@media (max-width: 480px) {
+
+  .rnt-block__title {
+    font-size: clamp(1.375rem, 6vw, 1.75rem);
+  }
+}

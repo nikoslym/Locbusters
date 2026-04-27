@@ -1,0 +1,597 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="icon" type="image/png" href="assets/images/favicon.png" />  <title>The Locbusters — Production Support in Greece</title>
+  <meta name="description" content="Boutique production support company in Greece. Unit Services, Production Equipment Rental, On-Set Intelligence. Built for production companies. Designed for execution." />
+  <meta name="keywords" content="production support Greece, unit services, film equipment rental, location management, production company Athens" />
+
+  <!-- Open Graph -->
+  <meta property="og:title" content="The Locbusters — Production Support in Greece" />
+  <meta property="og:description" content="Unit Services · Production Equipment Rental · On-Set Intelligence" />
+  <meta property="og:type" content="website" />
+
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet" />
+
+  <!-- Styles -->
+  <link rel="stylesheet" href="assets/css/styles.css" />
+</head>
+<body>
+
+  <!-- ================================================
+       SOCIAL FLOATING WIDGET
+  ================================================ -->
+  <div class="social-widget" aria-label="Social Media Links">
+    <a href="#" class="social-widget__link" aria-label="Facebook" target="_blank" rel="noopener noreferrer">
+      <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+        <path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"/>
+      </svg>
+    </a>
+    <a href="#" class="social-widget__link" aria-label="Instagram" target="_blank" rel="noopener noreferrer">
+      <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+        <rect x="2" y="2" width="20" height="20" rx="5" ry="5"/>
+        <path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"/>
+        <line x1="17.5" y1="6.5" x2="17.51" y2="6.5"/>
+      </svg>
+    </a>
+    <a href="#" class="social-widget__link" aria-label="LinkedIn" target="_blank" rel="noopener noreferrer">
+      <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+        <path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"/>
+        <rect x="2" y="9" width="4" height="12"/>
+        <circle cx="4" cy="4" r="2"/>
+      </svg>
+    </a>
+  </div>
+
+  <!-- ================================================
+       HEADER
+  ================================================ -->
+  <header class="header" id="header">
+    <div class="container">
+      <div class="header__inner">
+
+        <a href="index.html" class="header__logo" aria-label="The Locbusters — Home">
+          <img src="assets/images/logo.svg" alt="The Locbusters" class="header__logo-img" />
+        </a>
+
+        <nav class="header__nav" aria-label="Main navigation">
+          <a href="services.html" class="header__nav-link" data-i18n="nav.services">Services</a>
+          <a href="rentals.html" class="header__nav-link" data-i18n="nav.rentals">Rentals</a>
+          <a href="about.html" class="header__nav-link" data-i18n="nav.about">About</a>
+          <a href="contact.html" class="header__nav-link header__nav-link--cta" data-i18n="nav.contact">Get in Touch</a>
+        </nav>
+
+        <div class="header__actions">
+          <div class="lang-switch" aria-label="Language selector">
+            <button class="lang-switch__btn active" data-lang="en">EN</button>
+            <span class="lang-switch__sep">/</span>
+            <button class="lang-switch__btn" data-lang="gr">GR</button>
+          </div>
+          <button class="hamburger" id="hamburger" aria-label="Toggle menu" aria-expanded="false">
+            <span class="hamburger__line"></span>
+            <span class="hamburger__line"></span>
+          </button>
+        </div>
+
+      </div>
+    </div>
+
+    <!-- Mobile Menu -->
+    <div class="mobile-menu" id="mobileMenu" aria-hidden="true">
+      <nav class="mobile-menu__nav" aria-label="Mobile navigation">
+          <a href="services.html" class="mobile-menu__link" data-i18n="nav.services">Services</a>
+        <a href="rentals.html" class="mobile-menu__link" data-i18n="nav.rentals">Rentals</a>
+        <a href="about.html" class="mobile-menu__link" data-i18n="nav.about">About</a>
+        <a href="contact.html" class="mobile-menu__link" data-i18n="nav.contact">Contact</a>
+      </nav>
+      <div class="mobile-menu__footer">
+        <div class="lang-switch">
+          <button class="lang-switch__btn active" data-lang="en">EN</button>
+          <span class="lang-switch__sep">/</span>
+          <button class="lang-switch__btn" data-lang="gr">GR</button>
+        </div>
+        <div class="mobile-menu__social">
+          <a href="#" aria-label="Facebook">FB</a>
+          <a href="#" aria-label="Instagram">IG</a>
+          <a href="#" aria-label="LinkedIn">LN</a>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <main>
+
+    <!-- ================================================
+         01 — HERO
+    ================================================ -->
+    <section class="hero" id="hero" aria-label="Hero">
+      <div class="hero__bg-grid" aria-hidden="true"></div>
+
+      <div class="container hero__container">
+        <div class="hero__content">
+          <p class="hero__eyebrow" data-i18n="hero.eyebrow">Athens, Greece · Production Support Company</p>
+          <h1 class="hero__title">
+            <span class="hero__title-line" data-i18n="hero.line1">Production</span>
+            <span class="hero__title-line" data-i18n="hero.line2">Support</span>
+            <span class="hero__title-line hero__title-line--accent" data-i18n="hero.line3">in Greece.</span>
+          </h1>
+          <p class="hero__subtitle" data-i18n="hero.subtitle">
+            Unit Services &nbsp;·&nbsp; Production Equipment Rental &nbsp;·&nbsp; On-Set Intelligence
+          </p>
+          <p class="hero__body" data-i18n="hero.body">
+            We are a boutique production support company operating at the core of audiovisual production in Greece. Precision, efficiency, and complete operational clarity — from prep to strike.
+          </p>
+          <div class="hero__ctas">
+            <a href="#services" class="btn btn--primary" data-i18n="hero.cta1">Explore Services</a>
+            <a href="contact.html" class="btn btn--outline" data-i18n="hero.cta2">Get in Touch</a>
+          </div>
+        </div>
+
+        <div class="hero__info-card" aria-hidden="true">
+          <div class="hero__info-card-inner">
+            <div class="hero__info-item">
+              <span class="hero__info-label">Founded</span>
+              <span class="hero__info-value">2024</span>
+            </div>
+            <div class="hero__info-item">
+              <span class="hero__info-label">Operations</span>
+              <span class="hero__info-value">International &amp; Domestic</span>
+            </div>
+            <div class="hero__info-item">
+              <span class="hero__info-label">Base</span>
+              <span class="hero__info-value">Athens, Greece</span>
+            </div>
+            <div class="hero__info-item">
+              <span class="hero__info-label">Support</span>
+              <span class="hero__info-value">24 / 7</span>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="hero__scroll" aria-hidden="true">
+        <span class="hero__scroll-line"></span>
+        <span class="hero__scroll-text">Scroll</span>
+      </div>
+    </section>
+
+    <!-- ================================================
+         02 — TRUST / POSITIONING
+    ================================================ -->
+    <section class="trust" aria-label="Trust and positioning">
+      <div class="container">
+        <div class="trust__inner">
+          <blockquote class="trust__statement" data-i18n="trust.statement">
+            Built for production companies.<br>Designed for execution.<br>Trusted by crews.
+          </blockquote>
+          <div class="trust__pillars">
+            <div class="trust__pillar reveal">
+              <p data-i18n="trust.pillar1">Trusted by international and domestic productions operating across Greece.</p>
+            </div>
+            <div class="trust__pillar reveal">
+              <p data-i18n="trust.pillar2">Responsive, sustainable, and budget-conscious — from prep to wrap.</p>
+            </div>
+            <div class="trust__pillar reveal">
+              <p data-i18n="trust.pillar3">An integrated system — not fragmented services. One coordinated structure.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ================================================
+         03 — SERVICES PREVIEW
+    ================================================ -->
+    <section class="services section" id="services" aria-labelledby="services-heading">
+      <div class="container">
+
+        <div class="section-header reveal">
+          <p class="section-label" data-i18n="services.label">What We Do</p>
+          <h2 class="section-title" id="services-heading" data-i18n="services.title">
+            Integrated production support<br />for every stage of your shoot.
+          </h2>
+        </div>
+
+        <div class="services__grid" role="list">
+
+          <a href="services.html#unit-facilities" class="service-item reveal" role="listitem">
+            <span class="service-item__num">01</span>
+            <div class="service-item__body">
+              <h3 class="service-item__title" data-i18n="services.s1.title">Unit &amp; Facilities Management</h3>
+              <p class="service-item__desc" data-i18n="services.s1.desc">Full production base setup and operational coordination. Efficient, fully equipped environments from prep to wrap.</p>
+            </div>
+            <span class="service-item__arrow" aria-hidden="true">→</span>
+          </a>
+
+          <a href="services.html#location-logistics" class="service-item reveal" role="listitem">
+            <span class="service-item__num">02</span>
+            <div class="service-item__body">
+              <h3 class="service-item__title" data-i18n="services.s2.title">Location &amp; Production Logistics</h3>
+              <p class="service-item__desc" data-i18n="services.s2.desc">Coordination of locations, teams, and infrastructure for complex productions. Seamless operational flow across all stages.</p>
+            </div>
+            <span class="service-item__arrow" aria-hidden="true">→</span>
+          </a>
+
+          <a href="services.html#traffic-control" class="service-item reveal" role="listitem">
+            <span class="service-item__num">03</span>
+            <div class="service-item__body">
+              <h3 class="service-item__title" data-i18n="services.s3.title">Traffic Control</h3>
+              <p class="service-item__desc" data-i18n="services.s3.desc">Access, movement, and safety coordination for cast, crew, and production vehicles across all environments.</p>
+            </div>
+            <span class="service-item__arrow" aria-hidden="true">→</span>
+          </a>
+
+          <a href="services.html#green-filming" class="service-item reveal" role="listitem">
+            <span class="service-item__num">04</span>
+            <div class="service-item__body">
+              <h3 class="service-item__title" data-i18n="services.s4.title">Green Filming &amp; Sustainability</h3>
+              <p class="service-item__desc" data-i18n="services.s4.desc">Practical on-set sustainability solutions aligned with ALBERT and European guidelines — efficient and budget-conscious.</p>
+            </div>
+            <span class="service-item__arrow" aria-hidden="true">→</span>
+          </a>
+
+          <a href="services.html#custom-solutions" class="service-item reveal" role="listitem">
+            <span class="service-item__num">05</span>
+            <div class="service-item__body">
+              <h3 class="service-item__title" data-i18n="services.s5.title">Custom Solutions</h3>
+              <p class="service-item__desc" data-i18n="services.s5.desc">Flexible production support built through a trusted network of collaborators, scalable to any production requirement.</p>
+            </div>
+            <span class="service-item__arrow" aria-hidden="true">→</span>
+          </a>
+
+        </div>
+
+        <div class="services__footer reveal">
+          <a href="services.html" class="link-arrow" data-i18n="services.viewAll">View All Services</a>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- ================================================
+         04 — RENTALS PREVIEW
+    ================================================ -->
+    <section class="rentals section section--light" id="rentals" aria-labelledby="rentals-heading">
+      <div class="container">
+
+        <div class="section-header reveal">
+          <p class="section-label" data-i18n="rentals.label">Production Equipment Rental</p>
+          <h2 class="section-title section-title--dark" id="rentals-heading" data-i18n="rentals.title">
+            Essential on-set equipment.<br />Ready when you are.
+          </h2>
+        </div>
+
+        <div class="rentals__grid">
+
+          <a href="rentals.html#holding-areas" class="rental-item reveal">
+            <div class="rental-item__icon" aria-hidden="true">
+              <!-- Tent / Shelter icon -->
+              <svg width="28" height="28" viewBox="0 0 28 28" fill="none" stroke="currentColor" stroke-width="1.25" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M2 22 L14 6 L26 22 Z"/>
+                <path d="M8 22 L14 12 L20 22"/>
+                <line x1="2" y1="22" x2="26" y2="22"/>
+              </svg>
+            </div>
+            <h3 class="rental-item__title" data-i18n="rentals.r1.title">Holding Areas &amp; Green Rooms</h3>
+            <p class="rental-item__desc" data-i18n="rentals.r1.desc">Tents, shelters, heaters, AC units, umbrellas</p>
+            <span class="rental-item__link" aria-hidden="true">View →</span>
+          </a>
+
+          <a href="rentals.html#catering-rest" class="rental-item reveal">
+            <div class="rental-item__icon" aria-hidden="true">
+              <!-- Cutlery: knife left, fork right -->
+              <svg width="28" height="28" viewBox="0 0 28 28" fill="none" stroke="currentColor" stroke-width="1.25" stroke-linecap="round" stroke-linejoin="round">
+                <!-- Knife: straight spine + curved blade -->
+                <line x1="8" y1="3" x2="8" y2="25"/>
+                <path d="M8 3 C11.5 5 11.5 10 8 12"/>
+                <!-- Fork: 4 tines, curved shoulder, handle -->
+                <line x1="16" y1="3" x2="16" y2="10"/>
+                <line x1="18.3" y1="3" x2="18.3" y2="10"/>
+                <line x1="20.7" y1="3" x2="20.7" y2="10"/>
+                <line x1="23" y1="3" x2="23" y2="10"/>
+                <path d="M16 10 Q16 13 19.5 13.5 Q23 13 23 10"/>
+                <line x1="19.5" y1="13.5" x2="19.5" y2="25"/>
+              </svg>
+            </div>
+            <h3 class="rental-item__title" data-i18n="rentals.r2.title">Catering &amp; Rest Areas</h3>
+            <p class="rental-item__desc" data-i18n="rentals.r2.desc">Tables, chairs, dining setup, crew comfort</p>
+            <span class="rental-item__link" aria-hidden="true">View →</span>
+          </a>
+
+          <a href="rentals.html#makeup-wardrobe" class="rental-item reveal">
+            <div class="rental-item__icon" aria-hidden="true">
+              <!-- Make-up / Wardrobe icon -->
+              <svg width="28" height="28" viewBox="0 0 28 28" fill="none" stroke="currentColor" stroke-width="1.25" stroke-linecap="round" stroke-linejoin="round">
+                <rect x="5" y="4" width="18" height="14" rx="1"/>
+                <circle cx="14" cy="11" r="4"/>
+                <line x1="14" y1="18" x2="14" y2="24"/>
+                <line x1="9" y1="24" x2="19" y2="24"/>
+              </svg>
+            </div>
+            <h3 class="rental-item__title" data-i18n="rentals.r3.title">Make-Up &amp; Wardrobe</h3>
+            <p class="rental-item__desc" data-i18n="rentals.r3.desc">Mirrors, racks, ironing sets, prep equipment</p>
+            <span class="rental-item__link" aria-hidden="true">View →</span>
+          </a>
+
+          <a href="rentals.html#technical-power" class="rental-item reveal">
+            <div class="rental-item__icon" aria-hidden="true">
+              <!-- Power / Lightning icon -->
+              <svg width="28" height="28" viewBox="0 0 28 28" fill="none" stroke="currentColor" stroke-width="1.25" stroke-linecap="round" stroke-linejoin="round">
+                <polygon points="15,3 6,16 14,16 13,25 22,12 14,12"/>
+              </svg>
+            </div>
+            <h3 class="rental-item__title" data-i18n="rentals.r4.title">Power &amp; Utilities</h3>
+            <p class="rental-item__desc" data-i18n="rentals.r4.desc">Generators, EcoFlow systems, solar panels, LED lighting</p>
+            <span class="rental-item__link" aria-hidden="true">View →</span>
+          </a>
+
+          <a href="rentals.html#on-set-ops" class="rental-item reveal">
+            <div class="rental-item__icon" aria-hidden="true">
+              <!-- Accessories / Cart icon -->
+              <svg width="28" height="28" viewBox="0 0 28 28" fill="none" stroke="currentColor" stroke-width="1.25" stroke-linecap="round" stroke-linejoin="round">
+                <rect x="4" y="4" width="8" height="8" rx="1"/>
+                <rect x="16" y="4" width="8" height="8" rx="1"/>
+                <rect x="4" y="16" width="8" height="8" rx="1"/>
+                <rect x="16" y="16" width="8" height="8" rx="1"/>
+              </svg>
+            </div>
+            <h3 class="rental-item__title" data-i18n="rentals.r5.title">Accessories</h3>
+            <p class="rental-item__desc" data-i18n="rentals.r5.desc">Trolleys, carts, barriers, traffic cones, safety gear</p>
+            <span class="rental-item__link" aria-hidden="true">View →</span>
+          </a>
+
+          <a href="rentals.html#vehicles" class="rental-item reveal">
+            <div class="rental-item__icon" aria-hidden="true">
+              <!-- Van: large cargo box + angled cab + circular wheels -->
+              <svg width="28" height="28" viewBox="0 0 28 28" fill="none" stroke="currentColor" stroke-width="1.25" stroke-linecap="round" stroke-linejoin="round">
+                <!-- Cargo box -->
+                <rect x="1" y="4" width="16" height="15"/>
+                <!-- Cab: flat top → angled windscreen → vertical front → bottom -->
+                <path d="M17 4 L22 4 L27 10 L27 19 L17 19"/>
+                <!-- Bottom undercarriage: gaps where wheels sit -->
+                <line x1="1" y1="19" x2="4.5" y2="19"/>
+                <line x1="10.5" y1="19" x2="15" y2="19"/>
+                <line x1="22.5" y1="19" x2="27" y2="19"/>
+                <!-- Wheels -->
+                <circle cx="7.5" cy="21.5" r="2.5"/>
+                <circle cx="19.5" cy="21.5" r="2.5"/>
+              </svg>
+            </div>
+            <h3 class="rental-item__title" data-i18n="rentals.r6.title">Vehicles</h3>
+            <p class="rental-item__desc" data-i18n="rentals.r6.desc">Production vans, equipment transport solutions</p>
+            <span class="rental-item__link" aria-hidden="true">View →</span>
+          </a>
+
+        </div>
+
+        <div class="rentals__footer reveal">
+          <a href="rentals.html" class="link-arrow link-arrow--dark" data-i18n="rentals.viewAll">View All Equipment</a>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- ================================================
+         05 — ABOUT SNAPSHOT
+    ================================================ -->
+    <section class="about-snap section" id="about" aria-labelledby="about-heading">
+      <div class="container">
+        <div class="about-snap__inner">
+
+          <div class="about-snap__content reveal">
+            <p class="section-label" data-i18n="about.label">About Us</p>
+            <h2 class="section-title" id="about-heading" data-i18n="about.title">
+              We work where<br />production happens.
+            </h2>
+            <p class="about-snap__body" data-i18n="about.body1">
+              We are a boutique production support company based in Athens, Greece, built from within the industry. Our founders have spent years working on international and domestic sets — in real production environments where time, pressure, and precision define every decision.
+            </p>
+            <p class="about-snap__body" data-i18n="about.body2">
+              Our focus is not on separating services, but on integrating them — unit support, equipment rental, location and unit logistics — operating as one coordinated system.
+            </p>
+            <p class="about-snap__quote" data-i18n="about.quote">
+              "We are small enough to care, big enough to deliver."
+            </p>
+            <a href="about.html" class="link-arrow" data-i18n="about.cta">About Us</a>
+          </div>
+
+          <div class="about-snap__stats reveal">
+            <div class="about-snap__stat">
+              <span class="about-snap__stat-num">4</span>
+              <span class="about-snap__stat-label" data-i18n="about.stat1">Founding Professionals</span>
+            </div>
+            <div class="about-snap__stat">
+              <span class="about-snap__stat-num">10+</span>
+              <span class="about-snap__stat-label" data-i18n="about.stat2">Years Combined Experience</span>
+            </div>
+            <div class="about-snap__stat">
+              <span class="about-snap__stat-num">3</span>
+              <span class="about-snap__stat-label" data-i18n="about.stat3">LMGI &amp; GSLUD Members</span>
+            </div>
+            <div class="about-snap__stat">
+              <span class="about-snap__stat-num">∞</span>
+              <span class="about-snap__stat-label" data-i18n="about.stat4">Commitment to Execution</span>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ================================================
+         06 — HOW WE WORK
+    ================================================ -->
+    <section class="how-we-work section section--dark" aria-labelledby="how-heading">
+      <div class="container">
+
+        <div class="section-header reveal">
+          <p class="section-label" data-i18n="how.label">How We Work</p>
+          <h2 class="section-title" id="how-heading" data-i18n="how.title">
+            The structure behind<br />every successful shoot.
+          </h2>
+        </div>
+
+        <div class="pillars__grid">
+
+          <div class="pillar reveal">
+            <div class="pillar__num" aria-hidden="true">—01</div>
+            <h3 class="pillar__title" data-i18n="how.p1.title">Integrated System</h3>
+            <p class="pillar__desc" data-i18n="how.p1.desc">Not fragmented services. One coordinated structure — unit support, equipment, and location logistics operating as a single, efficient system.</p>
+          </div>
+
+          <div class="pillar reveal">
+            <div class="pillar__num" aria-hidden="true">—02</div>
+            <h3 class="pillar__title" data-i18n="how.p2.title">Precision &amp; Reliability</h3>
+            <p class="pillar__desc" data-i18n="how.p2.desc">Every decision on the ground translates into a smoother, more controlled production process. No surprises. No gaps.</p>
+          </div>
+
+          <div class="pillar reveal">
+            <div class="pillar__num" aria-hidden="true">—03</div>
+            <h3 class="pillar__title" data-i18n="how.p3.title">Invisible Support</h3>
+            <p class="pillar__desc" data-i18n="how.p3.desc">Production works best when support is invisible. We ensure everything behind the camera runs as smoothly as what's in front of it.</p>
+          </div>
+
+          <div class="pillar reveal">
+            <div class="pillar__num" aria-hidden="true">—04</div>
+            <h3 class="pillar__title" data-i18n="how.p4.title">Always Present</h3>
+            <p class="pillar__desc" data-i18n="how.p4.desc">Production doesn't stop. Neither do we. Responsive, 24/7 support wherever and whenever it's needed — before, during, and after every shoot.</p>
+          </div>
+
+        </div>
+
+      </div>
+    </section>
+
+    <!-- ================================================
+         07 — CLIENT / PRODUCTIONS STRIP
+    ================================================ -->
+    <section class="clients" aria-labelledby="clients-heading">
+      <div class="container">
+        <p class="clients__label section-label" id="clients-heading" data-i18n="clients.label">Productions &amp; Partners</p>
+      </div>
+      <div class="clients__marquee-wrap" aria-label="Productions we have supported">
+        <div class="clients__marquee" aria-hidden="true">
+          <div class="clients__track">
+            <div class="clients__logo-wrap"><img src="assets/images/clients/clients-blonde.png" alt="Blonde" class="clients__logo" /></div>
+            <div class="clients__logo-wrap"><img src="assets/images/clients/clients-heretic.png" alt="Heretic" class="clients__logo" /></div>
+            <div class="clients__logo-wrap"><img src="assets/images/clients/clients-faliro_house.jpg" alt="Faliro House Productions" class="clients__logo" /></div>
+            <div class="clients__logo-wrap"><img src="assets/images/clients/clients-central.png" alt="Central Athens" class="clients__logo" /></div>
+            <div class="clients__logo-wrap"><img src="assets/images/clients/clients-foss.png" alt="Foss Productions" class="clients__logo" /></div>
+            <div class="clients__logo-wrap"><img src="assets/images/clients/clients-avaton.png" alt="Avaton Films" class="clients__logo" /></div>
+            <!-- Duplicated for seamless loop -->
+            <div class="clients__logo-wrap"><img src="assets/images/clients/clients-blonde.png" alt="Blonde" class="clients__logo" /></div>
+            <div class="clients__logo-wrap"><img src="assets/images/clients/clients-heretic.png" alt="Heretic" class="clients__logo" /></div>
+            <div class="clients__logo-wrap"><img src="assets/images/clients/clients-faliro_house.jpg" alt="Faliro House Productions" class="clients__logo" /></div>
+            <div class="clients__logo-wrap"><img src="assets/images/clients/clients-central.png" alt="Central Athens" class="clients__logo" /></div>
+            <div class="clients__logo-wrap"><img src="assets/images/clients/clients-foss.png" alt="Foss Productions" class="clients__logo" /></div>
+            <div class="clients__logo-wrap"><img src="assets/images/clients/clients-avaton.png" alt="Avaton Films" class="clients__logo" /></div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ================================================
+         08 — FINAL CTA
+    ================================================ -->
+    <section class="cta-section" id="contact" aria-labelledby="cta-heading">
+      <div class="container">
+        <div class="cta-section__inner reveal">
+          <p class="section-label" data-i18n="cta.label">Get in Touch</p>
+          <h2 class="cta-section__title" id="cta-heading" data-i18n="cta.title">
+            Always on.<br />Always present.
+          </h2>
+          <p class="cta-section__sub" data-i18n="cta.sub">
+            Production doesn't stop. Neither do we. 24/7 support, wherever and whenever it's needed.
+          </p>
+          <p class="cta-section__body" data-i18n="cta.body">
+            For international &amp; domestic productions seeking reliable unit services, equipment support, and on-set operational intelligence — we provide the structure that keeps production moving.
+          </p>
+          <a href="contact.html" class="btn btn--primary btn--large" data-i18n="cta.btn">Get in Touch</a>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- ================================================
+       FOOTER
+  ================================================ -->
+  <footer class="footer" aria-label="Site footer">
+    <div class="container">
+      <div class="footer__top">
+
+        <div class="footer__brand">
+          <a href="/" class="footer__logo" aria-label="The Locbusters Home">
+            <img src="assets/images/logo.svg" alt="The Locbusters" class="footer__logo-img" />
+          </a>
+          <p class="footer__tagline" data-i18n="footer.tagline">Production Support in Greece.<br />From prep to strike.</p>
+          <div class="footer__social">
+            <a href="#" class="footer__social-link" aria-label="Facebook" target="_blank" rel="noopener noreferrer">Facebook</a>
+            <a href="#" class="footer__social-link" aria-label="Instagram" target="_blank" rel="noopener noreferrer">Instagram</a>
+            <a href="#" class="footer__social-link" aria-label="LinkedIn" target="_blank" rel="noopener noreferrer">LinkedIn</a>
+          </div>
+        </div>
+
+        <div class="footer__nav-group">
+          <p class="footer__nav-title" data-i18n="footer.servicesTitle">Services</p>
+          <nav aria-label="Services navigation">
+            <a href="services.html#unit-facilities" class="footer__nav-link" data-i18n="footer.s1">Unit &amp; Facilities Management</a>
+            <a href="services.html#location-logistics" class="footer__nav-link" data-i18n="footer.s2">Location &amp; Production Logistics</a>
+            <a href="services.html#traffic-control" class="footer__nav-link" data-i18n="footer.s3">Traffic Control</a>
+            <a href="services.html#green-filming" class="footer__nav-link" data-i18n="footer.s4">Green Filming &amp; Sustainability</a>
+            <a href="services.html#custom-solutions" class="footer__nav-link" data-i18n="footer.s5">Custom Solutions</a>
+          </nav>
+        </div>
+
+        <div class="footer__nav-group">
+          <p class="footer__nav-title" data-i18n="footer.rentalsTitle">Rentals</p>
+          <nav aria-label="Rentals navigation">
+            <a href="rentals.html#basecamp" class="footer__nav-link" data-i18n="footer.r1">Holding Areas &amp; Green Rooms</a>
+            <a href="rentals.html#basecamp" class="footer__nav-link" data-i18n="footer.r2">Catering &amp; Rest Areas</a>
+            <a href="rentals.html#basecamp" class="footer__nav-link" data-i18n="footer.r3">Make-Up &amp; Wardrobe</a>
+            <a href="rentals.html#technical-power" class="footer__nav-link" data-i18n="footer.r4">Power &amp; Utilities</a>
+            <a href="rentals.html#on-set-ops" class="footer__nav-link" data-i18n="footer.r5">Accessories</a>
+            <a href="rentals.html#vehicles" class="footer__nav-link" data-i18n="footer.r6">Vehicles</a>
+          </nav>
+        </div>
+
+        <div class="footer__nav-group">
+          <p class="footer__nav-title" data-i18n="footer.companyTitle">Company</p>
+          <nav aria-label="Company navigation">
+            <a href="about.html" class="footer__nav-link" data-i18n="footer.about">About Us</a>
+            <a href="about.html#team" class="footer__nav-link" data-i18n="footer.team">The Team</a>
+            <a href="contact.html" class="footer__nav-link" data-i18n="footer.contact">Get in Touch</a>
+          </nav>
+          <div class="footer__contact">
+            <a href="mailto:info@thelocbusters.com" class="footer__contact-link">info@thelocbusters.com</a>
+            <p class="footer__contact-text" data-i18n="footer.location">Athens, Greece</p>
+          </div>
+        </div>
+
+      </div>
+
+      <div class="footer__bottom">
+        <p class="footer__copy" data-i18n="footer.copy">
+          &copy; 2024 The Locbusters. All rights reserved.
+        </p>
+        <div class="footer__bottom-right">
+          <div class="lang-switch">
+            <button class="lang-switch__btn active" data-lang="en">EN</button>
+            <span class="lang-switch__sep">/</span>
+            <button class="lang-switch__btn" data-lang="gr">GR</button>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </footer>
+
+  <!-- Script -->
+  <script src="assets/js/main.js"></script>
+
+</body>
+</html>

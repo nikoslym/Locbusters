@@ -1,5 +1,5 @@
 /**
- * THE LOCBUSTERS — Main JavaScript
+ * THE LOCBUSTERS Main JavaScript
  * Handles: Header scroll, Mobile menu, Scroll reveal, Language switching
  */
 
@@ -24,15 +24,15 @@ const TRANSLATIONS = {
     'hero.line2':    'Support',
     'hero.line3':    'in Greece.',
     'hero.subtitle': 'Unit Services · Production Equipment Rental · On-Set Intelligence',
-    'hero.body':     'We are a boutique production support company operating at the core of audiovisual production in Greece. Precision, efficiency, and complete operational clarity — from prep to strike.',
+    'hero.body':     'We are a boutique production support company operating at the core of audiovisual production in Greece. Precision, efficiency, and complete operational clarity from prep to strike.',
     'hero.cta1':     'Explore Services',
     'hero.cta2':     'Get in Touch',
 
     // Trust
     'trust.statement': 'Built for production companies.\nDesigned for execution.\nTrusted by crews.',
     'trust.pillar1':   'Trusted by international and domestic productions operating across Greece.',
-    'trust.pillar2':   'Responsive, sustainable, and budget-conscious — from prep to wrap.',
-    'trust.pillar3':   'An integrated system — not fragmented services. One coordinated structure.',
+    'trust.pillar2':   'Responsive, sustainable, and budget-conscious from prep to wrap.',
+    'trust.pillar3':   'An integrated system not fragmented services. One coordinated structure.',
 
     // Services
     'services.label':    'What We Do',
@@ -44,7 +44,7 @@ const TRANSLATIONS = {
     'services.s3.title': 'Traffic Control',
     'services.s3.desc':  'Access, movement, and safety coordination for cast, crew, and production vehicles across all environments.',
     'services.s4.title': 'Green Filming & Sustainability',
-    'services.s4.desc':  'Practical on-set sustainability solutions aligned with ALBERT and European guidelines — efficient and budget-conscious.',
+    'services.s4.desc':  'Practical on-set sustainability solutions aligned with ALBERT and European guidelines efficient and budget-conscious.',
     'services.s5.title': 'Custom Solutions',
     'services.s5.desc':  'Flexible production support built through a trusted network of collaborators, scalable to any production requirement.',
     'services.viewAll':  'View All Services',
@@ -69,8 +69,8 @@ const TRANSLATIONS = {
     // About
     'about.label':  'About Us',
     'about.title':  'We work where\nproduction happens.',
-    'about.body1':  'We are a boutique production support company based in Athens, Greece, built from within the industry. Our founders have spent years working on international and domestic sets — in real production environments where time, pressure, and precision define every decision.',
-    'about.body2':  'Our focus is not on separating services, but on integrating them — unit support, equipment rental, location and unit logistics — operating as one coordinated system.',
+    'about.body1':  'We are a boutique production support company based in Athens, Greece, built from within the industry. Our founders have spent years working on international and domestic sets in real production environments where time, pressure, and precision define every decision.',
+    'about.body2':  'Our focus is not on separating services, but on integrating them unit support, equipment rental, location and unit logistics operating as one coordinated system.',
     'about.quote':  '"We are small enough to care, big enough to deliver."',
     'about.cta':    'About Us',
     'about.stat1':  'Founding Professionals',
@@ -82,13 +82,13 @@ const TRANSLATIONS = {
     'how.label':    'How We Work',
     'how.title':    'The structure behind\nevery successful shoot.',
     'how.p1.title': 'Integrated System',
-    'how.p1.desc':  'Not fragmented services. One coordinated structure — unit support, equipment, and location logistics operating as a single, efficient system.',
+    'how.p1.desc':  'Not fragmented services. One coordinated structure unit support, equipment, and location logistics operating as a single, efficient system.',
     'how.p2.title': 'Precision & Reliability',
     'how.p2.desc':  'Every decision on the ground translates into a smoother, more controlled production process. No surprises. No gaps.',
     'how.p3.title': 'Invisible Support',
     'how.p3.desc':  'Production works best when support is invisible. We ensure everything behind the camera runs as smoothly as what\'s in front of it.',
     'how.p4.title': 'Always Present',
-    'how.p4.desc':  'Production doesn\'t stop. Neither do we. Responsive, 24/7 support wherever and whenever it\'s needed — before, during, and after every shoot.',
+    'how.p4.desc':  'Production doesn\'t stop. Neither do we. Responsive, 24/7 support wherever and whenever it\'s needed before, during, and after every shoot.',
 
     // Clients
     'clients.label': 'Productions & Partners',
@@ -97,7 +97,7 @@ const TRANSLATIONS = {
     'cta.label': 'Get in Touch',
     'cta.title': 'Always on.\nAlways present.',
     'cta.sub':   'Production doesn\'t stop. Neither do we. 24/7 support, wherever and whenever it\'s needed.',
-    'cta.body':  'For international & domestic productions seeking reliable unit services, equipment support, and on-set operational intelligence — we provide the structure that keeps production moving.',
+    'cta.body':  'For international & domestic productions seeking reliable unit services, equipment support, and on-set operational intelligence we provide the structure that keeps production moving.',
     'cta.btn':   'Get in Touch',
 
     // Footer
@@ -136,15 +136,15 @@ const TRANSLATIONS = {
     'hero.line2':    'Παραγωγής',
     'hero.line3':    'στην Ελλάδα.',
     'hero.subtitle': 'Υπηρεσίες Unit · Ενοικίαση Εξοπλισμού · Επιτόπια Διαχείριση',
-    'hero.body':     'Είμαστε μια boutique εταιρεία υποστήριξης παραγωγής στον πυρήνα της οπτικοακουστικής παραγωγής στην Ελλάδα. Ακρίβεια, αποτελεσματικότητα και πλήρης επιχειρησιακή σαφήνεια — από την προετοιμασία έως το wrap.',
+    'hero.body':     'Είμαστε μια boutique εταιρεία υποστήριξης παραγωγής στον πυρήνα της οπτικοακουστικής παραγωγής στην Ελλάδα. Ακρίβεια, αποτελεσματικότητα και πλήρης επιχειρησιακή σαφήνεια από την προετοιμασία έως το wrap.',
     'hero.cta1':     'Οι Υπηρεσίες μας',
     'hero.cta2':     'Επικοινωνήστε',
 
     // Trust
     'trust.statement': 'Σχεδιασμένο για εταιρείες παραγωγής.\nΥλοποιημένο για αποτελέσματα.\nΑξιόπιστο από τα συνεργεία.',
     'trust.pillar1':   'Αξιόπιστοι από διεθνείς και εγχώριες παραγωγές σε όλη την Ελλάδα.',
-    'trust.pillar2':   'Αποτελεσματικοί, βιώσιμοι και οικονομικά συνετοί — από το prep έως το wrap.',
-    'trust.pillar3':   'Ένα ενοποιημένο σύστημα — όχι κατακερματισμένες υπηρεσίες. Μία συντονισμένη δομή.',
+    'trust.pillar2':   'Αποτελεσματικοί, βιώσιμοι και οικονομικά συνετοί από το prep έως το wrap.',
+    'trust.pillar3':   'Ένα ενοποιημένο σύστημα όχι κατακερματισμένες υπηρεσίες. Μία συντονισμένη δομή.',
 
     // Services
     'services.label':    'Τι Κάνουμε',
@@ -182,7 +182,7 @@ const TRANSLATIONS = {
     'about.label':  'Σχετικά με εμάς',
     'about.title':  'Εργαζόμαστε εκεί\nπου γίνεται η παραγωγή.',
     'about.body1':  'Είμαστε μια boutique εταιρεία υποστήριξης παραγωγής με έδρα την Αθήνα, χτισμένη από μέσα από τον κλάδο. Οι ιδρυτές μας έχουν περάσει χρόνια εργαζόμενοι σε διεθνείς και εγχώριες παραγωγές.',
-    'about.body2':  'Η εστίασή μας δεν είναι στον διαχωρισμό υπηρεσιών, αλλά στην ενοποίησή τους — υποστήριξη unit, ενοικίαση εξοπλισμού, logistics — λειτουργώντας ως ένα συντονισμένο σύστημα.',
+    'about.body2':  'Η εστίασή μας δεν είναι στον διαχωρισμό υπηρεσιών, αλλά στην ενοποίησή τους υποστήριξη unit, ενοικίαση εξοπλισμού, logistics λειτουργώντας ως ένα συντονισμένο σύστημα.',
     'about.quote':  '"Είμαστε αρκετά μικροί για να νοιαζόμαστε, αρκετά μεγάλοι για να αποδίδουμε."',
     'about.cta':    'Σχετικά με εμάς',
     'about.stat1':  'Ιδρυτικά Μέλη',
@@ -194,13 +194,13 @@ const TRANSLATIONS = {
     'how.label':    'Πώς Εργαζόμαστε',
     'how.title':    'Η δομή πίσω από\nκάθε επιτυχημένο γύρισμα.',
     'how.p1.title': 'Ενοποιημένο Σύστημα',
-    'how.p1.desc':  'Όχι κατακερματισμένες υπηρεσίες. Μία συντονισμένη δομή — υποστήριξη unit, εξοπλισμός και logistics σε ένα αποτελεσματικό σύστημα.',
+    'how.p1.desc':  'Όχι κατακερματισμένες υπηρεσίες. Μία συντονισμένη δομή υποστήριξη unit, εξοπλισμός και logistics σε ένα αποτελεσματικό σύστημα.',
     'how.p2.title': 'Ακρίβεια & Αξιοπιστία',
     'how.p2.desc':  'Κάθε απόφαση στο πεδίο μεταφράζεται σε πιο ομαλή, πιο ελεγχόμενη διαδικασία παραγωγής.',
     'how.p3.title': 'Αόρατη Υποστήριξη',
     'how.p3.desc':  'Η παραγωγή λειτουργεί καλύτερα όταν η υποστήριξη είναι αόρατη. Εξασφαλίζουμε ότι όλα πίσω από την κάμερα τρέχουν ομαλά.',
     'how.p4.title': 'Πάντα Παρόντες',
-    'how.p4.desc':  'Η παραγωγή δεν σταματά. Ούτε εμείς. Υποστήριξη 24/7, όπου και όποτε χρειάζεται — πριν, κατά τη διάρκεια και μετά από κάθε γύρισμα.',
+    'how.p4.desc':  'Η παραγωγή δεν σταματά. Ούτε εμείς. Υποστήριξη 24/7, όπου και όποτε χρειάζεται πριν, κατά τη διάρκεια και μετά από κάθε γύρισμα.',
 
     // Clients
     'clients.label': 'Παραγωγές & Συνεργάτες',
@@ -209,7 +209,7 @@ const TRANSLATIONS = {
     'cta.label': 'Επικοινωνήστε',
     'cta.title': 'Πάντα ενεργοί.\nΠάντα παρόντες.',
     'cta.sub':   'Η παραγωγή δεν σταματά. Ούτε εμείς. Υποστήριξη 24/7, όπου και όποτε χρειάζεται.',
-    'cta.body':  'Για διεθνείς και εγχώριες παραγωγές που αναζητούν αξιόπιστες υπηρεσίες unit, υποστήριξη εξοπλισμού και επιχειρησιακή διαχείριση on-set — παρέχουμε τη δομή που κρατά την παραγωγή σε κίνηση.',
+    'cta.body':  'Για διεθνείς και εγχώριες παραγωγές που αναζητούν αξιόπιστες υπηρεσίες unit, υποστήριξη εξοπλισμού και επιχειρησιακή διαχείριση on-set παρέχουμε τη δομή που κρατά την παραγωγή σε κίνηση.',
     'cta.btn':   'Επικοινωνήστε',
 
     // Footer
@@ -242,7 +242,7 @@ const TRANSLATIONS = {
 let currentLang = 'en';
 
 /* ----------------------------------------------------------
-   HEADER — Scroll behaviour
+   HEADER Scroll behaviour
    ---------------------------------------------------------- */
 function initHeader() {
   const header = document.getElementById('header');
@@ -302,7 +302,7 @@ function initMobileMenu() {
 }
 
 /* ----------------------------------------------------------
-   SCROLL REVEAL — Intersection Observer
+   SCROLL REVEAL Intersection Observer
    ---------------------------------------------------------- */
 function initScrollReveal() {
   const elements = document.querySelectorAll('.reveal');
@@ -327,7 +327,7 @@ function initScrollReveal() {
 }
 
 /* ----------------------------------------------------------
-   HERO — Animate in on load
+   HERO Animate in on load
    ---------------------------------------------------------- */
 function initHeroAnimation() {
   const hero = document.querySelector('.hero__content');

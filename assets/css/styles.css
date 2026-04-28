@@ -1,5 +1,5 @@
 /* ==========================================================
-   THE LOCBUSTERS — Main Stylesheet
+   THE LOCBUSTERS - Main Stylesheet
    Design System: Minimal · Operational · Premium
    ========================================================== */
 
@@ -7,7 +7,7 @@
    01. DESIGN TOKENS
    ---------------------------------------------------------- */
 :root {
-  /* Colors — Dark base with light accent sections */
+  /* Colors - Dark base with light accent sections */
   --c-bg:           #0A0A0A;
   --c-surface:      #111111;
   --c-surface-2:    #181818;
@@ -1255,7 +1255,7 @@ button {
 }
 
 /* ----------------------------------------------------------
-   18. RESPONSIVE — TABLET (≤ 1024px)
+   18. RESPONSIVE - TABLET (≤ 1024px)
    ---------------------------------------------------------- */
 @media (max-width: 1024px) {
 
@@ -1323,7 +1323,7 @@ button {
 }
 
 /* ----------------------------------------------------------
-   19. RESPONSIVE — MOBILE (≤ 768px)
+   19. RESPONSIVE - MOBILE (≤ 768px)
    ---------------------------------------------------------- */
 @media (max-width: 768px) {
 
@@ -1439,7 +1439,7 @@ button {
 }
 
 /* ----------------------------------------------------------
-   20. RESPONSIVE — SMALL MOBILE (≤ 480px)
+   20. RESPONSIVE - SMALL MOBILE (≤ 480px)
    ---------------------------------------------------------- */
 @media (max-width: 480px) {
 

@@ -1,9 +1,9 @@
 /* ==========================================================
-   THE LOCBUSTERS — About Page Styles
+   THE LOCBUSTERS - About Page Styles
    ========================================================== */
 
 /* ----------------------------------------------------------
-   HERO — ABOUT VARIANT
+   HERO - ABOUT VARIANT
    ---------------------------------------------------------- */
 .pg-hero--about {
   padding-bottom: var(--sp-7);
@@ -66,7 +66,7 @@
 }
 
 /* ----------------------------------------------------------
-   ABOUT TEXT — 2-COLUMN SPLIT
+   ABOUT TEXT - 2-COLUMN SPLIT
    ---------------------------------------------------------- */
 .abt-text {
   background-color: var(--c-light-bg);
@@ -145,7 +145,7 @@
   padding-bottom: 0;
 }
 
-/* Pull quote band — full bleed dark strip */
+/* Pull quote band - full bleed dark strip */
 .abt-story__quote-band {
   background-color: var(--c-surface);
   border-top: 1px solid var(--c-border);
@@ -167,12 +167,57 @@
 }
 
 .abt-story__closing {
-  font-size: 1.0625rem;
-  font-weight: 400;
-  color: var(--c-text-dim);
-  letter-spacing: -0.01em;
-  line-height: 1.5;
-  padding-bottom: var(--sp-6);
+  max-width: 900px;
+  margin: 0 auto;
+  padding: var(--sp-5) var(--sp-4) var(--sp-6);
+  text-align: center;
+  border-top: 1px solid var(--c-border);
+  border-bottom: 1px solid var(--c-border);
+  position: relative;
+  overflow: hidden;
+}
+
+.abt-story__closing::before,
+.abt-story__closing::after {
+  content: '"';
+  position: absolute;
+  font-size: clamp(2rem, 4vw, 3rem);
+  font-weight: 300;
+  color: rgba(232, 85, 5, 0.35);
+  line-height: 1;
+}
+
+.abt-story__closing::before {
+  left: var(--sp-3);
+  top: var(--sp-2);
+}
+
+.abt-story__closing::after {
+  right: var(--sp-3);
+  bottom: var(--sp-2);
+}
+
+.abt-story__closing-text {
+  display: block;
+  font-size: clamp(1.25rem, 2.5vw, 2rem);
+  font-weight: 300;
+  color: var(--c-text);
+  letter-spacing: -0.02em;
+  line-height: 1.35;
+  max-width: 760px;
+  margin: 0 auto;
+  animation: closing-quote-in 0.8s ease-out both;
+}
+
+@keyframes closing-quote-in {
+  from {
+    opacity: 0;
+    transform: translateY(10px) scale(0.99);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0) scale(1);
+  }
 }
 
 /* ----------------------------------------------------------
@@ -316,7 +361,7 @@
 }
 
 /* ----------------------------------------------------------
-   RESPONSIVE — TABLET (≤ 1024px)
+   RESPONSIVE - TABLET (≤ 1024px)
    ---------------------------------------------------------- */
 @media (max-width: 1024px) {
 
@@ -352,7 +397,7 @@
 }
 
 /* ----------------------------------------------------------
-   RESPONSIVE — MOBILE (≤ 768px)
+   RESPONSIVE - MOBILE (≤ 768px)
    ---------------------------------------------------------- */
 @media (max-width: 768px) {
 
@@ -369,13 +414,28 @@
     padding-left: var(--sp-3);
   }
 
+  .abt-story__closing {
+    padding: var(--sp-4) var(--sp-2) var(--sp-5);
+  }
+
+  .abt-story__closing::before,
+  .abt-story__closing::after {
+    font-size: 1.75rem;
+  }
+
   .quote-break {
     display: none;
   }
 }
 
+@media (prefers-reduced-motion: reduce) {
+  .abt-story__closing-text {
+    animation: none;
+  }
+}
+
 /* ----------------------------------------------------------
-   RESPONSIVE — SMALL MOBILE (≤ 480px)
+   RESPONSIVE - SMALL MOBILE (≤ 480px)
    ---------------------------------------------------------- */
 @media (max-width: 480px) {
 

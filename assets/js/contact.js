@@ -1,5 +1,5 @@
 /**
- * THE LOCBUSTERS — Contact Form
+ * THE LOCBUSTERS Contact Form
  * Handles client-side validation and success state.
  * Replace the submit handler with your backend/Webflow/Formspree integration.
  */
@@ -96,21 +96,21 @@
 
     /*
     ┌─────────────────────────────────────────────────────────┐
-    │  BACKEND INTEGRATION — REPLACE THIS BLOCK               │
+    │  BACKEND INTEGRATION REPLACE THIS BLOCK               │
     │                                                         │
-    │  Option A — Formspree:                                  │
+    │  Option A Formspree:                                  │
     │    fetch('https://formspree.io/f/YOUR_ID', {            │
     │      method: 'POST',                                    │
     │      body: new FormData(form),                          │
     │      headers: { Accept: 'application/json' }            │
     │    }).then(showSuccess).catch(showError)                 │
     │                                                         │
-    │  Option B — Webflow Forms:                              │
+    │  Option B Webflow Forms:                              │
     │    Remove this JS entirely. Add to <form>:              │
     │    data-name="Contact" data-wf-page-id="..."            │
     │    Webflow handles submission natively.                  │
     │                                                         │
-    │  Option C — Custom backend:                             │
+    │  Option C Custom backend:                             │
     │    POST to your API endpoint with FormData or JSON.     │
     └─────────────────────────────────────────────────────────┘
     */

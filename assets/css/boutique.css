@@ -236,7 +236,6 @@ body::before {
 .abt-hero__stats,
 .svc-detail,
 .rnt-group,
-.team-grid,
 .cnt-info {
   box-shadow: var(--shadow-soft);
 }
@@ -432,7 +431,7 @@ body::before {
 .team-member__photo {
   background:
     radial-gradient(circle at top left, rgba(232, 85, 5, 0.12), transparent 50%),
-    linear-gradient(rgba(244, 239, 231, 0.2), rgba(244, 239, 231, 0.5));
+    linear-gradient(rgba(20, 17, 14, 0.04), rgba(20, 17, 14, 0.1));
 }
 
 .team-member__photo-grid {
@@ -442,8 +441,8 @@ body::before {
 .team-member__initials {
   color: var(--c-dark-text);
   opacity: 0.46;
-  background: rgba(244, 239, 231, 0.76);
-  padding: 0.6rem 0.85rem;
+  background: transparent;
+  padding: 0;
 }
 
 .abt-story__quote-band {
@@ -670,7 +669,7 @@ body::before {
 
 /* RENTALS PREVIEW: staggered category grid */
 .rentals__grid {
-  grid-template-columns: repeat(6, 1fr);
+  grid-template-columns: repeat(2, minmax(0, 1fr));
   gap: var(--sp-2);
   background: transparent;
   border: 0;
@@ -680,18 +679,6 @@ body::before {
   border: 1px solid var(--c-border-dark);
   background: #fff;
   min-height: 230px;
-}
-
-.rental-item:nth-child(1),
-.rental-item:nth-child(2) {
-  grid-column: span 3;
-}
-
-.rental-item:nth-child(3),
-.rental-item:nth-child(4),
-.rental-item:nth-child(5),
-.rental-item:nth-child(6) {
-  grid-column: span 3;
 }
 
 /* ABOUT SNAPSHOT */
@@ -773,13 +760,15 @@ body::before {
 }
 
 .team-grid {
-  gap: var(--sp-3);
+  gap: var(--sp-4);
   border: 0;
   background: transparent;
 }
 
 .team-member {
   border: 1px solid var(--c-border-dark);
+  background: transparent;
+  box-shadow: 0 6px 18px rgba(12, 10, 9, 0.08);
 }
 
 /* Contact page: less corporate rail, more split composition */

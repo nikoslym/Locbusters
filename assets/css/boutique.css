@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600&family=Inter:wght@300;400;500;600;700;800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap');
 
 /*
   Boutique visual layer
@@ -25,7 +25,7 @@
   --c-border-hover: rgba(248, 240, 230, 0.35);
   --c-border-dark: rgba(24, 17, 12, 0.14);
   --font: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
-  --font-display: 'Cormorant Garamond', Georgia, serif;
+  --font-display: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
   --shadow-soft: 0 24px 72px rgba(0, 0, 0, 0.28);
 }
 
@@ -138,17 +138,16 @@ body::before {
 .rnt-block__title,
 .abt-text__heading,
 .cnt-form-title,
-.abt-story__quote,
-.abt-story__closing-text {
+.abt-story__quote {
   font-family: var(--font-display);
-  font-weight: 500;
-  letter-spacing: -0.035em;
+  font-weight: 400;
+  letter-spacing: -0.025em;
 }
 
 .section-title,
 .pg-hero__title,
 .hero__title {
-  line-height: 0.98;
+  line-height: 1.08;
 }
 
 .hero,
@@ -173,25 +172,11 @@ body::before {
   position: absolute;
   inset: 0;
   pointer-events: none;
-  opacity: 0.1;
+  opacity: 0.16;
   background-image:
-    url('../images/topo-pattern.png'),
-    radial-gradient(1200px 600px at 82% 30%, rgba(242, 239, 232, 0.14) 1px, transparent 2px),
-    radial-gradient(800px 500px at 78% 36%, rgba(242, 239, 232, 0.08) 1px, transparent 2px),
-    linear-gradient(140deg, rgba(242, 239, 232, 0.08) 1px, transparent 1px),
-    linear-gradient(40deg, rgba(242, 239, 232, 0.05) 1px, transparent 1px);
-  background-size: 980px auto, 24px 24px, 36px 36px, 90px 90px, 120px 120px;
-  background-repeat: repeat, repeat, repeat, repeat, repeat;
-  background-position: center, 0 0, 12px 8px, 0 0, 20px 12px;
-}
-
-/* Homepage hero uses custom map background image only */
-.hero::before {
-  opacity: 0.22;
-  background-image:
-    linear-gradient(rgba(5, 5, 5, 0.58), rgba(5, 5, 5, 0.58)),
+    linear-gradient(rgba(5, 5, 5, 0.62), rgba(5, 5, 5, 0.62)),
     url('../images/map-bg.png');
-  background-size: cover, min(760px, 72vw);
+  background-size: cover, min(520px, 46vw);
   background-repeat: no-repeat, repeat;
   background-position: center, center;
 }
@@ -225,8 +210,8 @@ body::before {
 }
 
 .hero__title-line--accent {
-  color: var(--c-text);
-  font-style: italic;
+  color: var(--c-text-dim);
+  font-style: normal;
 }
 
 .hero__subtitle,
@@ -236,8 +221,9 @@ body::before {
 }
 
 .hero__body {
-  color: rgba(248, 240, 230, 0.76);
-  font-size: clamp(0.95rem, 1.1vw, 1.05rem);
+  color: rgba(248, 240, 230, 0.82);
+  font-size: clamp(1rem, 1.2vw, 1.125rem);
+  line-height: 1.75;
   max-width: 60ch;
 }
 
@@ -264,7 +250,6 @@ body::before {
 .trust,
 .svc-positioning,
 .section--light,
-.rentals,
 .clients,
 .abt-text,
 .abt-team,
@@ -276,8 +261,9 @@ body::before {
 .svc-positioning__statement,
 .abt-text__heading {
   font-family: var(--font-display);
-  font-size: clamp(1.8rem, 3.4vw, 3.6rem);
-  line-height: 1;
+  font-size: clamp(1.75rem, 3vw, 3rem);
+  font-weight: 400;
+  line-height: 1.12;
   border-left: 0;
   padding-left: 0;
 }
@@ -310,10 +296,8 @@ body::before {
 }
 
 .section--dark,
-.how-we-work,
 .svc-how,
-.how-it-works,
-.abt-philosophy {
+.how-it-works {
   background: linear-gradient(180deg, #060606 0%, #020202 100%);
 }
 
@@ -349,11 +333,11 @@ body::before {
   border-radius: 0;
 }
 
-.rental-item {
+.rentals:not(.rentals--featured) .rental-item {
   background-color: #F7F1E8;
 }
 
-.rental-item:hover {
+.rentals:not(.rentals--featured) .rental-item:hover {
   background-color: #EFE3D5;
 }
 
@@ -420,7 +404,7 @@ body::before {
   box-shadow: var(--shadow-soft);
 }
 
-.rnt-placeholder::after {
+.rnt-placeholder:not(.rnt-placeholder--photo)::after {
   content: '';
   position: absolute;
   inset: 0;
@@ -565,7 +549,7 @@ body::before {
   height: 100%;
   min-height: 320px;
   object-fit: cover;
-  filter: grayscale(12%) contrast(1.05);
+  filter: grayscale(14%) contrast(1.05) saturate(0.9);
 }
 
 .trust__statement {
@@ -678,18 +662,77 @@ body::before {
   display: none;
 }
 
-/* RENTALS PREVIEW: staggered category grid */
+/* HOMEPAGE RENTALS: richer cinematic band */
+.rentals--featured {
+  position: relative;
+  overflow: hidden;
+  background:
+    radial-gradient(circle at 12% 18%, rgba(232, 85, 5, 0.14) 0%, transparent 34%),
+    radial-gradient(circle at 88% 82%, rgba(232, 85, 5, 0.08) 0%, transparent 38%),
+    linear-gradient(165deg, #12100e 0%, #080706 48%, #040404 100%);
+  border-top: 1px solid var(--c-border);
+  border-bottom: 1px solid var(--c-border);
+}
+
+.rentals--featured::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  pointer-events: none;
+  opacity: 0.07;
+  background-image: url('../images/map-bg.png');
+  background-size: min(460px, 42vw);
+  background-repeat: repeat;
+}
+
+.rentals--featured .container {
+  position: relative;
+  z-index: 1;
+}
+
+.rentals--featured .section-label {
+  color: var(--c-accent);
+}
+
+.rentals--featured .section-title {
+  color: var(--c-text);
+}
+
+.rentals--featured .link-arrow--dark {
+  color: var(--c-text);
+}
+
 .rentals__grid {
   grid-template-columns: repeat(2, minmax(0, 1fr));
-  gap: var(--sp-2);
+  gap: var(--sp-3);
   background: transparent;
   border: 0;
 }
 
 .rental-item {
-  border: 1px solid var(--c-border-dark);
-  background: #fff;
-  min-height: 230px;
+  border: 1px solid rgba(248, 240, 230, 0.14);
+  background: rgba(248, 240, 230, 0.04);
+  min-height: 240px;
+  box-shadow: 0 12px 40px rgba(0, 0, 0, 0.22);
+}
+
+.rentals--featured .rental-item__title {
+  color: var(--c-text);
+  font-family: var(--font-display);
+  font-weight: 500;
+}
+
+.rentals--featured .rental-item__desc {
+  color: rgba(248, 240, 230, 0.72);
+}
+
+.rentals--featured .rental-item__icon {
+  color: var(--c-accent);
+}
+
+.rentals--featured .rental-item:hover {
+  background: rgba(248, 240, 230, 0.08);
+  border-color: rgba(232, 85, 5, 0.35);
 }
 
 /* ABOUT SNAPSHOT */
@@ -865,4 +908,189 @@ body::before {
   .cnt-main__grid {
     grid-template-columns: 1fr;
   }
+
+  .rentals--featured .rentals__grid {
+    grid-template-columns: 1fr;
+  }
+
+  .abt-story__media-img {
+    min-height: 220px;
+  }
+}
+
+/* ----------------------------------------------------------
+   Client refinement pass: readability, imagery, blueprint texture
+   ---------------------------------------------------------- */
+
+body {
+  font-size: 1.0625rem;
+}
+
+.section-label {
+  font-size: 0.75rem;
+}
+
+.header__nav-link {
+  font-size: 0.875rem;
+}
+
+.trust__lines p,
+.trust__pillar p,
+.service-item__desc,
+.rental-item__desc,
+.about-snap__body,
+.pillar__desc,
+.abt-story__para,
+.abt-text__body p,
+.team-member__bio p,
+.svc-positioning__lines p,
+.svc-block__desc,
+.rnt-block__desc,
+.pg-hero__body,
+.cta-section__sub,
+.cta-section__body,
+.cnt-hero__body {
+  font-size: 1rem;
+  line-height: 1.75;
+}
+
+.abt-team__sub,
+.hero__info-value,
+.footer__nav-link {
+  font-size: 0.9375rem;
+}
+
+.service-item__title {
+  font-family: var(--font-display);
+  font-weight: 500;
+  letter-spacing: -0.02em;
+}
+
+/* Subtle floorplan texture on dark bands */
+.cta-section,
+.svc-how,
+.how-it-works,
+.abt-story__quote-band {
+  position: relative;
+  overflow: hidden;
+}
+
+.cta-section::before,
+.svc-how::before,
+.how-it-works::before,
+.abt-story__quote-band::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  pointer-events: none;
+  opacity: 0.06;
+  background-image: url('../images/map-bg.png');
+  background-size: min(440px, 38vw);
+  background-repeat: repeat;
+}
+
+.cta-section__inner,
+.svc-how .container,
+.how-it-works .container,
+.abt-story__quote-band .container {
+  position: relative;
+  z-index: 1;
+}
+
+/* Team photography */
+.team-member__photo {
+  position: relative;
+  overflow: hidden;
+  background: #1a1816;
+}
+
+.team-member__img {
+  display: none;
+}
+
+.team-member__initials {
+  font-size: 2.25rem;
+  font-weight: 300;
+  letter-spacing: -0.04em;
+  color: var(--c-dark-text-dim);
+  opacity: 0.46;
+  position: relative;
+  z-index: 1;
+  user-select: none;
+  background: transparent;
+  padding: 0;
+}
+
+.team-member__photo-grid {
+  position: absolute;
+  inset: 0;
+  background-image: radial-gradient(circle, rgba(10, 10, 10, 0.06) 1px, transparent 1px);
+  background-size: 16px 16px;
+}
+
+/* About story feature image */
+.abt-story__media {
+  margin-bottom: var(--sp-6);
+  border: 1px solid var(--c-border);
+  overflow: hidden;
+  max-height: 420px;
+}
+
+.abt-story__media-img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  min-height: 280px;
+  max-height: 420px;
+  object-fit: cover;
+  object-position: center;
+  filter: grayscale(12%) contrast(1.05) saturate(0.9);
+}
+
+/* Rentals page photography */
+.rnt-placeholder--photo {
+  background-color: #0e0e0e;
+}
+
+.rnt-placeholder--photo::before {
+  display: none;
+}
+
+.rnt-placeholder--photo::after {
+  content: '';
+  position: absolute;
+  inset: 0;
+  z-index: 1;
+  pointer-events: none;
+  background: linear-gradient(rgba(8, 7, 6, 0.15), rgba(8, 7, 6, 0.45));
+  opacity: 1;
+}
+
+.rnt-placeholder__img {
+  position: absolute;
+  inset: 0;
+  z-index: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
+  filter: grayscale(10%) contrast(1.04) saturate(0.92);
+}
+
+
+/* Spacing balance after removed sections */
+.about-snap {
+  padding-bottom: var(--sp-8);
+}
+
+.clients {
+  margin-top: 0;
+}
+
+.abt-story {
+  padding-bottom: var(--sp-7);
+}
+
+.abt-team {
+  padding-top: var(--sp-7);
 }

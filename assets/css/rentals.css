@@ -64,13 +64,13 @@
 /* Content: placeholder image + item groups */
 .rnt-block__content {
   display: grid;
-  grid-template-columns: 1fr 2fr;
+  grid-template-columns: 1.2fr 1.8fr;
   gap: var(--sp-7);
   align-items: start;
 }
 
 .rnt-block__content--reversed {
-  grid-template-columns: 2fr 1fr;
+  grid-template-columns: 1.8fr 1.2fr;
 }
 
 /* ----------------------------------------------------------

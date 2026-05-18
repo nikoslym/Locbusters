@@ -6,7 +6,7 @@
    HERO - CONTACT VARIANT
    ---------------------------------------------------------- */
 .pg-hero--contact {
-  padding-bottom: var(--sp-7);
+  padding-bottom: clamp(var(--sp-5), 5vw, var(--sp-6));
 }
 
 .cnt-hero__inner {

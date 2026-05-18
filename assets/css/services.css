@@ -20,8 +20,8 @@
    ---------------------------------------------------------- */
 .pg-hero {
   position: relative;
-  padding-top: calc(var(--header-h) + var(--sp-8));
-  padding-bottom: var(--sp-8);
+  padding-top: calc(var(--header-h) + var(--sp-3));
+  padding-bottom: clamp(var(--sp-5), 5vw, var(--sp-6));
   background-color: var(--c-bg);
   overflow: hidden;
 }
@@ -55,7 +55,7 @@
   letter-spacing: 0.1em;
   text-transform: uppercase;
   color: var(--c-text-muted);
-  margin-bottom: var(--sp-4);
+  margin: 0 0 var(--sp-3);
 }
 
 .pg-hero__breadcrumb a {

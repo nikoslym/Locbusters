@@ -150,18 +150,30 @@ body::before {
   line-height: 1.08;
 }
 
-.hero,
-.pg-hero,
-.pg-hero--about,
-.pg-hero--contact {
+.hero {
   position: relative;
   overflow: hidden;
-  min-height: 86svh;
+  min-height: 100svh;
   border-bottom: 1px solid var(--c-border);
   background:
     radial-gradient(circle at 16% 20%, rgba(232, 85, 5, 0.1) 0%, transparent 28%),
     radial-gradient(circle at 80% 75%, rgba(232, 85, 5, 0.08) 0%, transparent 33%),
     linear-gradient(180deg, #080808 0%, #040404 100%);
+}
+
+.pg-hero,
+.pg-hero--about,
+.pg-hero--contact {
+  position: relative;
+  overflow: hidden;
+  min-height: auto;
+  border-bottom: 1px solid var(--c-border);
+  background:
+    radial-gradient(circle at 16% 20%, rgba(232, 85, 5, 0.1) 0%, transparent 28%),
+    radial-gradient(circle at 80% 75%, rgba(232, 85, 5, 0.08) 0%, transparent 33%),
+    linear-gradient(180deg, #080808 0%, #040404 100%);
+  padding-top: calc(var(--header-h) + var(--sp-3));
+  padding-bottom: clamp(var(--sp-5), 5vw, var(--sp-6));
 }
 
 .hero::before,
@@ -193,15 +205,50 @@ body::before {
   display: none;
 }
 
-.hero__container,
+.hero__container {
+  position: relative;
+  z-index: 2;
+  grid-template-columns: minmax(0, 1.08fr) minmax(280px, 420px);
+  gap: clamp(2rem, 5vw, 6rem);
+  align-items: center;
+}
+
 .pg-hero__container,
+.pg-hero > .container,
 .abt-hero__inner,
 .cnt-hero__inner {
   position: relative;
   z-index: 2;
   grid-template-columns: minmax(0, 1.08fr) minmax(280px, 420px);
   gap: clamp(2rem, 5vw, 6rem);
-  align-items: center;
+  align-items: start;
+}
+
+.pg-hero__content,
+.abt-hero__content,
+.cnt-hero__content {
+  align-self: start;
+}
+
+.pg-hero__index,
+.abt-hero__stats,
+.cnt-hero__availability {
+  align-self: start;
+}
+
+.pg-hero__breadcrumb {
+  margin: 0 0 var(--sp-3);
+  padding: 0;
+  line-height: 1.4;
+  color: var(--c-text-muted);
+}
+
+.pg-hero__breadcrumb a {
+  color: var(--c-text-muted);
+}
+
+.pg-hero__breadcrumb a:hover {
+  color: var(--c-text);
 }
 
 .hero__title {
@@ -805,7 +852,17 @@ body::before {
 
 .rnt-block__content,
 .rnt-block__content--reversed {
-  grid-template-columns: 1fr 1fr;
+  display: grid;
+  align-items: start;
+  gap: var(--sp-7);
+}
+
+.rnt-block__content {
+  grid-template-columns: minmax(312px, 1.2fr) minmax(0, 1.8fr);
+}
+
+.rnt-block__content--reversed {
+  grid-template-columns: minmax(0, 1.8fr) minmax(312px, 1.2fr);
 }
 
 /* About page story and team */

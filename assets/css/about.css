@@ -6,7 +6,7 @@
    HERO - ABOUT VARIANT
    ---------------------------------------------------------- */
 .pg-hero--about {
-  padding-bottom: var(--sp-7);
+  padding-bottom: clamp(var(--sp-5), 5vw, var(--sp-6));
 }
 
 .abt-hero__inner {

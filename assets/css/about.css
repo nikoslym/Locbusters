@@ -13,7 +13,7 @@
   display: grid;
   grid-template-columns: 1fr auto;
   gap: var(--sp-8);
-  align-items: end;
+  align-items: start;
   position: relative;
   z-index: 1;
 }

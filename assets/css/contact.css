@@ -11,72 +11,12 @@
 
 .cnt-hero__inner {
   display: grid;
-  grid-template-columns: 1fr auto;
+  grid-template-columns: minmax(0, 1fr);
   gap: var(--sp-8);
-  align-items: end;
+  align-items: start;
   position: relative;
   z-index: 1;
-}
-
-/* 24/7 availability panel */
-.cnt-hero__availability {
-  flex-shrink: 0;
-  align-self: end;
-}
-
-.cnt-avail {
-  border: 1px solid var(--c-border);
-  padding: var(--sp-5) var(--sp-5);
-  display: flex;
-  flex-direction: column;
-  gap: var(--sp-2);
-  min-width: 220px;
-  background: var(--c-surface);
-  position: relative;
-}
-
-/* Live pulse indicator */
-.cnt-avail::before {
-  content: '';
-  position: absolute;
-  top: var(--sp-3);
-  right: var(--sp-3);
-  width: 8px;
-  height: 8px;
-  border-radius: 50%;
-  background: var(--c-accent);
-  box-shadow: 0 0 0 0 rgba(232, 85, 5, 0.35);
-  animation: pulse-dot 2.5s ease-in-out infinite;
-}
-
-@keyframes pulse-dot {
-  0%, 100% { box-shadow: 0 0 0 0 rgba(232, 85, 5, 0.35); }
-  50%       { box-shadow: 0 0 0 8px rgba(232, 85, 5, 0); }
-}
-
-.cnt-avail__num {
-  font-size: clamp(2.5rem, 4vw, 4rem);
-  font-weight: 300;
-  letter-spacing: -0.05em;
-  color: var(--c-text);
-  line-height: 1;
-}
-
-.cnt-avail__label {
-  font-size: 0.625rem;
-  font-weight: 600;
-  letter-spacing: 0.18em;
-  text-transform: uppercase;
-  color: var(--c-accent);
-}
-
-.cnt-avail__text {
-  font-size: 0.8125rem;
-  color: var(--c-text-muted);
-  line-height: 1.6;
-  padding-top: var(--sp-2);
-  border-top: 1px solid var(--c-border);
-  margin-top: var(--sp-1);
+  max-width: 720px;
 }
 
 /* ----------------------------------------------------------
@@ -364,33 +304,6 @@
   margin-top: var(--sp-1);
 }
 
-/* Availability badge */
-.cnt-badge {
-  display: inline-flex;
-  align-items: center;
-  gap: 0.5rem;
-  padding: 0.4rem 0.75rem;
-  border: 1px solid rgba(232, 85, 5, 0.35);
-  width: fit-content;
-}
-
-.cnt-badge__dot {
-  width: 7px;
-  height: 7px;
-  border-radius: 50%;
-  background: var(--c-accent);
-  flex-shrink: 0;
-  animation: pulse-dot 2.5s ease-in-out infinite;
-}
-
-.cnt-badge__text {
-  font-size: 0.6875rem;
-  font-weight: 600;
-  letter-spacing: 0.12em;
-  text-transform: uppercase;
-  color: var(--c-accent);
-}
-
 .cnt-info__value {
   font-size: 1rem;
   font-weight: 400;
@@ -455,28 +368,6 @@
     gap: var(--sp-5);
   }
 
-  .cnt-hero__availability {
-    width: 100%;
-  }
-
-  .cnt-avail {
-    min-width: unset;
-    display: grid;
-    grid-template-columns: auto 1fr;
-    gap: var(--sp-4);
-    align-items: center;
-  }
-
-  .cnt-avail::before {
-    display: none;
-  }
-
-  .cnt-avail__text {
-    grid-column: 1 / -1;
-    margin-top: 0;
-    padding-top: var(--sp-3);
-  }
-
   .cnt-main__grid {
     grid-template-columns: 1fr;
     gap: var(--sp-6);
@@ -524,10 +415,6 @@
 
   .cnt-info__block:last-child {
     border-bottom: none;
-  }
-
-  .cnt-avail {
-    grid-template-columns: 1fr;
   }
 
   .cnt-form__footer {

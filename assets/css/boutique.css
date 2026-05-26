@@ -253,13 +253,13 @@ body::before {
 }
 
 .pg-hero__index,
-.abt-hero__stats,
-.cnt-hero__availability {
+.abt-hero__stats {
   align-self: start;
 }
 
-/* About hero: single column when stats panel is removed */
-.abt-hero__inner--solo {
+/* Page heroes: single column when side panel is removed */
+.abt-hero__inner--solo,
+.cnt-hero__inner--solo {
   grid-template-columns: minmax(0, 1fr);
   max-width: 720px;
 }
@@ -311,7 +311,6 @@ body::before {
 
 .hero__info-card-inner,
 .pg-hero__index,
-.cnt-avail,
 .abt-hero__stats,
 .svc-detail,
 .rnt-group,
@@ -320,8 +319,7 @@ body::before {
 }
 
 .hero__info-card-inner,
-.pg-hero__index,
-.cnt-avail {
+.pg-hero__index {
   background: rgba(242, 239, 232, 0.06);
   backdrop-filter: blur(16px);
   -webkit-backdrop-filter: blur(16px);

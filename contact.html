@@ -56,10 +56,10 @@
           <img src="assets/images/logo.svg" alt="The Locbusters" class="header__logo-img" />
         </a>
         <nav class="header__nav" aria-label="Main navigation">
-          <a href="services.html" class="header__nav-link">Services</a>
-          <a href="rentals.html" class="header__nav-link">Rentals</a>
-          <a href="about.html" class="header__nav-link">About</a>
-          <a href="contact.html" class="header__nav-link header__nav-link--active">Get in Touch</a>
+          <a href="services.html" class="header__nav-link" data-i18n="nav.services">Services</a>
+          <a href="rentals.html" class="header__nav-link" data-i18n="nav.rentals">Rentals</a>
+          <a href="about.html" class="header__nav-link" data-i18n="nav.about">About</a>
+          <a href="contact.html" class="header__nav-link header__nav-link--active" data-i18n="nav.contact">Get in Touch</a>
         </nav>
         <div class="header__actions">
           <div class="lang-switch">
@@ -76,10 +76,10 @@
     </div>
     <div class="mobile-menu" id="mobileMenu" aria-hidden="true">
       <nav class="mobile-menu__nav">
-        <a href="services.html" class="mobile-menu__link">Services</a>
-        <a href="rentals.html" class="mobile-menu__link">Rentals</a>
-        <a href="about.html" class="mobile-menu__link">About</a>
-        <a href="contact.html" class="mobile-menu__link">Get in Touch</a>
+        <a href="services.html" class="mobile-menu__link" data-i18n="nav.services">Services</a>
+        <a href="rentals.html" class="mobile-menu__link" data-i18n="nav.rentals">Rentals</a>
+        <a href="about.html" class="mobile-menu__link" data-i18n="nav.about">About</a>
+        <a href="contact.html" class="mobile-menu__link" data-i18n="nav.contact">Get in Touch</a>
       </nav>
       <div class="mobile-menu__footer">
         <div class="lang-switch">
@@ -105,13 +105,13 @@
         <div class="cnt-hero__inner cnt-hero__inner--solo">
           <div class="cnt-hero__content">
             <p class="pg-hero__breadcrumb">
-              <a href="index.html">Home</a>
+              <a href="index.html" data-i18n="breadcrumb.home">Home</a>
               <span aria-hidden="true">→</span>
-              Get in Touch
+              <span data-i18n="breadcrumb.contact">Get in Touch</span>
             </p>
-            <h1 class="pg-hero__title">Get in Touch</h1>
-            <p class="pg-hero__subtitle">Always on.<br />Always present.</p>
-            <p class="pg-hero__body">Production doesn't stop. Neither do we.<br />24/7 support, wherever and whenever it's needed.</p>
+            <h1 class="pg-hero__title" data-i18n="contactPage.title">Get in Touch</h1>
+            <p class="pg-hero__subtitle" data-i18n="contactPage.subtitle">Always on.<br />Always present.</p>
+            <p class="pg-hero__body" data-i18n="contactPage.body">Production doesn't stop. Neither do we.<br />24/7 support, wherever and whenever it's needed.</p>
           </div>
         </div>
       </div>
@@ -127,9 +127,9 @@
           <!-- LEFT FORM -->
           <div class="cnt-form-wrap">
             <div class="cnt-form-header">
-              <p class="section-label">Send a Message</p>
-              <h2 class="cnt-form-title" id="contact-heading">Tell us about<br />your project.</h2>
-              <p class="cnt-form-sub">We'll come back with a clear, structured response fast.</p>
+              <p class="section-label" data-i18n="contactPage.formLabel">Send a Message</p>
+              <h2 class="cnt-form-title" id="contact-heading" data-i18n="contactPage.formTitle">Tell us about<br />your project.</h2>
+              <p class="cnt-form-sub" data-i18n="contactPage.formSub">We'll come back with a clear, structured response fast.</p>
             </div>
 
             <!--
@@ -143,26 +143,28 @@
 
               <div class="cnt-form__row cnt-form__row--half">
                 <div class="cnt-field">
-                  <label class="cnt-field__label" for="name">Name <span aria-hidden="true">*</span></label>
+                  <label class="cnt-field__label" for="name"><span data-i18n="contactPage.label.name">Name</span> <span aria-hidden="true">*</span></label>
                   <input
                     class="cnt-field__input"
                     type="text"
                     id="name"
                     name="name"
                     autocomplete="name"
+                    data-i18n-placeholder="contactPage.placeholder.name"
                     placeholder="Your name"
                     required
                     aria-required="true"
                   />
                 </div>
                 <div class="cnt-field">
-                  <label class="cnt-field__label" for="email">Email <span aria-hidden="true">*</span></label>
+                  <label class="cnt-field__label" for="email"><span data-i18n="contactPage.label.email">Email</span> <span aria-hidden="true">*</span></label>
                   <input
                     class="cnt-field__input"
                     type="email"
                     id="email"
                     name="email"
                     autocomplete="email"
+                    data-i18n-placeholder="contactPage.placeholder.email"
                     placeholder="your@email.com"
                     required
                     aria-required="true"
@@ -172,8 +174,8 @@
 
               <div class="cnt-field">
                 <label class="cnt-field__label" for="company">
-                  Production / Company
-                  <span class="cnt-field__optional">(optional)</span>
+                  <span data-i18n="contactPage.label.company">Production / Company</span>
+                  <span class="cnt-field__optional" data-i18n="contactPage.label.optional">(optional)</span>
                 </label>
                 <input
                   class="cnt-field__input"
@@ -181,16 +183,18 @@
                   id="company"
                   name="company"
                   autocomplete="organization"
+                  data-i18n-placeholder="contactPage.placeholder.company"
                   placeholder="Production company or project name"
                 />
               </div>
 
               <div class="cnt-field cnt-field--grow">
-                <label class="cnt-field__label" for="message">Message <span aria-hidden="true">*</span></label>
+                <label class="cnt-field__label" for="message"><span data-i18n="contactPage.label.message">Message</span> <span aria-hidden="true">*</span></label>
                 <textarea
                   class="cnt-field__input cnt-field__textarea"
                   id="message"
                   name="message"
+                  data-i18n-placeholder="contactPage.placeholder.message"
                   placeholder="Tell us about your shoot dates, location, what you need."
                   rows="6"
                   required
@@ -200,16 +204,16 @@
 
               <div class="cnt-form__footer">
                 <button class="cnt-submit btn btn--primary" type="submit">
-                  Send Message
+                  <span data-i18n="contactPage.submit">Send Message</span>
                   <span class="cnt-submit__arrow" aria-hidden="true">→</span>
                 </button>
-                <p class="cnt-form__note">We typically respond within a few hours.</p>
+                <p class="cnt-form__note" data-i18n="contactPage.note">We typically respond within a few hours.</p>
               </div>
 
               <!-- Success state (hidden by default, shown via JS) -->
               <div class="cnt-form__success" id="formSuccess" aria-live="polite" hidden>
                 <span class="cnt-form__success-icon" aria-hidden="true">✓</span>
-                <p>Message received. We'll be in touch shortly.</p>
+                <p data-i18n="contactPage.success">Message received. We'll be in touch shortly.</p>
               </div>
 
             </form>
@@ -219,24 +223,24 @@
           <aside class="cnt-info" aria-label="Contact information">
 
             <div class="cnt-info__block">
-              <p class="cnt-info__label">Direct Contact</p>
+              <p class="cnt-info__label" data-i18n="contactPage.info.direct">Direct Contact</p>
               <a href="mailto:info@thelocbusters.com" class="cnt-info__email">
                 info@thelocbusters.com
               </a>
               <a href="tel:+30000000000" class="cnt-info__phone">
                 +30 000 000 0000
               </a>
-              <p class="cnt-info__note">Direct communication is always preferred for urgent production needs.</p>
+              <p class="cnt-info__note" data-i18n="contactPage.info.directNote">Direct communication is always preferred for urgent production needs.</p>
             </div>
 
             <div class="cnt-info__block">
-              <p class="cnt-info__label">Location</p>
-              <p class="cnt-info__value">Athens, Greece</p>
-              <p class="cnt-info__text">Operating nationwide across all Greek locations.</p>
+              <p class="cnt-info__label" data-i18n="contactPage.info.location">Location</p>
+              <p class="cnt-info__value" data-i18n="contactPage.info.locationVal">Athens, Greece</p>
+              <p class="cnt-info__text" data-i18n="contactPage.info.locationText">Operating nationwide across all Greek locations.</p>
             </div>
 
             <div class="cnt-info__block">
-              <p class="cnt-info__label">Follow</p>
+              <p class="cnt-info__label" data-i18n="contactPage.info.follow">Follow</p>
               <div class="cnt-social">
                 <a href="#" class="cnt-social__link" target="_blank" rel="noopener noreferrer">
                   <span>Facebook</span>
@@ -264,7 +268,7 @@
     ================================================ -->
     <section class="cnt-trust" aria-labelledby="trust-heading">
       <div class="container">
-        <p class="cnt-trust__line section-label" id="trust-heading">Trusted by production teams across Greece</p>
+        <p class="cnt-trust__line section-label" id="trust-heading" data-i18n="contactPage.trust">Trusted by production teams across Greece</p>
       </div>
       <div class="clients__marquee-wrap" aria-label="Productions we have supported">
         <div class="clients__marquee" aria-hidden="true">
@@ -299,7 +303,7 @@
           <a href="index.html" class="footer__logo">
             <img src="assets/images/logo.svg" alt="The Locbusters" class="footer__logo-img" />
           </a>
-          <p class="footer__tagline">Production Support in Greece.<br />From prep to strike.</p>
+          <p class="footer__tagline" data-i18n="footer.tagline">Production Support in Greece.<br />From prep to strike.</p>
           <div class="footer__social">
             <a href="#" class="footer__social-link" target="_blank" rel="noopener noreferrer">Facebook</a>
             <a href="#" class="footer__social-link" target="_blank" rel="noopener noreferrer">Instagram</a>
@@ -307,40 +311,42 @@
           </div>
         </div>
         <div class="footer__nav-group">
-          <p class="footer__nav-title">Services</p>
+          <p class="footer__nav-title" data-i18n="footer.servicesTitle">Services</p>
           <nav>
-            <a href="services.html#unit-facilities" class="footer__nav-link">Unit &amp; Facilities</a>
-            <a href="services.html#location-logistics" class="footer__nav-link">Location Logistics</a>
-            <a href="services.html#traffic-control" class="footer__nav-link">Traffic Control</a>
-            <a href="services.html#green-filming" class="footer__nav-link">Green Filming</a>
-            <a href="services.html#safety-risk" class="footer__nav-link">Safety &amp; Risk</a>
-            <a href="services.html#custom-solutions" class="footer__nav-link">Custom Solutions</a>
+            <a href="services.html#unit-facilities" class="footer__nav-link" data-i18n="footer.s1">Unit &amp; Facilities Management</a>
+            <a href="services.html#location-logistics" class="footer__nav-link" data-i18n="footer.s2">Location &amp; Production Logistics</a>
+            <a href="services.html#set-location" class="footer__nav-link" data-i18n="footer.s3">Set &amp; Location Management</a>
+            <a href="services.html#traffic-control" class="footer__nav-link" data-i18n="footer.s4">Traffic Control</a>
+            <a href="services.html#green-filming" class="footer__nav-link" data-i18n="footer.s5">Green Filming &amp; Sustainability</a>
+            <a href="services.html#safety-risk" class="footer__nav-link" data-i18n="footer.s6">Safety &amp; Risk Intelligence</a>
+            <a href="services.html#event-planning" class="footer__nav-link" data-i18n="footer.s7">Event Planning</a>
+            <a href="services.html#custom-solutions" class="footer__nav-link" data-i18n="footer.s8">Custom Solutions</a>
           </nav>
         </div>
         <div class="footer__nav-group">
-          <p class="footer__nav-title">Rentals</p>
+          <p class="footer__nav-title" data-i18n="footer.rentalsTitle">Rentals</p>
           <nav>
-            <a href="rentals.html#basecamp" class="footer__nav-link">Basecamp</a>
-            <a href="rentals.html#on-set-ops" class="footer__nav-link">On-Set Operations</a>
-            <a href="rentals.html#technical-power" class="footer__nav-link">Technical &amp; Power</a>
-            <a href="rentals.html#vehicles" class="footer__nav-link">Production Vehicles</a>
+            <a href="rentals.html#basecamp" class="footer__nav-link" data-i18n="footer.r1">Basecamp</a>
+            <a href="rentals.html#on-set-ops" class="footer__nav-link" data-i18n="footer.r2">On-Set Operations</a>
+            <a href="rentals.html#technical-power" class="footer__nav-link" data-i18n="footer.r3">Technical &amp; Power</a>
+            <a href="rentals.html#vehicles" class="footer__nav-link" data-i18n="footer.r4">Production Vehicles</a>
           </nav>
         </div>
         <div class="footer__nav-group">
-          <p class="footer__nav-title">Company</p>
+          <p class="footer__nav-title" data-i18n="footer.companyTitle">Company</p>
           <nav>
-            <a href="about.html" class="footer__nav-link">About Us</a>
-            <a href="about.html#team" class="footer__nav-link">The Team</a>
-            <a href="contact.html" class="footer__nav-link">Get in Touch</a>
+            <a href="about.html" class="footer__nav-link" data-i18n="footer.about">About Us</a>
+            <a href="about.html#team" class="footer__nav-link" data-i18n="footer.team">The Team</a>
+            <a href="contact.html" class="footer__nav-link" data-i18n="footer.contact">Get in Touch</a>
           </nav>
           <div class="footer__contact">
             <a href="mailto:info@thelocbusters.com" class="footer__contact-link">info@thelocbusters.com</a>
-            <p class="footer__contact-text">Athens, Greece</p>
+            <p class="footer__contact-text" data-i18n="footer.location">Athens, Greece</p>
           </div>
         </div>
       </div>
       <div class="footer__bottom">
-        <p class="footer__copy">&copy; 2026 The Locbusters. All rights reserved.</p>
+        <p class="footer__copy" data-i18n="footer.copy">&copy; 2026 The Locbusters. All rights reserved.</p>
         <div class="footer__bottom-right">
           <div class="lang-switch">
             <button class="lang-switch__btn active" data-lang="en">EN</button>

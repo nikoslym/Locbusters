@@ -12,6 +12,18 @@
   const success = document.getElementById('formSuccess');
   if (!form) return;
 
+  function t(key) {
+    if (typeof window.getLocbustersTranslation === 'function') {
+      return window.getLocbustersTranslation(key);
+    }
+    return '';
+  }
+
+  function resetSubmitButton(btn) {
+    btn.disabled = false;
+    btn.innerHTML = `<span data-i18n="contactPage.submit">${t('contactPage.submit') || 'Send Message'}</span><span class="cnt-submit__arrow" aria-hidden="true">→</span>`;
+  }
+
   /* ----------------------------------------------------------
      VALIDATION HELPERS
      ---------------------------------------------------------- */
@@ -49,24 +61,24 @@
     const message = form.querySelector('#message');
 
     if (!name.value.trim()) {
-      setError(name, 'Please enter your name.');
+      setError(name, t('contactPage.error.name') || 'Please enter your name.');
       valid = false;
     } else {
       clearError(name);
     }
 
     if (!email.value.trim()) {
-      setError(email, 'Please enter your email address.');
+      setError(email, t('contactPage.error.email') || 'Please enter your email address.');
       valid = false;
     } else if (!isValidEmail(email.value)) {
-      setError(email, 'Please enter a valid email address.');
+      setError(email, t('contactPage.error.emailInvalid') || 'Please enter a valid email address.');
       valid = false;
     } else {
       clearError(email);
     }
 
     if (!message.value.trim()) {
-      setError(message, 'Please enter your message.');
+      setError(message, t('contactPage.error.message') || 'Please enter your message.');
       valid = false;
     } else {
       clearError(message);
@@ -92,34 +104,12 @@
 
     const btn = form.querySelector('.cnt-submit');
     btn.disabled = true;
-    btn.textContent = 'Sending…';
-
-    /*
-    ┌─────────────────────────────────────────────────────────┐
-    │  BACKEND INTEGRATION REPLACE THIS BLOCK               │
-    │                                                         │
-    │  Option A Formspree:                                  │
-    │    fetch('https://formspree.io/f/YOUR_ID', {            │
-    │      method: 'POST',                                    │
-    │      body: new FormData(form),                          │
-    │      headers: { Accept: 'application/json' }            │
-    │    }).then(showSuccess).catch(showError)                 │
-    │                                                         │
-    │  Option B Webflow Forms:                              │
-    │    Remove this JS entirely. Add to <form>:              │
-    │    data-name="Contact" data-wf-page-id="..."            │
-    │    Webflow handles submission natively.                  │
-    │                                                         │
-    │  Option C Custom backend:                             │
-    │    POST to your API endpoint with FormData or JSON.     │
-    └─────────────────────────────────────────────────────────┘
-    */
+    btn.innerHTML = `<span>${t('contactPage.sending') || 'Sending…'}</span>`;
 
     // Demo: simulate a short delay then show success
     setTimeout(function () {
       form.querySelectorAll('.cnt-field__input').forEach(el => el.value = '');
-      btn.disabled = false;
-      btn.innerHTML = 'Send Message <span class="cnt-submit__arrow" aria-hidden="true">→</span>';
+      resetSubmitButton(btn);
       success.hidden = false;
       success.scrollIntoView({ behavior: 'smooth', block: 'nearest' });
     }, 900);

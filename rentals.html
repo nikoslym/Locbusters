@@ -56,10 +56,10 @@
           <img src="assets/images/logo.svg" alt="The Locbusters" class="header__logo-img" />
         </a>
         <nav class="header__nav" aria-label="Main navigation">
-          <a href="services.html" class="header__nav-link">Services</a>
-          <a href="rentals.html" class="header__nav-link header__nav-link--active">Rentals</a>
-          <a href="about.html" class="header__nav-link">About</a>
-          <a href="contact.html" class="header__nav-link header__nav-link--cta">Get in Touch</a>
+          <a href="services.html" class="header__nav-link" data-i18n="nav.services">Services</a>
+          <a href="rentals.html" class="header__nav-link header__nav-link--active" data-i18n="nav.rentals">Rentals</a>
+          <a href="about.html" class="header__nav-link" data-i18n="nav.about">About</a>
+          <a href="contact.html" class="header__nav-link header__nav-link--cta" data-i18n="nav.contact">Get in Touch</a>
         </nav>
         <div class="header__actions">
           <div class="lang-switch">
@@ -76,10 +76,10 @@
     </div>
     <div class="mobile-menu" id="mobileMenu" aria-hidden="true">
       <nav class="mobile-menu__nav">
-        <a href="services.html" class="mobile-menu__link">Services</a>
-        <a href="rentals.html" class="mobile-menu__link">Rentals</a>
-        <a href="about.html" class="mobile-menu__link">About</a>
-        <a href="contact.html" class="mobile-menu__link">Contact</a>
+        <a href="services.html" class="mobile-menu__link" data-i18n="nav.services">Services</a>
+        <a href="rentals.html" class="mobile-menu__link" data-i18n="nav.rentals">Rentals</a>
+        <a href="about.html" class="mobile-menu__link" data-i18n="nav.about">About</a>
+        <a href="contact.html" class="mobile-menu__link" data-i18n="nav.contact">Get in Touch</a>
       </nav>
       <div class="mobile-menu__footer">
         <div class="lang-switch">
@@ -104,25 +104,25 @@
       <div class="container pg-hero__container">
         <div class="pg-hero__content">
           <p class="pg-hero__breadcrumb">
-            <a href="index.html">Home</a>
+            <a href="index.html" data-i18n="breadcrumb.home">Home</a>
             <span aria-hidden="true">→</span>
-            Rentals
+            <span data-i18n="breadcrumb.rentals">Rentals</span>
           </p>
-          <h1 class="pg-hero__title">Production<br />Equipment<br />Rental</h1>
-          <p class="pg-hero__subtitle">Essential on-set equipment supporting every stage of production.</p>
-          <p class="pg-hero__body">Reliable, production-ready equipment available for international and domestic shoots across Greece. Everything you need on set configured, delivered, and supported.</p>
+          <h1 class="pg-hero__title" data-i18n="rentalsPage.title">Production<br />Equipment<br />Rental</h1>
+          <p class="pg-hero__subtitle" data-i18n="rentalsPage.subtitle">Essential on-set equipment supporting every stage of production.</p>
+          <p class="pg-hero__body" data-i18n="rentalsPage.heroBody">Reliable, production-ready equipment available for international and domestic shoots across Greece. Everything you need on set - configured, delivered, and supported.</p>
           <div class="pg-hero__ctas">
-            <a href="contact.html" class="btn btn--primary">Get in Touch</a>
-            <a href="#categories" class="btn btn--outline">Browse Categories</a>
+            <a href="contact.html" class="btn btn--primary" data-i18n="rentalsPage.cta1">Get in Touch</a>
+            <a href="#categories" class="btn btn--outline" data-i18n="rentalsPage.cta2">Browse Categories</a>
           </div>
         </div>
         <div class="pg-hero__index pg-hero__index--lower">
-          <p class="pg-hero__index-label">Equipment Categories</p>
+          <p class="pg-hero__index-label" data-i18n="rentalsPage.indexLabel">Equipment Categories</p>
           <nav aria-label="Category index">
-            <a href="#basecamp" class="pg-hero__index-link">01 Basecamp</a>
-            <a href="#on-set-ops" class="pg-hero__index-link">02 On-Set Operations</a>
-            <a href="#technical-power" class="pg-hero__index-link">03 Technical &amp; Power</a>
-            <a href="#vehicles" class="pg-hero__index-link">04 Production Vehicles</a>
+            <a href="#basecamp" class="pg-hero__index-link" data-i18n="rentalsPage.index.i1">01 Basecamp</a>
+            <a href="#on-set-ops" class="pg-hero__index-link" data-i18n="rentalsPage.index.i2">02 On-Set Operations</a>
+            <a href="#technical-power" class="pg-hero__index-link" data-i18n="rentalsPage.index.i3">03 Technical &amp; Power</a>
+            <a href="#vehicles" class="pg-hero__index-link" data-i18n="rentalsPage.index.i4">04 Production Vehicles</a>
           </nav>
         </div>
       </div>
@@ -138,10 +138,10 @@
             <img src="assets/images/production.jpg" alt="Production team preparing equipment on set" class="svc-positioning__media-img" />
           </div>
           <div class="svc-positioning__content">
-            <p class="svc-positioning__statement">The infrastructure that keeps production running on time and on set.</p>
+            <p class="svc-positioning__statement" data-i18n="rentalsPage.pos.statement">The infrastructure that keeps production running on time and on set.</p>
             <div class="svc-positioning__lines">
-              <p>We provide the essential equipment and tools that keep production running smoothly on set and on location. Every item is maintained, production-ready, and available with direct operational support.</p>
-              <p>We don't ship a box of kit. We configure and deploy what you actually need, when you need it.</p>
+              <p data-i18n="rentalsPage.pos.line1">We provide the essential equipment and tools that keep production running smoothly on set and on location. Every item is maintained, production-ready, and available with direct operational support.</p>
+              <p data-i18n="rentalsPage.pos.line2">We don't ship a box of kit. We configure and deploy what you actually need, when you need it.</p>
             </div>
           </div>
         </div>
@@ -159,8 +159,8 @@
           <div class="rnt-block__header reveal">
             <span class="rnt-block__num">01</span>
             <div>
-              <h2 class="rnt-block__title" id="rnt1-title">Basecamp</h2>
-              <p class="rnt-block__desc">Infrastructure for crew support, comfort, and preparation.<br />Shelter, seating, dining, and make-up/wardrobe stations fully equipped for every production need.</p>
+              <h2 class="rnt-block__title" id="rnt1-title" data-i18n="rentalsPage.r1.title">Basecamp</h2>
+              <p class="rnt-block__desc" data-i18n="rentalsPage.r1.desc">Infrastructure for crew support, comfort, and preparation.<br />Shelter, seating, dining, and make-up/wardrobe stations fully equipped for every production need.</p>
             </div>
           </div>
 
@@ -171,38 +171,38 @@
 
             <div class="rnt-block__groups reveal">
               <div class="rnt-group" id="holding-areas">
-                <p class="rnt-group__title">Shelter &amp; Climate</p>
+                <p class="rnt-group__title" data-i18n="rentalsPage.r1.g1.title">Shelter &amp; Climate</p>
                 <ul class="rnt-group__list">
-                  <li>Pop-up tents</li>
-                  <li>Rain gutters</li>
-                  <li>Sandbags</li>
-                  <li>Iron weights</li>
-                  <li>Umbrellas</li>
-                  <li>Heaters</li>
-                  <li>A/C units</li>
+                  <li data-i18n="rentalsPage.r1.g1.i1">Pop-up tents</li>
+                  <li data-i18n="rentalsPage.r1.g1.i2">Rain gutters</li>
+                  <li data-i18n="rentalsPage.r1.g1.i3">Sandbags</li>
+                  <li data-i18n="rentalsPage.r1.g1.i4">Iron weights</li>
+                  <li data-i18n="rentalsPage.r1.g1.i5">Umbrellas</li>
+                  <li data-i18n="rentalsPage.r1.g1.i6">Heaters</li>
+                  <li data-i18n="rentalsPage.r1.g1.i7">A/C units</li>
                 </ul>
               </div>
               <div class="rnt-group" id="catering-rest">
-                <p class="rnt-group__title">Seating &amp; Dining</p>
+                <p class="rnt-group__title" data-i18n="rentalsPage.r1.g2.title">Seating &amp; Dining</p>
                 <ul class="rnt-group__list">
-                  <li>Folding chairs</li>
-                  <li>Director's chairs (EZ-Up)</li>
-                  <li>Stools</li>
-                  <li>Folding tables</li>
-                  <li>Table stretch cloths</li>
+                  <li data-i18n="rentalsPage.r1.g2.i1">Folding chairs</li>
+                  <li data-i18n="rentalsPage.r1.g2.i2">Director's chairs (EZ-Up)</li>
+                  <li data-i18n="rentalsPage.r1.g2.i3">Stools</li>
+                  <li data-i18n="rentalsPage.r1.g2.i4">Folding tables</li>
+                  <li data-i18n="rentalsPage.r1.g2.i5">Table stretch cloths</li>
                 </ul>
               </div>
               <div class="rnt-group" id="makeup-wardrobe">
-                <p class="rnt-group__title">Make-Up &amp; Wardrobe</p>
+                <p class="rnt-group__title" data-i18n="rentalsPage.r1.g3.title">Make-Up &amp; Wardrobe</p>
                 <ul class="rnt-group__list">
-                  <li>Make-up mirrors</li>
-                  <li>Full body mirrors</li>
-                  <li>Racks</li>
-                  <li>Ironing sets</li>
-                  <li>Steamers</li>
-                  <li>Towels</li>
-                  <li>Blankets</li>
-                  <li>Make-up chairs</li>
+                  <li data-i18n="rentalsPage.r1.g3.i1">Make-up mirrors</li>
+                  <li data-i18n="rentalsPage.r1.g3.i2">Full body mirrors</li>
+                  <li data-i18n="rentalsPage.r1.g3.i3">Racks</li>
+                  <li data-i18n="rentalsPage.r1.g3.i4">Ironing sets</li>
+                  <li data-i18n="rentalsPage.r1.g3.i5">Steamers</li>
+                  <li data-i18n="rentalsPage.r1.g3.i6">Towels</li>
+                  <li data-i18n="rentalsPage.r1.g3.i7">Blankets</li>
+                  <li data-i18n="rentalsPage.r1.g3.i8">Make-up chairs</li>
                 </ul>
               </div>
             </div>
@@ -216,43 +216,43 @@
           <div class="rnt-block__header reveal">
             <span class="rnt-block__num">02</span>
             <div>
-              <h2 class="rnt-block__title" id="rnt2-title">On-Set Operations</h2>
-              <p class="rnt-block__desc">Practical tools for movement, safety, and daily workflow efficiency on set.</p>
+              <h2 class="rnt-block__title" id="rnt2-title" data-i18n="rentalsPage.r2.title">On-Set Operations</h2>
+              <p class="rnt-block__desc" data-i18n="rentalsPage.r2.desc">Practical tools for movement, safety, and daily workflow efficiency on set.</p>
             </div>
           </div>
 
           <div class="rnt-block__content rnt-block__content--reversed">
             <div class="rnt-block__groups reveal">
               <div class="rnt-group">
-                <p class="rnt-group__title">Movement &amp; Workflow</p>
+                <p class="rnt-group__title" data-i18n="rentalsPage.r2.g1.title">Movement &amp; Workflow</p>
                 <ul class="rnt-group__list">
-                  <li>Ladders</li>
-                  <li>Trolleys</li>
-                  <li>Fold-it carts</li>
-                  <li>Hand trucks</li>
-                  <li>Clamps</li>
-                  <li>Printers</li>
+                  <li data-i18n="rentalsPage.r2.g1.i1">Ladders</li>
+                  <li data-i18n="rentalsPage.r2.g1.i2">Trolleys</li>
+                  <li data-i18n="rentalsPage.r2.g1.i3">Fold-it carts</li>
+                  <li data-i18n="rentalsPage.r2.g1.i4">Hand trucks</li>
+                  <li data-i18n="rentalsPage.r2.g1.i5">Clamps</li>
+                  <li data-i18n="rentalsPage.r2.g1.i6">Printers</li>
                 </ul>
               </div>
               <div class="rnt-group">
-                <p class="rnt-group__title">Safety &amp; Access</p>
+                <p class="rnt-group__title" data-i18n="rentalsPage.r2.g2.title">Safety &amp; Access</p>
                 <ul class="rnt-group__list">
-                  <li>Traffic cones</li>
-                  <li>Barriers</li>
-                  <li>Reflective vests</li>
-                  <li>Warning flags</li>
-                  <li>Camouflage nets</li>
+                  <li data-i18n="rentalsPage.r2.g2.i1">Traffic cones</li>
+                  <li data-i18n="rentalsPage.r2.g2.i2">Barriers</li>
+                  <li data-i18n="rentalsPage.r2.g2.i3">Reflective vests</li>
+                  <li data-i18n="rentalsPage.r2.g2.i4">Warning flags</li>
+                  <li data-i18n="rentalsPage.r2.g2.i5">Camouflage nets</li>
                 </ul>
               </div>
               <div class="rnt-group">
-                <p class="rnt-group__title">On-Set Essentials</p>
+                <p class="rnt-group__title" data-i18n="rentalsPage.r2.g3.title">On-Set Essentials</p>
                 <ul class="rnt-group__list">
-                  <li>Megaphones</li>
-                  <li>Coolers</li>
-                  <li>Cleaning sets</li>
-                  <li>Toolboxes</li>
-                  <li>Fire extinguishers</li>
-                  <li>Blackout cloths</li>
+                  <li data-i18n="rentalsPage.r2.g3.i1">Megaphones</li>
+                  <li data-i18n="rentalsPage.r2.g3.i2">Coolers</li>
+                  <li data-i18n="rentalsPage.r2.g3.i3">Cleaning sets</li>
+                  <li data-i18n="rentalsPage.r2.g3.i4">Toolboxes</li>
+                  <li data-i18n="rentalsPage.r2.g3.i5">Fire extinguishers</li>
+                  <li data-i18n="rentalsPage.r2.g3.i6">Blackout cloths</li>
                 </ul>
               </div>
             </div>
@@ -270,8 +270,8 @@
           <div class="rnt-block__header reveal">
             <span class="rnt-block__num">03</span>
             <div>
-              <h2 class="rnt-block__title" id="rnt3-title">Technical &amp; Power</h2>
-              <p class="rnt-block__desc">Reliable energy and technical equipment ensuring uninterrupted production flow.</p>
+              <h2 class="rnt-block__title" id="rnt3-title" data-i18n="rentalsPage.r3.title">Technical &amp; Power</h2>
+              <p class="rnt-block__desc" data-i18n="rentalsPage.r3.desc">Reliable energy and technical equipment ensuring uninterrupted production flow.</p>
             </div>
           </div>
 
@@ -281,30 +281,30 @@
                 <svg width="40" height="40" viewBox="0 0 40 40" fill="none" stroke="currentColor" stroke-width="1" stroke-linecap="round" stroke-linejoin="round" opacity="0.3">
                   <polygon points="22,4 10,22 20,22 18,36 30,18 20,18"/>
                 </svg>
-                <span>Power &amp; Technical</span>
+                <span data-i18n="rentalsPage.placeholder.power">Power &amp; Technical</span>
               </div>
             </div>
 
             <div class="rnt-block__groups reveal">
               <div class="rnt-group">
-                <p class="rnt-group__title">Power</p>
+                <p class="rnt-group__title" data-i18n="rentalsPage.r3.g1.title">Power</p>
                 <ul class="rnt-group__list">
-                  <li>Portable generators</li>
-                  <li>EcoFlow systems &amp; solar panels</li>
-                  <li>Power strips &amp; extension cords</li>
+                  <li data-i18n="rentalsPage.r3.g1.i1">Portable generators</li>
+                  <li data-i18n="rentalsPage.r3.g1.i2">EcoFlow systems &amp; solar panels</li>
+                  <li data-i18n="rentalsPage.r3.g1.i3">Power strips &amp; extension cords</li>
                 </ul>
               </div>
               <div class="rnt-group">
-                <p class="rnt-group__title">Lighting &amp; Climate</p>
+                <p class="rnt-group__title" data-i18n="rentalsPage.r3.g2.title">Lighting &amp; Climate</p>
                 <ul class="rnt-group__list">
-                  <li>LED working lights</li>
-                  <li>LED tapes</li>
-                  <li>Fans</li>
-                  <li>Blowers</li>
-                  <li>Air compressors</li>
-                  <li>Portable heaters</li>
-                  <li>Portable gas heaters</li>
-                  <li>Pop-up bins</li>
+                  <li data-i18n="rentalsPage.r3.g2.i1">LED working lights</li>
+                  <li data-i18n="rentalsPage.r3.g2.i2">LED tapes</li>
+                  <li data-i18n="rentalsPage.r3.g2.i3">Fans</li>
+                  <li data-i18n="rentalsPage.r3.g2.i4">Blowers</li>
+                  <li data-i18n="rentalsPage.r3.g2.i5">Air compressors</li>
+                  <li data-i18n="rentalsPage.r3.g2.i6">Portable heaters</li>
+                  <li data-i18n="rentalsPage.r3.g2.i7">Portable gas heaters</li>
+                  <li data-i18n="rentalsPage.r3.g2.i8">Pop-up bins</li>
                 </ul>
               </div>
             </div>
@@ -318,8 +318,8 @@
           <div class="rnt-block__header reveal">
             <span class="rnt-block__num">04</span>
             <div>
-              <h2 class="rnt-block__title" id="rnt4-title">Production Vehicles</h2>
-              <p class="rnt-block__desc">Production Equipment Transport Solutions</p>
+              <h2 class="rnt-block__title" id="rnt4-title" data-i18n="rentalsPage.r4.title">Production Vehicles</h2>
+              <p class="rnt-block__desc" data-i18n="rentalsPage.r4.desc">Production Equipment Transport Solutions</p>
             </div>
           </div>
 
@@ -339,36 +339,36 @@
     <section class="how-it-works section section--dark" aria-labelledby="how-heading">
       <div class="container">
         <div class="section-header reveal">
-          <p class="section-label">Process</p>
-          <h2 class="section-title" id="how-heading">How It Works</h2>
+          <p class="section-label" data-i18n="rentalsPage.how.label">Process</p>
+          <h2 class="section-title" id="how-heading" data-i18n="rentalsPage.how.title">How It Works</h2>
         </div>
         <div class="how-it-works__steps">
           <div class="hiw-step reveal">
             <span class="hiw-step__num">01</span>
             <div class="hiw-step__body">
-              <h3 class="hiw-step__title">Define Your Needs</h3>
-              <p class="hiw-step__desc">Tell us your shoot dates, location, crew size, and what you need on set. The more context, the better we can configure.</p>
+              <h3 class="hiw-step__title" data-i18n="rentalsPage.how.s1.title">Define Your Needs</h3>
+              <p class="hiw-step__desc" data-i18n="rentalsPage.how.s1.desc">Tell us your shoot dates, location, crew size, and what you need on set. The more context, the better we can configure.</p>
             </div>
           </div>
           <div class="hiw-step reveal">
             <span class="hiw-step__num">02</span>
             <div class="hiw-step__body">
-              <h3 class="hiw-step__title">We Prepare &amp; Configure</h3>
-              <p class="hiw-step__desc">We prepare, check, and configure every item to production standard no improvisation on the day.</p>
+              <h3 class="hiw-step__title" data-i18n="rentalsPage.how.s2.title">We Prepare &amp; Configure</h3>
+              <p class="hiw-step__desc" data-i18n="rentalsPage.how.s2.desc">We prepare, check, and configure every item to production standard - no improvisation on the day.</p>
             </div>
           </div>
           <div class="hiw-step reveal">
             <span class="hiw-step__num">03</span>
             <div class="hiw-step__body">
-              <h3 class="hiw-step__title">Delivery &amp; Setup</h3>
-              <p class="hiw-step__desc">Equipment is delivered and set up at your location. Basecamp is operational before your crew arrives.</p>
+              <h3 class="hiw-step__title" data-i18n="rentalsPage.how.s3.title">Delivery &amp; Setup</h3>
+              <p class="hiw-step__desc" data-i18n="rentalsPage.how.s3.desc">Equipment is delivered and set up at your location. Basecamp is operational before your crew arrives.</p>
             </div>
           </div>
           <div class="hiw-step reveal">
             <span class="hiw-step__num">04</span>
             <div class="hiw-step__body">
-              <h3 class="hiw-step__title">On-Set Support</h3>
-              <p class="hiw-step__desc">We remain available throughout the shoot. If something changes, we adapt. Production doesn't stop neither do we.</p>
+              <h3 class="hiw-step__title" data-i18n="rentalsPage.how.s4.title">On-Set Support</h3>
+              <p class="hiw-step__desc" data-i18n="rentalsPage.how.s4.desc">We remain available throughout the shoot. If something changes, we adapt. Production doesn't stop - neither do we.</p>
             </div>
           </div>
         </div>
@@ -380,7 +380,7 @@
     ================================================ -->
     <section class="clients" aria-labelledby="clients-heading">
       <div class="container">
-        <p class="clients__label section-label" id="clients-heading">Productions &amp; Partners</p>
+        <p class="clients__label section-label" id="clients-heading" data-i18n="clients.label">Productions &amp; Partners</p>
       </div>
       <div class="clients__marquee-wrap" aria-label="Productions we have supported">
         <div class="clients__marquee" aria-hidden="true">
@@ -410,17 +410,17 @@
     <section class="cta-section" id="contact" aria-labelledby="cta-heading">
       <div class="container">
         <div class="cta-section__inner reveal">
-          <p class="section-label">Get in Touch</p>
-          <h2 class="cta-section__title" id="cta-heading">
+          <p class="section-label" data-i18n="cta.label">Get in Touch</p>
+          <h2 class="cta-section__title" id="cta-heading" data-i18n="cta.title">
             Precision. Experience. Execution.
           </h2>
-          <p class="cta-section__sub">
+          <p class="cta-section__sub" data-i18n="cta.sub">
             For international &amp; domestic productions seeking reliable unit services, equipment support and on-set operational intelligence, we provide the structure that keeps production moving.
           </p>
-          <p class="cta-section__body">
+          <p class="cta-section__body" data-i18n="cta.body">
             From basecamp to execution, we ensure every production is fully supported, equipped, and under control.
           </p>
-          <a href="contact.html" class="btn btn--primary btn--large">Get in Touch</a>
+          <a href="contact.html" class="btn btn--primary btn--large" data-i18n="cta.btn">Get in Touch</a>
         </div>
       </div>
     </section>
@@ -437,7 +437,7 @@
           <a href="index.html" class="footer__logo">
             <img src="assets/images/logo.svg" alt="The Locbusters" class="footer__logo-img" />
           </a>
-          <p class="footer__tagline">Production Support in Greece.<br />From prep to strike.</p>
+          <p class="footer__tagline" data-i18n="footer.tagline">Production Support in Greece.<br />From prep to strike.</p>
           <div class="footer__social">
             <a href="#" class="footer__social-link" target="_blank" rel="noopener noreferrer">Facebook</a>
             <a href="#" class="footer__social-link" target="_blank" rel="noopener noreferrer">Instagram</a>
@@ -445,40 +445,42 @@
           </div>
         </div>
         <div class="footer__nav-group">
-          <p class="footer__nav-title">Services</p>
+          <p class="footer__nav-title" data-i18n="footer.servicesTitle">Services</p>
           <nav>
-            <a href="services.html#unit-facilities" class="footer__nav-link">Unit &amp; Facilities</a>
-            <a href="services.html#location-logistics" class="footer__nav-link">Location Logistics</a>
-            <a href="services.html#traffic-control" class="footer__nav-link">Traffic Control</a>
-            <a href="services.html#green-filming" class="footer__nav-link">Green Filming</a>
-            <a href="services.html#safety-risk" class="footer__nav-link">Safety &amp; Risk</a>
-            <a href="services.html#custom-solutions" class="footer__nav-link">Custom Solutions</a>
+            <a href="services.html#unit-facilities" class="footer__nav-link" data-i18n="footer.s1">Unit &amp; Facilities Management</a>
+            <a href="services.html#location-logistics" class="footer__nav-link" data-i18n="footer.s2">Location &amp; Production Logistics</a>
+            <a href="services.html#set-location" class="footer__nav-link" data-i18n="footer.s3">Set &amp; Location Management</a>
+            <a href="services.html#traffic-control" class="footer__nav-link" data-i18n="footer.s4">Traffic Control</a>
+            <a href="services.html#green-filming" class="footer__nav-link" data-i18n="footer.s5">Green Filming &amp; Sustainability</a>
+            <a href="services.html#safety-risk" class="footer__nav-link" data-i18n="footer.s6">Safety &amp; Risk Intelligence</a>
+            <a href="services.html#event-planning" class="footer__nav-link" data-i18n="footer.s7">Event Planning</a>
+            <a href="services.html#custom-solutions" class="footer__nav-link" data-i18n="footer.s8">Custom Solutions</a>
           </nav>
         </div>
         <div class="footer__nav-group">
-          <p class="footer__nav-title">Rentals</p>
+          <p class="footer__nav-title" data-i18n="footer.rentalsTitle">Rentals</p>
           <nav>
-            <a href="rentals.html#basecamp" class="footer__nav-link">Basecamp</a>
-            <a href="rentals.html#on-set-ops" class="footer__nav-link">On-Set Operations</a>
-            <a href="rentals.html#technical-power" class="footer__nav-link">Technical &amp; Power</a>
-            <a href="rentals.html#vehicles" class="footer__nav-link">Production Vehicles</a>
+            <a href="rentals.html#basecamp" class="footer__nav-link" data-i18n="footer.r1">Basecamp</a>
+            <a href="rentals.html#on-set-ops" class="footer__nav-link" data-i18n="footer.r2">On-Set Operations</a>
+            <a href="rentals.html#technical-power" class="footer__nav-link" data-i18n="footer.r3">Technical &amp; Power</a>
+            <a href="rentals.html#vehicles" class="footer__nav-link" data-i18n="footer.r4">Production Vehicles</a>
           </nav>
         </div>
         <div class="footer__nav-group">
-          <p class="footer__nav-title">Company</p>
+          <p class="footer__nav-title" data-i18n="footer.companyTitle">Company</p>
           <nav>
-            <a href="about.html" class="footer__nav-link">About Us</a>
-            <a href="about.html#team" class="footer__nav-link">The Team</a>
-            <a href="contact.html" class="footer__nav-link">Get in Touch</a>
+            <a href="about.html" class="footer__nav-link" data-i18n="footer.about">About Us</a>
+            <a href="about.html#team" class="footer__nav-link" data-i18n="footer.team">The Team</a>
+            <a href="contact.html" class="footer__nav-link" data-i18n="footer.contact">Get in Touch</a>
           </nav>
           <div class="footer__contact">
             <a href="mailto:info@thelocbusters.com" class="footer__contact-link">info@thelocbusters.com</a>
-            <p class="footer__contact-text">Athens, Greece</p>
+            <p class="footer__contact-text" data-i18n="footer.location">Athens, Greece</p>
           </div>
         </div>
       </div>
       <div class="footer__bottom">
-        <p class="footer__copy">&copy; 2026 The Locbusters. All rights reserved.</p>
+        <p class="footer__copy" data-i18n="footer.copy">&copy; 2026 The Locbusters. All rights reserved.</p>
         <div class="footer__bottom-right">
           <div class="lang-switch">
             <button class="lang-switch__btn active" data-lang="en">EN</button>

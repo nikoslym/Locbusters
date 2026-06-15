@@ -842,7 +842,7 @@ body::before {
 }
 
 
-/* ABOUT SNAPSHOT — stats removed, single column */
+/* ABOUT SNAPSHOT - stats removed, single column */
 .about-snap {
   padding-top: var(--sp-8);
 }
@@ -1223,7 +1223,7 @@ body {
 }
 
 /* ==========================================================
-   CINEMATIC BANNER — full-width image separator
+   CINEMATIC BANNER - full-width image separator
    Usage: <div class="cinematic-banner">
             <img class="cinematic-banner__img" src="..." />
           </div>

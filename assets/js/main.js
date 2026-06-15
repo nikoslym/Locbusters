@@ -629,7 +629,23 @@ const TRANSLATIONS = {
 /* ----------------------------------------------------------
    STATE
    ---------------------------------------------------------- */
-let currentLang = localStorage.getItem(LANG_STORAGE_KEY) || 'en';
+function getStoredLang() {
+  try {
+    return localStorage.getItem(LANG_STORAGE_KEY) === 'gr' ? 'gr' : 'en';
+  } catch {
+    return 'en';
+  }
+}
+
+function storeLang(lang) {
+  try {
+    localStorage.setItem(LANG_STORAGE_KEY, lang);
+  } catch {
+    /* localStorage unavailable */
+  }
+}
+
+let currentLang = getStoredLang();
 
 /* ----------------------------------------------------------
    HEADER Scroll behaviour
@@ -772,20 +788,24 @@ function applyTranslations(lang) {
 function setLanguage(lang) {
   if (!TRANSLATIONS[lang] || lang === currentLang) return;
   currentLang = lang;
-  localStorage.setItem(LANG_STORAGE_KEY, lang);
+  storeLang(lang);
   setLangButtons(lang);
   applyTranslations(lang);
 }
 
-function initLanguageSwitch() {
-  setLangButtons(currentLang);
-  applyTranslations(currentLang);
-
+function bindLanguageButtons() {
   document.querySelectorAll('.lang-switch__btn').forEach(btn => {
     btn.addEventListener('click', () => {
       setLanguage(btn.getAttribute('data-lang'));
     });
   });
+}
+
+function initLanguageSwitch() {
+  currentLang = getStoredLang();
+  setLangButtons(currentLang);
+  applyTranslations(currentLang);
+  bindLanguageButtons();
 }
 
 /* ----------------------------------------------------------
@@ -835,3 +855,8 @@ if (document.readyState === 'loading') {
 } else {
   init();
 }
+
+// Script is at end of <body> — apply stored language immediately on navigation
+currentLang = getStoredLang();
+setLangButtons(currentLang);
+applyTranslations(currentLang);

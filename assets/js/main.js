@@ -42,7 +42,7 @@ const TRANSLATIONS = {
     'trust.line2':     'From basecamp to final wrap, we are the operational layer that keeps production moving.',
 
     // Services (homepage preview)
-    'services.label':    'What We Do',
+    'services.label':    'Services',
     'services.title':    'Integrated production support\nfor international and domestic shoots in Greece.',
     'services.s1.title': 'Unit & Facilities Management',
     'services.s1.desc':  'Operational coordination and production base setup, ensuring efficient and fully equipped working environments from prep to wrap.',
@@ -293,7 +293,7 @@ const TRANSLATIONS = {
     'contactPage.formLabel':'Send a Message',
     'contactPage.formTitle':'Tell us about\nyour project.',
     'contactPage.formSub':  'We\'ll come back with a clear, structured response fast.',
-    'contactPage.trust':    'Trusted by production teams across Greece',
+    'contactPage.trust':    'Μας εμπιστεύονται ομάδες παραγωγής σε όλη την Ελλάδα',
     'contactPage.label.name':    'Name',
     'contactPage.label.email':   'Email',
     'contactPage.label.company': 'Production / Company',
@@ -626,6 +626,86 @@ const TRANSLATIONS = {
   }
 };
 
+/* Keys with official Greek copy in the client PDF (THE LOCBUSTERS SITE MAP GR_ENG.pdf) */
+const PDF_GR_KEYS = new Set([
+  'hero.eyebrow', 'hero.cta1', 'hero.cta2',
+  'hero.line1', 'hero.line3', 'hero.subtitle', 'hero.body1', 'hero.body2', 'hero.body3',
+  'services.label', 'services.title',
+  'services.s1.title', 'services.s1.desc',
+  'services.s2.title', 'services.s2.desc',
+  'services.s3.title', 'services.s3.desc',
+  'services.s4.title', 'services.s4.desc',
+  'services.s5.title', 'services.s5.desc',
+  'rentals.label', 'rentals.title',
+  'rentals.r1.title', 'rentals.r1.desc',
+  'rentals.r2.title', 'rentals.r2.desc',
+  'rentals.r3.title', 'rentals.r3.desc',
+  'rentals.r4.title', 'rentals.r4.desc',
+  'cta.label', 'cta.title', 'cta.sub', 'cta.body', 'cta.btn',
+  'footer.servicesTitle', 'footer.rentalsTitle',
+  'footer.s1', 'footer.s2', 'footer.s3', 'footer.s4', 'footer.s5', 'footer.s6', 'footer.s7', 'footer.s8',
+  'footer.r1', 'footer.r2', 'footer.r3', 'footer.r4',
+  'footer.about', 'footer.team',
+  'aboutPage.title', 'aboutPage.abtHeading',
+  'aboutPage.abt.p1', 'aboutPage.abt.p2', 'aboutPage.abt.p3', 'aboutPage.abt.p5',
+  'aboutPage.storyLabel',
+  'aboutPage.story.p1', 'aboutPage.story.p2', 'aboutPage.story.p3', 'aboutPage.story.p4', 'aboutPage.story.p5',
+  'aboutPage.teamLabel', 'aboutPage.teamHeading',
+  'aboutPage.giorgos.bio1', 'aboutPage.giorgos.bio2', 'aboutPage.giorgos.bio3', 'aboutPage.giorgos.bio4',
+  'aboutPage.maria.bio1', 'aboutPage.maria.bio2', 'aboutPage.maria.bio3', 'aboutPage.maria.bio4',
+  'aboutPage.giannis.bio1', 'aboutPage.giannis.bio2', 'aboutPage.giannis.bio3',
+  'aboutPage.michalis.bio1', 'aboutPage.michalis.bio2', 'aboutPage.michalis.bio3',
+  'servicesPage.title', 'servicesPage.subtitle',
+  'servicesPage.s1.title', 'servicesPage.s1.desc',
+  'servicesPage.s2.title', 'servicesPage.s2.desc',
+  'servicesPage.s3.title', 'servicesPage.s3.desc',
+  'servicesPage.s4.title', 'servicesPage.s4.desc',
+  'servicesPage.s5.title', 'servicesPage.s5.desc',
+  'servicesPage.s6.title', 'servicesPage.s6.desc1', 'servicesPage.s6.desc2',
+  'servicesPage.s7.title', 'servicesPage.s7.desc1', 'servicesPage.s7.desc2',
+  'servicesPage.s8.title', 'servicesPage.s8.desc',
+  'rentalsPage.title', 'rentalsPage.subtitle',
+  'rentalsPage.r1.title', 'rentalsPage.r1.desc',
+  'rentalsPage.r2.title', 'rentalsPage.r2.desc',
+  'rentalsPage.r3.title', 'rentalsPage.r3.desc',
+  'rentalsPage.r4.title', 'rentalsPage.r4.desc',
+  'rentalsPage.r1.g1.title', 'rentalsPage.r1.g2.title', 'rentalsPage.r1.g3.title',
+  'rentalsPage.r2.g1.title', 'rentalsPage.r2.g2.title', 'rentalsPage.r2.g3.title',
+  'rentalsPage.r3.g1.title', 'rentalsPage.r3.g2.title',
+  'rentalsPage.r1.g1.i1', 'rentalsPage.r1.g1.i2', 'rentalsPage.r1.g1.i3', 'rentalsPage.r1.g1.i4',
+  'rentalsPage.r1.g1.i5', 'rentalsPage.r1.g1.i6', 'rentalsPage.r1.g1.i7',
+  'rentalsPage.r1.g2.i1', 'rentalsPage.r1.g2.i2', 'rentalsPage.r1.g2.i3', 'rentalsPage.r1.g2.i4', 'rentalsPage.r1.g2.i5',
+  'rentalsPage.r1.g3.i1', 'rentalsPage.r1.g3.i2', 'rentalsPage.r1.g3.i3', 'rentalsPage.r1.g3.i4',
+  'rentalsPage.r1.g3.i5', 'rentalsPage.r1.g3.i6', 'rentalsPage.r1.g3.i7', 'rentalsPage.r1.g3.i8',
+  'rentalsPage.r2.g1.i1', 'rentalsPage.r2.g1.i2', 'rentalsPage.r2.g1.i3', 'rentalsPage.r2.g1.i4',
+  'rentalsPage.r2.g1.i5', 'rentalsPage.r2.g1.i6',
+  'rentalsPage.r2.g2.i1', 'rentalsPage.r2.g2.i2', 'rentalsPage.r2.g2.i3', 'rentalsPage.r2.g2.i4', 'rentalsPage.r2.g2.i5',
+  'rentalsPage.r2.g3.i1', 'rentalsPage.r2.g3.i2', 'rentalsPage.r2.g3.i3', 'rentalsPage.r2.g3.i4',
+  'rentalsPage.r2.g3.i5', 'rentalsPage.r2.g3.i6',
+  'rentalsPage.r3.g1.i1', 'rentalsPage.r3.g1.i2', 'rentalsPage.r3.g1.i3',
+  'rentalsPage.r3.g2.i1', 'rentalsPage.r3.g2.i2', 'rentalsPage.r3.g2.i3', 'rentalsPage.r3.g2.i4',
+  'rentalsPage.r3.g2.i5', 'rentalsPage.r3.g2.i6', 'rentalsPage.r3.g2.i7', 'rentalsPage.r3.g2.i8',
+  'contactPage.title', 'contactPage.subtitle', 'contactPage.body',
+]);
+
+/* Greek-only strings (no English in the PDF); shown in both language modes */
+const GREEK_ONLY_KEYS = new Set([
+  'contactPage.trust',
+]);
+
+function getTranslation(lang, key) {
+  const en = TRANSLATIONS.en;
+  const gr = TRANSLATIONS.gr;
+
+  if (GREEK_ONLY_KEYS.has(key)) {
+    return gr[key] ?? en[key] ?? '';
+  }
+  if (lang === 'gr' && PDF_GR_KEYS.has(key)) {
+    return gr[key] ?? en[key] ?? '';
+  }
+  return en[key] ?? '';
+}
+
 /* ----------------------------------------------------------
    STATE
    ---------------------------------------------------------- */
@@ -761,13 +841,10 @@ function setLangButtons(lang) {
 }
 
 function applyTranslations(lang) {
-  const t = TRANSLATIONS[lang];
-  if (!t) return;
-
   document.querySelectorAll('[data-i18n]').forEach(el => {
     const key   = el.getAttribute('data-i18n');
-    const value = t[key];
-    if (value === undefined) return;
+    const value = getTranslation(lang, key);
+    if (!value) return;
 
     if (value.includes('\n')) {
       el.innerHTML = value.replace(/\n/g, '<br>');
@@ -778,8 +855,8 @@ function applyTranslations(lang) {
 
   document.querySelectorAll('[data-i18n-placeholder]').forEach(el => {
     const key = el.getAttribute('data-i18n-placeholder');
-    const value = t[key];
-    if (value !== undefined) el.placeholder = value;
+    const value = getTranslation(lang, key);
+    if (value) el.placeholder = value;
   });
 
   document.documentElement.lang = lang === 'gr' ? 'el' : 'en';
@@ -841,9 +918,7 @@ function init() {
 }
 
 window.getLocbustersTranslation = function (key) {
-  const lang = TRANSLATIONS[currentLang] || TRANSLATIONS.en;
-  if (lang[key] !== undefined) return lang[key];
-  return TRANSLATIONS.en[key] || '';
+  return getTranslation(currentLang, key);
 };
 
 window.getLocbustersLang = function () {

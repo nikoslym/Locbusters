@@ -647,7 +647,7 @@ const PDF_GR_KEYS = new Set([
   'footer.r1', 'footer.r2', 'footer.r3', 'footer.r4',
   'footer.about', 'footer.team',
   'aboutPage.title', 'aboutPage.abtHeading',
-  'aboutPage.abt.p1', 'aboutPage.abt.p2', 'aboutPage.abt.p3', 'aboutPage.abt.p5',
+  'aboutPage.abt.p1', 'aboutPage.abt.p2', 'aboutPage.abt.p5',
   'aboutPage.storyLabel',
   'aboutPage.story.p1', 'aboutPage.story.p2', 'aboutPage.story.p3', 'aboutPage.story.p4', 'aboutPage.story.p5',
   'aboutPage.teamLabel', 'aboutPage.teamHeading',

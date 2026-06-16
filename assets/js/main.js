@@ -131,24 +131,30 @@ const TRANSLATIONS = {
     'aboutPage.story.p5': 'It is not a formation of convenience, but of practice—built from real production experience and shaped by the way we have always worked: focused on execution.',
     'aboutPage.teamLabel': 'The Team',
     'aboutPage.teamHeading': 'Real on-set expertise.\nIntegrated execution.\nProven reliability.',
+    'aboutPage.giorgos.name': 'Giorgos Georganas',
     'aboutPage.giorgos.role': 'Unit Manager',
-    'aboutPage.giorgos.bio1': 'Giorgos is a highly experienced Unit Manager with a long track record in major international studio and service productions in Greece.',
-    'aboutPage.giorgos.bio2': 'He has worked closely with leading global studios and production companies, managing complex on-location operations and large-scale shoots from prep through wrap. His expertise lies in high-level unit coordination, logistical execution, and on-set problem solving within fast-paced productions.',
-    'aboutPage.giorgos.bio3': 'With a deep understanding of operational flow and production demands, he ensures that equipment, crew, and locations function as a single, efficient system. Known for reliability, efficiency, and precision, he is a trusted professional that delivers demanding work to the highest standards.',
+    'aboutPage.giorgos.bio1': 'Giorgos is a highly experienced Unit Manager with a long track record in major international studio and service productions in Greece. He has worked closely with leading global studios and production companies, managing complex on-location operations and large-scale shoots from prep through wrap.',
+    'aboutPage.giorgos.bio2': 'His expertise lies in high-level unit coordination, logistical execution, and on-set problem solving within fast-paced productions. With a deep understanding of operational flow and production demands, he ensures that equipment, crew, and locations function as a single, efficient system.',
+    'aboutPage.giorgos.bio3': 'Known for reliability, efficiency, and precision, he is a trusted professional that delivers demanding work to the highest standards.',
     'aboutPage.giorgos.bio4': 'He is also a founding member of the Greek Society of Location and Unit Department (GSLUD).',
+    'aboutPage.maria.name': 'Maria Repousi',
     'aboutPage.maria.role': 'Production Specialist',
     'aboutPage.maria.bio1': 'Maria is a Production professional with more than 10 years of experience in complex domestic and international film productions. She has worked with leading global studios as well as international and domestic production companies, managing Productions from development through delivery.',
     'aboutPage.maria.bio2': 'Her expertise spans budgeting, scheduling, and production operations at scale, with a strong ability to anticipate risks, oversee production processes and coordinate teams and staff across demanding environments.',
     'aboutPage.maria.bio3': 'In recent years, she has participated in specialized masterclasses and training in sustainability for the audiovisual industry, focusing on developing and implementing environmental strategies to reduce production carbon footprint, waste, and resource consumption.',
-    'aboutPage.maria.bio4': 'She is also a founding member and Treasurer of the Board of the Greek Society of Location and Unit Department (GSLUD).',
+    'aboutPage.maria.bio4': '',
+    'aboutPage.maria.bio5': 'She is also a founding member and Treasurer of the Board of the Greek Society of Location and Unit Department (GSLUD).',
+    'aboutPage.giannis.name': 'Giannis Sotiropoulos',
     'aboutPage.giannis.role': 'Location Manager',
     'aboutPage.giannis.bio1': 'Giannis Sotiropoulos is a Location Manager and Scouter working across major international film and television productions in Greece. Since 2018, he has supported high-profile studio productions for global platforms including Netflix, Amazon, and Disney.',
     'aboutPage.giannis.bio2': 'He is an Associate Member of the Location Managers Guild International (LMGI) and an active member of the LMGI UK, Europe and Africa Committee. He is also a founding member and Vice President of the Greek Society of Location and Unit Department (GSLUD).',
     'aboutPage.giannis.bio3': 'His expertise ensures precise location execution, smooth logistics, and full alignment with international production standards.',
+    'aboutPage.michalis.name': 'Michalis Vrachliotis',
     'aboutPage.michalis.role': 'Production & Location Specialist',
     'aboutPage.michalis.bio1': 'Michalis is a Production professional with over 10 years of experience across Production and Location Departments in international and domestic audiovisual productions. He has contributed to feature films, television series, independent productions, and international photo shoots.',
-    'aboutPage.michalis.bio2': 'His dual experience across production and location workflows, allows him to operate fluidly across departments, supporting complex shoots in dynamic environments. He brings adaptability, operational stability, and consistent on-set value to every production he supports.',
-    'aboutPage.michalis.bio3': 'He is also a founding member of the Greek Society of Location and Unit Department (GSLUD).',
+    'aboutPage.michalis.bio2': 'His dual experience across production and location workflows, allows him to operate fluidly across departments, supporting complex shoots in dynamic environments.',
+    'aboutPage.michalis.bio3': 'He brings adaptability, operational stability, and consistent on-set value to every production he supports.',
+    'aboutPage.michalis.bio4': 'He is also a founding member of the Greek Society of Location and Unit Department (GSLUD).',
 
     // Services page
     'servicesPage.title':    'Services',
@@ -439,24 +445,30 @@ const TRANSLATIONS = {
     'aboutPage.story.p5': 'Η The Locbusters δεν δημιουργήθηκε τυχαία. Βασίζεται σε πραγματική εμπειρία και έχει διαμορφωθεί από τον τρόπο με τον οποίο εμείς τα μέλη της, εργαζόμαστε πάντα: με απόλυτη προσήλωση στην εκτέλεση και σεβασμό στον κάθε συνεργάτη.',
     'aboutPage.teamLabel': 'Η Ομάδα',
     'aboutPage.teamHeading': 'Πραγματική εμπειρία στον οπτικοακουστικό χώρο.\nΆμεση εκτέλεση.\nΑποδεδειγμένη αξιοπιστία.',
+    'aboutPage.giorgos.name': 'Γιώργος Γεωργανάς',
     'aboutPage.giorgos.role': 'Unit Manager',
-    'aboutPage.giorgos.bio1': 'Ο Γιώργος έχει πολυετή εμπειρία ως Unit Manager σε εγχώριες και διεθνείς παραγωγές στην Ελλάδα.',
-    'aboutPage.giorgos.bio2': 'Έχει συνεργαστεί με κορυφαία διεθνή στούντιο και εταιρείες παραγωγής, αναλαμβάνοντας αποτελεσματικά από την προετοιμασία έως την ολοκλήρωση, σύνθετες επιχειρησιακές λειτουργίες και μεγάλης κλίμακας γυρίσματα.',
-    'aboutPage.giorgos.bio3': 'Η εξειδίκευσή του εστιάζει στον συντονισμό υψηλού επιπέδου υπηρεσιών διαχείρισης και εγκατάστασης βάσεων και στόλου τεχνικών οχημάτων, μέσα από την επιχειρησιακή οργάνωση και την επίλυση προβλημάτων στα πιο απαιτητικά περιβάλλοντα παραγωγής. Με βαθιά κατανόηση της επιχειρησιακής ροής και των αναγκών μιας παραγωγής, διασφαλίζει ότι εξοπλισμός, συνεργείο και τοποθεσίες, λειτουργούν ως ένα ενιαίο και αποδοτικό σύστημα.',
-    'aboutPage.giorgos.bio4': 'Είναι ιδρυτικό μέλος του Σωματείου Εργαζομένων Κινηματογράφου, Τηλεόρασης, Οπτικοακουστικών Έργων στο Location & Unit Department (GSLUD). Γνωστός για την αξιοπιστία, την αποτελεσματικότητα και την ακρίβειά του, αποτελεί έναν επαγγελματία που ανταποκρίνεται στις πιο απαιτητικές παραγωγές, με τα υψηλότερα πρότυπα ποιότητας.',
+    'aboutPage.giorgos.bio1': 'Ο Γιώργος έχει πολυετή εμπειρία ως Unit Manager σε εγχώριες και διεθνείς παραγωγές στην Ελλάδα. Έχει συνεργαστεί με κορυφαία διεθνή στούντιο και εταιρείες παραγωγής, αναλαμβάνοντας αποτελεσματικά από την προετοιμασία έως την ολοκλήρωση, σύνθετες επιχειρησιακές λειτουργίες και μεγάλης κλίμακας γυρίσματα.',
+    'aboutPage.giorgos.bio2': 'Η εξειδίκευσή του εστιάζει στον συντονισμό υψηλού επιπέδου υπηρεσιών διαχείρισης και εγκατάστασης βάσεων και στόλου τεχνικών οχημάτων, μέσα από την επιχειρησιακή οργάνωση και την επίλυση προβλημάτων στα πιο απαιτητικά περιβάλλοντα παραγωγής. Με βαθιά κατανόηση της επιχειρησιακής ροής και των αναγκών μιας παραγωγής, διασφαλίζει ότι εξοπλισμός, συνεργείο και τοποθεσίες, λειτουργούν ως ένα ενιαίο και αποδοτικό σύστημα.',
+    'aboutPage.giorgos.bio3': 'Είναι ιδρυτικό μέλος του Σωματείου Εργαζομένων Κινηματογράφου, Τηλεόρασης, Οπτικοακουστικών Έργων στο Location & Unit Department (GSLUD).',
+    'aboutPage.giorgos.bio4': 'Γνωστός για την αξιοπιστία, την αποτελεσματικότητα και την ακρίβειά του, αποτελεί έναν επαγγελματία που ανταποκρίνεται στις πιο απαιτητικές παραγωγές, με τα υψηλότερα πρότυπα ποιότητας.',
+    'aboutPage.maria.name': 'Μάρια Ρεπούση',
     'aboutPage.maria.role': 'Ειδικός Παραγωγής',
     'aboutPage.maria.bio1': 'Η Μάρια είναι επαγγελματίας παραγωγής με περισσότερα από 10 χρόνια εμπειρίας. Έχει συνεργαστεί με ελληνικές και ξένες εταιρείες παραγωγής, καθώς και με διεθνή στούντιο, διαχειριζόμενη κάθε είδους παραγωγή από το στάδιο της ανάπτυξής της έως την τελική παράδοση.',
     'aboutPage.maria.bio2': 'Η εμπειρία της καλύπτει διάφορα στάδια της παραγωγής, όπως, τον προϋπολογισμό, τον προγραμματισμό και τη διαχείριση παραγωγής μεγάλης κλίμακας, με ιδιαίτερη ικανότητα στην πρόβλεψη κινδύνων, την επίβλεψη όλων των παραγωγικών διαδικασιών, την οικονομική διαχείριση και τον συντονισμό ομάδων και προσωπικού σε απαιτητικά περιβάλλοντα.',
     'aboutPage.maria.bio3': 'Τα τελευταία χρόνια έχει παρακολουθήσει εξειδικευμένα προγράμματα εκπαίδευσης και masterclasses για τη βιωσιμότητα στον οπτικοακουστικό κλάδο, με έμφαση στην ανάπτυξη και εφαρμογή περιβαλλοντικών στρατηγικών που μειώνουν το ανθρακικό αποτύπωμα, τα απόβλητα και την κατανάλωση πόρων στις παραγωγές.',
-    'aboutPage.maria.bio4': 'Ζει και εργάζεται στην Αθήνα, σε διάφορες θέσεις της Παραγωγής, όπως Line Producer, Διευθύντρια Παραγωγής και Υπεύθυνη Οργάνωσης Χώρων Γυρίσματος. Είναι επίσης ιδρυτικό μέλος και Ταμίας του Διοικητικού Συμβουλίου του Σωματείου Εργαζομένων Κινηματογράφου, Τηλεόρασης, Οπτικοακουστικών Έργων στο Location & Unit Department (GSLUD).',
+    'aboutPage.maria.bio4': 'Ζει και εργάζεται στην Αθήνα, σε διάφορες θέσεις της Παραγωγής, όπως Line Producer, Διευθύντρια Παραγωγής και Υπεύθυνη Οργάνωσης Χώρων Γυρίσματος.',
+    'aboutPage.maria.bio5': 'Είναι επίσης ιδρυτικό μέλος και Ταμίας του Διοικητικού Συμβουλίου του Σωματείου Εργαζομένων Κινηματογράφου, Τηλεόρασης, Οπτικοακουστικών Έργων στο Location & Unit Department (GSLUD).',
+    'aboutPage.giannis.name': 'Γιάννης Σωτηρόπουλος',
     'aboutPage.giannis.role': 'Υπεύθυνος Τοποθεσιών',
     'aboutPage.giannis.bio1': 'Ο Γιάννης είναι Υπεύθυνος εύρεσης και διαχείρισης χώρων γυρίσματος, με εμπειρία σε ελληνικές και διεθνείς κινηματογραφικές και τηλεοπτικές παραγωγές στην Ελλάδα. Από το 2018 έχει συμμετάσχει σε μεγάλες παραγωγές διεθνών στούντιο και πλατφορμών όπως το Netflix, η Amazon και η Disney.',
     'aboutPage.giannis.bio2': 'Είναι Μέλος του Location Managers Guild International (LMGI) και ενεργό μέλος της Επιτροπής Ηνωμένου Βασιλείου, Ευρώπης και Αφρικής του LMGI. Παράλληλα, είναι ιδρυτικό μέλος και Αντιπρόεδρος του Σωματείου Εργαζομένων Κινηματογράφου, Τηλεόρασης, Οπτικοακουστικών Έργων στο Location & Unit Department (GSLUD).',
     'aboutPage.giannis.bio3': 'Η εξειδίκευσή του διασφαλίζει ακριβή διαχείριση τοποθεσιών, ομαλή επιχειρησιακή λειτουργία και πλήρη εναρμόνιση με τα διεθνή πρότυπα παραγωγής.',
+    'aboutPage.michalis.name': 'Μιχάλης Βραχλιώτης',
     'aboutPage.michalis.role': 'Ειδικός Παραγωγής & Τοποθεσιών',
     'aboutPage.michalis.bio1': 'Ο Μιχάλης είναι επαγγελματίας παραγωγής με περισσότερα από 10 χρόνια εμπειρίας στα Τμήματα Παραγωγής και Διαχείρισης & Εύρεσης Τοποθεσιών σε διεθνείς και εγχώριες οπτικοακουστικές παραγωγές.',
     'aboutPage.michalis.bio2': 'Έχει συμμετάσχει σε ταινίες μεγάλου & μικρού μήκους, τηλεοπτικές σειρές, ανεξάρτητες παραγωγές και διεθνείς φωτογραφίσεις και παραγωγές στούντιο. Η διπλή εμπειρία του στους τομείς της παραγωγής και των τοποθεσιών, του επιτρέπει να κινείται με άνεση ανάμεσα στα τμήματα, έχοντας βαθιά κατανόηση της δουλειάς. Υποστηρίζοντας σύνθετες παραγωγές σε απαιτητικά και διαρκώς μεταβαλλόμενα περιβάλλοντα.',
-    'aboutPage.michalis.bio3': 'Προσφέρει προσαρμοστικότητα, επιχειρησιακή σταθερότητα και αξία σε κάθε παραγωγή που συμμετέχει. Είναι επίσης ιδρυτικό μέλος του Σωματείου Εργαζομένων Κινηματογράφου, Τηλεόρασης, Οπτικοακουστικών Έργων στο Location & Unit Department (GSLUD).',
+    'aboutPage.michalis.bio3': 'Προσφέρει προσαρμοστικότητα, επιχειρησιακή σταθερότητα και αξία σε κάθε παραγωγή που συμμετέχει.',
+    'aboutPage.michalis.bio4': 'Είναι επίσης ιδρυτικό μέλος του Σωματείου Εργαζομένων Κινηματογράφου, Τηλεόρασης, Οπτικοακουστικών Έργων στο Location & Unit Department (GSLUD).',
 
     // Services page
     'servicesPage.title':    'Υπηρεσίες',
@@ -651,10 +663,10 @@ const PDF_GR_KEYS = new Set([
   'aboutPage.storyLabel',
   'aboutPage.story.p1', 'aboutPage.story.p1b', 'aboutPage.story.p2', 'aboutPage.story.p2b', 'aboutPage.story.p3', 'aboutPage.story.p4', 'aboutPage.story.p5',
   'aboutPage.teamLabel', 'aboutPage.teamHeading',
-  'aboutPage.giorgos.bio1', 'aboutPage.giorgos.bio2', 'aboutPage.giorgos.bio3', 'aboutPage.giorgos.bio4',
-  'aboutPage.maria.bio1', 'aboutPage.maria.bio2', 'aboutPage.maria.bio3', 'aboutPage.maria.bio4',
-  'aboutPage.giannis.bio1', 'aboutPage.giannis.bio2', 'aboutPage.giannis.bio3',
-  'aboutPage.michalis.bio1', 'aboutPage.michalis.bio2', 'aboutPage.michalis.bio3',
+  'aboutPage.giorgos.name', 'aboutPage.giorgos.bio1', 'aboutPage.giorgos.bio2', 'aboutPage.giorgos.bio3', 'aboutPage.giorgos.bio4',
+  'aboutPage.maria.name', 'aboutPage.maria.bio1', 'aboutPage.maria.bio2', 'aboutPage.maria.bio3', 'aboutPage.maria.bio4', 'aboutPage.maria.bio5',
+  'aboutPage.giannis.name', 'aboutPage.giannis.bio1', 'aboutPage.giannis.bio2', 'aboutPage.giannis.bio3',
+  'aboutPage.michalis.name', 'aboutPage.michalis.bio1', 'aboutPage.michalis.bio2', 'aboutPage.michalis.bio3', 'aboutPage.michalis.bio4',
   'servicesPage.title', 'servicesPage.subtitle',
   'servicesPage.s1.title', 'servicesPage.s1.desc',
   'servicesPage.s2.title', 'servicesPage.s2.desc',
@@ -844,7 +856,12 @@ function applyTranslations(lang) {
   document.querySelectorAll('[data-i18n]').forEach(el => {
     const key   = el.getAttribute('data-i18n');
     const value = getTranslation(lang, key);
-    if (!value) return;
+
+    if (value === '') {
+      el.hidden = true;
+      return;
+    }
+    el.hidden = false;
 
     if (value.includes('\n')) {
       el.innerHTML = value.replace(/\n/g, '<br>');

@@ -698,6 +698,18 @@ const PDF_GR_KEYS = new Set([
   'rentalsPage.r3.g2.i1', 'rentalsPage.r3.g2.i2', 'rentalsPage.r3.g2.i3', 'rentalsPage.r3.g2.i4',
   'rentalsPage.r3.g2.i5', 'rentalsPage.r3.g2.i6', 'rentalsPage.r3.g2.i7', 'rentalsPage.r3.g2.i8',
   'contactPage.title', 'contactPage.subtitle', 'contactPage.body',
+  'contactPage.formLabel', 'contactPage.formTitle', 'contactPage.formSub',
+  'contactPage.label.name', 'contactPage.label.email', 'contactPage.label.company',
+  'contactPage.label.optional', 'contactPage.label.message',
+  'contactPage.placeholder.name', 'contactPage.placeholder.email',
+  'contactPage.placeholder.company', 'contactPage.placeholder.message',
+  'contactPage.submit', 'contactPage.sending', 'contactPage.note',
+  'contactPage.success',
+  'contactPage.error.name', 'contactPage.error.email',
+  'contactPage.error.emailInvalid', 'contactPage.error.message',
+  'contactPage.info.direct', 'contactPage.info.directNote',
+  'contactPage.info.location', 'contactPage.info.locationVal', 'contactPage.info.locationText',
+  'contactPage.info.follow',
 ]);
 
 /* Greek-only strings (no English in the PDF); shown in both language modes */

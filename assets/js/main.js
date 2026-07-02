@@ -27,7 +27,7 @@ const TRANSLATIONS = {
 
     // Hero (homepage)
     'hero.eyebrow':  'Athens, Greece · Production Support Company',
-    'hero.line1':    'Production Support',
+    'hero.line1':    'Production support services',
     'hero.line3':    'in Greece.',
     'hero.subtitle': 'Unit Services · Production Equipment Rental · On-Set Intelligence',
     'hero.body1':    'We are a boutique production support company operating in Greece.',
@@ -147,8 +147,8 @@ const TRANSLATIONS = {
     'aboutPage.giannis.name': 'Giannis Sotiropoulos',
     'aboutPage.giannis.role': 'Location Manager',
     'aboutPage.giannis.bio1': 'Giannis Sotiropoulos is a Location Manager and Scouter working across major international film and television productions in Greece. Since 2018, he has supported high-profile studio productions for global platforms including Netflix, Amazon, and Disney.',
-    'aboutPage.giannis.bio2': 'He is an Associate Member of the Location Managers Guild International (LMGI) and an active member of the LMGI UK, Europe and Africa Committee. He is also a founding member and Vice President of the Greek Society of Location and Unit Department (GSLUD).',
-    'aboutPage.giannis.bio3': 'His expertise ensures precise location execution, smooth logistics, and full alignment with international production standards.',
+    'aboutPage.giannis.bio2': 'His expertise ensures precise location execution, smooth logistics, and full alignment with international production standards.',
+    'aboutPage.giannis.bio3': 'He is an Associate Member of the Location Managers Guild International (LMGI) and an active member of the LMGI UK, Europe and Africa Committee. He is also a founding member and Vice President of the Greek Society of Location and Unit Department (GSLUD).',
     'aboutPage.michalis.name': 'Michalis Vrachliotis',
     'aboutPage.michalis.role': 'Production & Location Specialist',
     'aboutPage.michalis.bio1': 'Michalis is a Production professional with over 10 years of experience across Production and Location Departments in international and domestic audiovisual productions. He has contributed to feature films, television series, independent productions, and international photo shoots.',
@@ -233,7 +233,7 @@ const TRANSLATIONS = {
     'rentalsPage.r1.g3.i5': 'Steamers',
     'rentalsPage.r1.g3.i6': 'Towels',
     'rentalsPage.r1.g3.i7': 'Blankets',
-    'rentalsPage.r1.g3.i8': 'Make-up chairs (EZ-Up)',
+    'rentalsPage.r1.g3.i8': 'Make-up chairs',
     'rentalsPage.r2.g1.title': 'Movement & Workflow',
     'rentalsPage.r2.g1.i1': 'Ladders',
     'rentalsPage.r2.g1.i2': 'Trolleys',
@@ -341,7 +341,7 @@ const TRANSLATIONS = {
 
     // Hero (homepage)
     'hero.eyebrow':  'Αθήνα, Ελλάδα · Εταιρεία Υποστήριξης Παραγωγής',
-    'hero.line1':    'Υποστήριξη Παραγωγής',
+    'hero.line1':    'Υπηρεσίες υποστήριξης παραγωγής',
     'hero.line3':    'στην Ελλάδα.',
     'hero.subtitle': 'Υπηρεσίες Διαχείρισης & Εγκατάστασης Βάσης · Ενοικίαση Εξοπλισμού Παραγωγής · Επιχειρησιακή Υποστήριξη Γυρίσματος',
     'hero.body1':    'Είμαστε οι Locbusters. Μια εταιρεία εξειδικευμένη στην υποστήριξη οπτικοακουστικών παραγωγών που δραστηριοποιείται στην Ελλάδα.',
@@ -351,7 +351,7 @@ const TRANSLATIONS = {
     'hero.cta2':     'Επικοινωνήστε',
 
     // Trust (homepage)
-    'trust.statement': 'Η επιλογή των επαγγελματιών του κλάδου.\nΣχεδιασμένο για εκτέλεση.\nΑξιόπιστο από τα συνεργεία.',
+    'trust.statement': 'Η επιλογή των επαγγελματιών του κλάδου.',
     'trust.line1':     'Δεν διαχωρίζουμε τις υπηρεσίες - τις ενοποιούμε. Κάθε τμήμα, κάθε απόφαση, κάθε εξοπλισμός λειτουργεί ως μέρος μιας συντονισμένης δομής.',
     'trust.line2':     'Από τη βάση γυρίσματος έως την ολοκλήρωση, είμαστε το επιχειρησιακό επίπεδο που κρατά την παραγωγή σε κίνηση.',
 
@@ -429,7 +429,7 @@ const TRANSLATIONS = {
     'aboutPage.heroBody': 'Είμαστε μια εταιρεία εξειδικευμένη στην υποστήριξη οπτικοακουστικών παραγωγών και κάθε είδους δράσεων, με έδρα την Αθήνα. Δημιουργηθήκαμε από επαγγελματίες του κλάδου, ανθρώπους που έχουν περάσει χρόνια δουλεύοντας σε διεθνή και εγχώρια κινηματογραφικά και τηλεοπτικά γυρίσματα, κάτω από πραγματικές συνθήκες παραγωγής.',
     'aboutPage.abtLabel': 'Σχετικά',
     'aboutPage.abtHeading':'Σχετικά με εμάς',
-    'aboutPage.abt.p1':   'Είμαστε μια εταιρεία εξειδικευμένη στην υποστήριξη οπτικοακουστικών παραγωγών και κάθε είδους δράσεων.',
+    'aboutPage.abt.p1':   'Είμαστε μια εταιρεία εξειδικευμένη στις υπηρεσίες υποστήριξης οπτικοακουστικών παραγωγών και κάθε είδους δράσεων.',
     'aboutPage.abt.p2':   'Δημιουργηθήκαμε από επαγγελματίες του κλάδου, ανθρώπους που έχουν περάσει χρόνια δουλεύοντας σε διεθνή και εγχώρια κινηματογραφικά και τηλεοπτικά γυρίσματα, κάτω από πραγματικές συνθήκες παραγωγής. Εστιάζουμε στην ενοποίηση υπηρεσιών διαχειρίζοντάς τες ως ένα ενιαίο και συντονισμένο σύστημα: Διαχείριση βάσεων, προσωρινών υποδομών και τοποθεσιών γυρίσματος, ενοικίαση εξοπλισμού, επιχειρησιακή οργάνωση.',
     'aboutPage.abt.p3':   '',
     'aboutPage.abt.p4':   '',
@@ -461,8 +461,8 @@ const TRANSLATIONS = {
     'aboutPage.giannis.name': 'Γιάννης Σωτηρόπουλος',
     'aboutPage.giannis.role': 'Υπεύθυνος Τοποθεσιών',
     'aboutPage.giannis.bio1': 'Ο Γιάννης είναι Υπεύθυνος εύρεσης και διαχείρισης χώρων γυρίσματος, με εμπειρία σε ελληνικές και διεθνείς κινηματογραφικές και τηλεοπτικές παραγωγές στην Ελλάδα. Από το 2018 έχει συμμετάσχει σε μεγάλες παραγωγές διεθνών στούντιο και πλατφορμών όπως το Netflix, η Amazon και η Disney.',
-    'aboutPage.giannis.bio2': 'Είναι Μέλος του Location Managers Guild International (LMGI) και ενεργό μέλος της Επιτροπής Ηνωμένου Βασιλείου, Ευρώπης και Αφρικής του LMGI. Παράλληλα, είναι ιδρυτικό μέλος και Αντιπρόεδρος του Σωματείου Εργαζομένων Κινηματογράφου, Τηλεόρασης, Οπτικοακουστικών Έργων στο Location & Unit Department (GSLUD).',
-    'aboutPage.giannis.bio3': 'Η εξειδίκευσή του διασφαλίζει ακριβή διαχείριση τοποθεσιών, ομαλή επιχειρησιακή λειτουργία και πλήρη εναρμόνιση με τα διεθνή πρότυπα παραγωγής.',
+    'aboutPage.giannis.bio2': 'Η εξειδίκευσή του διασφαλίζει ακριβή διαχείριση τοποθεσιών, ομαλή επιχειρησιακή λειτουργία και πλήρη εναρμόνιση με τα διεθνή πρότυπα παραγωγής.',
+    'aboutPage.giannis.bio3': 'Είναι Μέλος του Location Managers Guild International (LMGI) και ενεργό μέλος της Επιτροπής Ηνωμένου Βασιλείου, Ευρώπης και Αφρικής του LMGI. Παράλληλα, είναι ιδρυτικό μέλος και Αντιπρόεδρος του Σωματείου Εργαζομένων Κινηματογράφου, Τηλεόρασης, Οπτικοακουστικών Έργων στο Location & Unit Department (GSLUD).',
     'aboutPage.michalis.name': 'Μιχάλης Βραχλιώτης',
     'aboutPage.michalis.role': 'Ειδικός Παραγωγής & Τοποθεσιών',
     'aboutPage.michalis.bio1': 'Ο Μιχάλης είναι επαγγελματίας παραγωγής με περισσότερα από 10 χρόνια εμπειρίας στα Τμήματα Παραγωγής και Διαχείρισης & Εύρεσης Τοποθεσιών σε διεθνείς και εγχώριες οπτικοακουστικές παραγωγές.',
@@ -472,7 +472,7 @@ const TRANSLATIONS = {
 
     // Services page
     'servicesPage.title':    'Υπηρεσίες',
-    'servicesPage.subtitle': 'Ολοκληρωμένη υποστήριξη παραγωγών για διεθνή και εγχώρια γυρίσματα στην Ελλάδα.',
+    'servicesPage.subtitle': 'Ολοκληρωμένες υπηρεσίες υποστήριξης παραγωγών για διεθνή και εγχώρια γυρίσματα στην Ελλάδα.',
     'servicesPage.indexLabel': 'Σε αυτή τη σελίδα',
     'servicesPage.s1.title': 'Διαχείριση και Εγκατάσταση Προσωρινών Υποδομών Υποστήριξης Παραγωγής & Διαχείρισης Στόλου Τεχνικών Οχημάτων',
     'servicesPage.s1.desc':  'Επιχειρησιακός συντονισμός και πλήρης οργάνωση βάσεων παραγωγής, διασφαλίζοντας αποδοτικά και πλήρως εξοπλισμένα περιβάλλοντα εργασίας από την προετοιμασία έως την ολοκλήρωση.',
@@ -890,7 +890,22 @@ function setLanguage(lang) {
 function bindLanguageButtons() {
   document.querySelectorAll('.lang-switch__btn').forEach(btn => {
     btn.addEventListener('click', () => {
+      const mobileMenu = document.getElementById('mobileMenu');
+      const hamburger  = document.getElementById('hamburger');
+      const isMobileMenuOpen = mobileMenu && mobileMenu.classList.contains('is-open');
+
       setLanguage(btn.getAttribute('data-lang'));
+
+      if (isMobileMenuOpen) {
+        mobileMenu.classList.remove('is-open');
+        if (hamburger) {
+          hamburger.classList.remove('is-open');
+          hamburger.setAttribute('aria-expanded', 'false');
+        }
+        mobileMenu.setAttribute('aria-hidden', 'true');
+        document.body.style.overflow = '';
+        window.scrollTo({ top: 0, behavior: 'smooth' });
+      }
     });
   });
 }

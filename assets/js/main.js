@@ -128,7 +128,7 @@ const TRANSLATIONS = {
     'aboutPage.story.p2b': '',
     'aboutPage.story.p3': 'Each also operates independently within the industry, bringing specialized expertise across unit, production and location departments. The company is a natural extension of this existing network, combining complementary experience into a single - coordinated structure.',
     'aboutPage.story.p4': 'Our approach is simple: production works best when support is invisible, precise, and reliable.',
-    'aboutPage.story.p5': 'It is not a formation of convenience, but of practice—built from real production experience and shaped by the way we have always worked: focused on execution.',
+    'aboutPage.story.p5': 'It is not a formation of convenience, but of practice-built from real production experience and shaped by the way we have always worked: focused on execution.',
     'aboutPage.teamLabel': 'The Team',
     'aboutPage.teamHeading': 'Real on-set expertise.\nIntegrated execution.\nProven reliability.',
     'aboutPage.giorgos.name': 'Giorgos Georganas',
@@ -158,7 +158,7 @@ const TRANSLATIONS = {
 
     // Services page
     'servicesPage.title':    'Services',
-    'servicesPage.subtitle': 'Integrated production support for international & domestic shoots in Greece.',
+    'servicesPage.subtitle': 'Integrated production support services for international & domestic shoots in Greece.',
     'servicesPage.indexLabel': 'On This Page',
     'servicesPage.s1.title': 'Unit & Facilities Management',
     'servicesPage.s1.desc':  'Operational coordination and production base setup, ensuring efficient and fully equipped working environments from prep to wrap.',
@@ -372,7 +372,7 @@ const TRANSLATIONS = {
 
     // Rentals (homepage preview)
     'rentals.label':    'Ενοικίαση Εξοπλισμού Παραγωγής',
-    'rentals.title':    'Κορυφαίας ποιότητας εξοπλισμός υποστήριξης,\nγια κάθε στάδιο της παραγωγής — από το στήσιμο της βάσης παραγωγής έως την εκτέλεση.',
+    'rentals.title':    'Κορυφαίας ποιότητας εξοπλισμός υποστήριξης,\nγια κάθε στάδιο της παραγωγής - από το στήσιμο της βάσης παραγωγής έως την εκτέλεση.',
     'rentals.r1.title': 'Βάση Γυρίσματος',
     'rentals.r1.desc':  'Υποδομές για την υποστήριξη, άνεση και προετοιμασία του συνεργείου.',
     'rentals.r2.title': 'Λειτουργίες Χώρου Γυρίσματος',
@@ -436,7 +436,7 @@ const TRANSLATIONS = {
     'aboutPage.abt.p5':   'Στόχος μας είναι να διασφαλίζουμε ότι κάθε παραγωγή υποστηρίζεται με σαφήνεια, ακρίβεια και αξιοπιστία, ώστε κάθε απόφαση στο πεδίο να μεταφράζεται σε μια πιο ομαλή και ελεγχόμενη διαδικασία παραγωγής.',
     'aboutPage.storyLabel': 'Η Ιστορία μας',
     'aboutPage.storyHeading':'Πώς φτάσαμε εδώ.',
-    'aboutPage.story.p1': 'Η The Locbusters ιδρύθηκε το 2024 Βασισμένη σε χρόνια κοινής επαγγελματικής πορείας σε διεθνείς και εγχώριες παραγωγές στην Ελλάδα, οι ιδρυτές της έχουν συνεργαστεί επανειλημμένα — τόσο ως ομάδα όσο και σε διαφορετικές συνθέσεις — σε παραγωγές που κυμαίνονται από ανεξάρτητες ταινίες μεγάλου και μικρού μήκους έως μεγάλες παραγωγές διεθνών στούντιο. Αυτή η μακροχρόνια επαγγελματική σχέση προϋπήρχε της εταιρείας και διαμορφώθηκε μέσα από πραγματικές συνθήκες παραγωγής, όπου ο χρόνος είναι κρίσιμος και η πίεση, η πολυπλοκότητα και η ακρίβεια καθορίζουν κάθε απόφαση.',
+    'aboutPage.story.p1': 'Η The Locbusters ιδρύθηκε το 2024 Βασισμένη σε χρόνια κοινής επαγγελματικής πορείας σε διεθνείς και εγχώριες παραγωγές στην Ελλάδα, οι ιδρυτές της έχουν συνεργαστεί επανειλημμένα - τόσο ως ομάδα όσο και σε διαφορετικές συνθέσεις - σε παραγωγές που κυμαίνονται από ανεξάρτητες ταινίες μεγάλου και μικρού μήκους έως μεγάλες παραγωγές διεθνών στούντιο. Αυτή η μακροχρόνια επαγγελματική σχέση προϋπήρχε της εταιρείας και διαμορφώθηκε μέσα από πραγματικές συνθήκες παραγωγής, όπου ο χρόνος είναι κρίσιμος και η πίεση, η πολυπλοκότητα και η ακρίβεια καθορίζουν κάθε απόφαση.',
     'aboutPage.story.p1b': '',
     'aboutPage.story.p2': 'Καθώς η Ελλάδα εξελίσσεται σε σημαντικό προορισμό για διεθνή γυρίσματα και οι εγχώριες παραγωγές γίνονται ολοένα και πιο απαιτητικές, η ανάγκη για ένα αξιόπιστο επιχειρησιακό επίπεδο υποστήριξης έχει καταστεί απαραίτητη. Οι Locbusters είναι αυτό το επίπεδο υποστήριξης κάθε παραγωγής. Αυτό που μας ενώνει είναι ο κοινός τρόπος εργασίας: η εμπιστοσύνη, ο σεβασμός, η ακρίβεια και μια κοινή αντίληψη για το τι οφείλει να προσφέρει η υποστήριξη παραγωγής στο πεδίο.',
     'aboutPage.story.p2b': '',
@@ -494,7 +494,7 @@ const TRANSLATIONS = {
 
     // Rentals page
     'rentalsPage.title':    'Ενοικίαση\nΕξοπλισμού\nΠαραγωγής',
-    'rentalsPage.subtitle': 'Κορυφαίας ποιότητας εξοπλισμός υποστήριξης, για κάθε στάδιο της παραγωγής — από το στήσιμο της βάσης παραγωγής έως την εκτέλεση.',
+    'rentalsPage.subtitle': 'Κορυφαίας ποιότητας εξοπλισμός υποστήριξης, για κάθε στάδιο της παραγωγής - από το στήσιμο της βάσης παραγωγής έως την εκτέλεση.',
     'rentalsPage.indexLabel': 'Κατηγορίες Εξοπλισμού',
     'rentalsPage.r1.title': 'Βάση Γυρίσματος',
     'rentalsPage.r1.desc':  'Υποδομές για την υποστήριξη, άνεση και προετοιμασία του συνεργείου.\nΣτέγαστρα, καθίσματα, χώροι εστίασης, σταθμοί μακιγιάζ και βεστιαρίου, πλήρως εξοπλισμένοι για τις ανάγκες κάθε παραγωγής.',
@@ -642,12 +642,14 @@ const TRANSLATIONS = {
 const PDF_GR_KEYS = new Set([
   'hero.eyebrow', 'hero.cta1', 'hero.cta2',
   'hero.line1', 'hero.line3', 'hero.subtitle', 'hero.body1', 'hero.body2', 'hero.body3',
+  'trust.statement',
   'services.label', 'services.title',
   'services.s1.title', 'services.s1.desc',
   'services.s2.title', 'services.s2.desc',
   'services.s3.title', 'services.s3.desc',
   'services.s4.title', 'services.s4.desc',
   'services.s5.title', 'services.s5.desc',
+  'services.viewAll',
   'rentals.label', 'rentals.title',
   'rentals.r1.title', 'rentals.r1.desc',
   'rentals.r2.title', 'rentals.r2.desc',
@@ -975,7 +977,7 @@ if (document.readyState === 'loading') {
   init();
 }
 
-// Script is at end of <body> — apply stored language immediately on navigation
+// Script is at end of <body> - apply stored language immediately on navigation
 currentLang = getStoredLang();
 setLangButtons(currentLang);
 applyTranslations(currentLang);

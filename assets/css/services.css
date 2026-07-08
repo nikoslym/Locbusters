@@ -38,7 +38,7 @@
 
 .pg-hero__container {
   display: grid;
-  grid-template-columns: 1fr auto;
+  grid-template-columns: minmax(0, 1fr);
   gap: var(--sp-8);
   align-items: start;
   position: relative;
@@ -82,15 +82,16 @@
   font-weight: 400;
   letter-spacing: -0.01em;
   color: var(--c-text-dim);
-  line-height: 1.4;
+  line-height: 1.5;
   margin-bottom: var(--sp-3);
+  max-width: 100%;
 }
 
 .pg-hero__body {
   font-size: 0.9375rem;
   color: var(--c-text-muted);
   line-height: 1.75;
-  max-width: 540px;
+  max-width: 100%;
 }
 
 /* On-page index */

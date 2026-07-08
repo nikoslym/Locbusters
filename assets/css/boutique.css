@@ -267,15 +267,23 @@ body::before {
 .cnt-hero__inner {
   position: relative;
   z-index: 2;
-  grid-template-columns: minmax(0, 1.08fr) minmax(280px, 420px);
+  display: grid;
+  grid-template-columns: minmax(0, 1fr);
   gap: clamp(2rem, 5vw, 6rem);
   align-items: start;
+}
+
+.pg-hero__container:has(.pg-hero__index),
+.pg-hero > .container:has(.pg-hero__index) {
+  grid-template-columns: minmax(0, 1.08fr) minmax(280px, 420px);
 }
 
 .pg-hero__content,
 .abt-hero__content,
 .cnt-hero__content {
   align-self: start;
+  width: 100%;
+  max-width: 100%;
 }
 
 .pg-hero__index,
@@ -336,6 +344,8 @@ html[lang="el"] .hero__title-line {
 .pg-hero__subtitle {
   color: var(--c-text);
   font-size: clamp(1rem, 1.5vw, 1.15rem);
+  max-width: 100%;
+  line-height: 1.5;
 }
 
 .hero__body {
@@ -640,6 +650,26 @@ html[lang="el"] .hero__title-line {
 
   .pg-hero__index--lower {
     margin-top: 0;
+  }
+
+  /* Buttons: full-width, comfortable tap targets, no overflow on small screens */
+  .cta-section .btn,
+  .services__cta .btn {
+    align-self: stretch;
+    width: 100%;
+  }
+
+  .hero__ctas .btn,
+  .pg-hero__ctas .btn,
+  .cta-section .btn,
+  .services__cta .btn,
+  .cnt-submit {
+    width: 100%;
+    justify-content: center;
+    text-align: center;
+    white-space: normal;
+    min-height: 3rem;
+    padding: 0.95rem 1.5rem;
   }
 }
 
@@ -1408,6 +1438,10 @@ body {
   }
 
   .pg-hero__body {
+    max-width: 100%;
+  }
+
+  .pg-hero__subtitle {
     max-width: 100%;
   }
 }

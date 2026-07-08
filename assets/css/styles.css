@@ -171,7 +171,9 @@ button {
 .btn {
   display: inline-flex;
   align-items: center;
+  justify-content: center;
   gap: var(--sp-1);
+  min-height: 2.75rem;
   font-size: 0.75rem;
   font-weight: 600;
   letter-spacing: 0.1em;
@@ -437,14 +439,18 @@ button {
 .hamburger {
   display: none;
   flex-direction: column;
+  align-items: center;
+  justify-content: center;
   gap: 5px;
-  width: 28px;
-  padding: 4px 0;
+  width: 44px;
+  height: 44px;
+  margin-right: -10px;
+  padding: 0;
 }
 
 .hamburger__line {
   display: block;
-  width: 100%;
+  width: 24px;
   height: 1.5px;
   background: var(--c-text);
   transition: var(--t-base);
@@ -512,6 +518,11 @@ button {
   gap: var(--sp-3);
 }
 
+.mobile-menu__footer .lang-switch__btn {
+  padding: 0.5rem 0.75rem;
+  margin: -0.5rem 0;
+}
+
 .mobile-menu__social a {
   font-size: 0.6875rem;
   font-weight: 600;
@@ -519,6 +530,7 @@ button {
   text-transform: uppercase;
   color: var(--c-text-muted);
   transition: color var(--t-fast);
+  padding: 0.5rem 0.25rem;
 }
 
 .mobile-menu__social a:hover {

@@ -72,6 +72,7 @@ html {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   text-rendering: optimizeLegibility;
+  /* Keep horizontal overflow off body — iOS Safari breaks position:fixed when body clips overflow */
 }
 
 body {
@@ -79,7 +80,16 @@ body {
   background-color: var(--c-bg);
   color: var(--c-text);
   line-height: 1.65;
-  overflow-x: hidden;
+}
+
+main {
+  overflow-x: clip;
+}
+
+@supports not (overflow: clip) {
+  main {
+    overflow-x: hidden;
+  }
 }
 
 a {
@@ -303,8 +313,10 @@ button {
   top: 0;
   left: 0;
   right: 0;
-  z-index: 100;
+  z-index: 1000;
   height: var(--header-h);
+  -webkit-transform: translateZ(0);
+  transform: translateZ(0);
   transition: background-color var(--t-base), border-color var(--t-base);
   border-bottom: 1px solid transparent;
 }
@@ -446,6 +458,8 @@ button {
   height: 44px;
   margin-right: -10px;
   padding: 0;
+  -webkit-appearance: none;
+  appearance: none;
 }
 
 .hamburger__line {
@@ -472,14 +486,18 @@ button {
   left: 0;
   right: 0;
   bottom: 0;
+  height: calc(100dvh - var(--header-h));
   background-color: var(--c-surface);
-  z-index: 99;
+  z-index: 999;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
   padding: var(--sp-5) var(--gutter) var(--sp-5);
+  padding-bottom: calc(var(--sp-5) + env(safe-area-inset-bottom, 0px));
   transform: translateX(100%);
   transition: transform 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+  -webkit-overflow-scrolling: touch;
+  overscroll-behavior: contain;
 }
 
 .mobile-menu.is-open {
@@ -545,7 +563,7 @@ button {
   min-height: 100svh;
   display: flex;
   flex-direction: column;
-  justify-content: flex-end;
+  justify-content: flex-start;
   padding-top: calc(var(--header-h) + var(--sp-6));
   padding-bottom: var(--sp-8);
   overflow: hidden;
@@ -566,7 +584,7 @@ button {
   display: grid;
   grid-template-columns: 1fr auto;
   gap: var(--sp-6);
-  align-items: end;
+  align-items: start;
   position: relative;
   z-index: 1;
 }
@@ -1364,7 +1382,7 @@ button {
   .hero {
     min-height: 100svh;
     padding-bottom: var(--sp-7);
-    justify-content: flex-end;
+    justify-content: flex-start;
   }
 
   .hero__title {

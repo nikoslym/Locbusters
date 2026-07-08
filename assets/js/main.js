@@ -779,12 +779,36 @@ function initMobileMenu() {
   const mobileMenu = document.getElementById('mobileMenu');
   if (!hamburger || !mobileMenu) return;
 
+  let scrollPosition = 0;
+
+  const lockScroll = () => {
+    scrollPosition = window.scrollY;
+    document.body.style.position = 'fixed';
+    document.body.style.top = `-${scrollPosition}px`;
+    document.body.style.left = '0';
+    document.body.style.right = '0';
+    document.body.style.width = '100%';
+  };
+
+  const unlockScroll = () => {
+    document.body.style.position = '';
+    document.body.style.top = '';
+    document.body.style.left = '';
+    document.body.style.right = '';
+    document.body.style.width = '';
+    window.scrollTo(0, scrollPosition);
+  };
+
   const toggle = (open) => {
     hamburger.classList.toggle('is-open', open);
     mobileMenu.classList.toggle('is-open', open);
     hamburger.setAttribute('aria-expanded', String(open));
     mobileMenu.setAttribute('aria-hidden', String(!open));
-    document.body.style.overflow = open ? 'hidden' : '';
+    if (open) {
+      lockScroll();
+    } else {
+      unlockScroll();
+    }
   };
 
   hamburger.addEventListener('click', () => {

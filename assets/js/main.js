@@ -77,7 +77,8 @@ const TRANSLATIONS = {
     'about.cta':    'About Us',
 
     // Clients
-    'clients.label': 'Productions & Partners',
+    'clients.label':       'Productions & Partners',
+    'clients.marqueeAria': 'Productions we have supported',
 
     // CTA
     'cta.label': 'Get in Touch',
@@ -299,7 +300,7 @@ const TRANSLATIONS = {
     'contactPage.formLabel':'Send a Message',
     'contactPage.formTitle':'Tell us about\nyour project.',
     'contactPage.formSub':  'We\'ll come back with a clear, structured response fast.',
-    'contactPage.trust':    'Μας εμπιστεύονται ομάδες παραγωγής σε όλη την Ελλάδα',
+    'contactPage.trust':    'Trusted by Production & Location Teams across the country',
     'contactPage.label.name':    'Name',
     'contactPage.label.email':   'Email',
     'contactPage.label.company': 'Production / Company',
@@ -391,7 +392,8 @@ const TRANSLATIONS = {
     'about.cta':    'Σχετικά με εμάς',
 
     // Clients
-    'clients.label': 'Παραγωγές & Συνεργάτες',
+    'clients.label':       'Παραγωγές & Συνεργάτες',
+    'clients.marqueeAria': 'Παραγωγές που έχουμε υποστηρίξει',
 
     // CTA
     'cta.label': 'Επικοινωνήστε μαζί μας',
@@ -651,6 +653,7 @@ const PDF_GR_KEYS = new Set([
   'services.s4.title', 'services.s4.desc',
   'services.s5.title', 'services.s5.desc',
   'services.viewAll',
+  'clients.label', 'clients.marqueeAria',
   'rentals.label', 'rentals.title',
   'rentals.r1.title', 'rentals.r1.desc',
   'rentals.r2.title', 'rentals.r2.desc',
@@ -713,12 +716,11 @@ const PDF_GR_KEYS = new Set([
   'contactPage.info.direct', 'contactPage.info.directNote',
   'contactPage.info.location', 'contactPage.info.locationVal', 'contactPage.info.locationText',
   'contactPage.info.follow',
+  'contactPage.trust',
 ]);
 
 /* Greek-only strings (no English in the PDF); shown in both language modes */
-const GREEK_ONLY_KEYS = new Set([
-  'contactPage.trust',
-]);
+const GREEK_ONLY_KEYS = new Set([]);
 
 function getTranslation(lang, key) {
   const en = TRANSLATIONS.en;
@@ -889,6 +891,12 @@ function applyTranslations(lang) {
     const key = el.getAttribute('data-i18n-placeholder');
     const value = getTranslation(lang, key);
     if (value) el.placeholder = value;
+  });
+
+  document.querySelectorAll('[data-i18n-aria-label]').forEach(el => {
+    const key = el.getAttribute('data-i18n-aria-label');
+    const value = getTranslation(lang, key);
+    if (value) el.setAttribute('aria-label', value);
   });
 
   document.documentElement.lang = lang === 'gr' ? 'el' : 'en';

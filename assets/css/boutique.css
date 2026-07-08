@@ -161,7 +161,7 @@ body::before {
 .section-title,
 .pg-hero__title,
 .hero__title {
-  line-height: 1.08;
+  line-height: 1.2;
 }
 
 .hero {
@@ -320,9 +320,10 @@ body::before {
 
 .hero__title {
   font-size: clamp(2.5rem, 5.5vw, 6rem);
-  line-height: 1.0;
+  line-height: 1.2;
   letter-spacing: -0.04em;
   margin-bottom: var(--sp-5);
+  gap: 0.12em;
 }
 
 /* Greek homepage hero - two lines only, scale fluidly across viewports */

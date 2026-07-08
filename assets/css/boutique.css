@@ -504,16 +504,7 @@ html[lang="el"] .hero__title-line {
 }
 
 .cta-section .btn {
-  display: inline-flex;
   align-self: flex-start;
-  justify-content: center;
-  max-width: 10.5rem;
-  padding: 0.65rem 1.15rem;
-  font-size: 0.6875rem;
-  line-height: 1.45;
-  letter-spacing: 0.08em;
-  white-space: normal;
-  text-align: center;
 }
 
 .svc-block,
@@ -732,13 +723,13 @@ html[lang="el"] .hero__title-line {
 }
 
 .trust__statement {
-  background: rgba(255, 255, 255, 0.72);
-  backdrop-filter: blur(18px);
-  -webkit-backdrop-filter: blur(18px);
+  background: rgba(255, 255, 255, 0.42);
+  backdrop-filter: blur(20px);
+  -webkit-backdrop-filter: blur(20px);
   color: var(--c-dark-text);
   padding: var(--sp-5) var(--sp-6);
-  border: 1px solid rgba(255, 255, 255, 0.4);
-  box-shadow: 0 24px 72px rgba(0, 0, 0, 0.18);
+  border: 1px solid rgba(255, 255, 255, 0.28);
+  box-shadow: 0 24px 72px rgba(0, 0, 0, 0.12);
   margin: 0;
   text-align: center;
 }
@@ -753,7 +744,7 @@ html[lang="el"] .hero__title-line {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  max-width: min(100%, 640px);
+  max-width: min(100%, 920px);
   width: 100%;
   gap: var(--sp-3);
 }
@@ -1021,17 +1012,15 @@ html[lang="el"] .hero__title-line {
 
 .rnt-block__content,
 .rnt-block__content--reversed {
-  display: grid;
-  align-items: start;
-  gap: var(--sp-7);
+  display: none;
 }
 
-.rnt-block__content {
-  grid-template-columns: minmax(312px, 1.2fr) minmax(0, 1.8fr);
+.rnt-block__visual-bg {
+  box-shadow: none;
 }
 
-.rnt-block__content--reversed {
-  grid-template-columns: minmax(0, 1.8fr) minmax(312px, 1.2fr);
+.rnt-block__visual-bg.rnt-placeholder--photo::after {
+  display: none;
 }
 
 /* About page story and team */
@@ -1136,8 +1125,7 @@ html[lang="el"] .hero__title-line {
     grid-template-columns: 1fr;
   }
 
-  .rnt-block__content,
-  .rnt-block__content--reversed {
+  .rnt-block__visual .rnt-block__groups {
     grid-template-columns: 1fr;
   }
 
@@ -1293,11 +1281,10 @@ body {
 
 /* About story feature image */
 .abt-story__media {
+  width: 100%;
   margin-top: var(--sp-5);
   margin-bottom: var(--sp-7);
   overflow: hidden;
-  border: 0;
-  max-height: none;
 }
 
 .abt-story__media-img {

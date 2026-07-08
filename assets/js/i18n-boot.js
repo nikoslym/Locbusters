@@ -1,11 +1,10 @@
 /**
- * Runs in <head> — restores html lang before first paint when GR is stored.
+ * Runs in <head> — sets html[lang] from localStorage before first paint.
  */
 (function () {
   try {
-    if (localStorage.getItem('locbusters-lang') === 'gr') {
-      document.documentElement.lang = 'el';
-    }
+    document.documentElement.lang =
+      localStorage.getItem('locbusters-lang') === 'gr' ? 'el' : 'en';
   } catch (e) {
     /* localStorage unavailable */
   }

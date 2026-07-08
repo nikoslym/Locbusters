@@ -43,7 +43,7 @@ const TRANSLATIONS = {
 
     // Services (homepage preview)
     'services.label':    'Services',
-    'services.title':    'Integrated production support\nfor international and domestic shoots in Greece.',
+    'services.title':    'Production support services in Greece.',
     'services.s1.title': 'Unit & Facilities Management',
     'services.s1.desc':  'Operational coordination and production base setup, ensuring efficient and fully equipped working environments from prep to wrap.',
     'services.s2.title': 'Location & Production Logistics',
@@ -221,7 +221,7 @@ const TRANSLATIONS = {
     'rentalsPage.r1.g1.i7': 'A/C units',
     'rentalsPage.r1.g2.title': 'Seating & Dining',
     'rentalsPage.r1.g2.i1': 'Folding chairs',
-    'rentalsPage.r1.g2.i2': 'Director\'s chairs (EZ-Up)',
+    'rentalsPage.r1.g2.i2': 'Director\'s chairs',
     'rentalsPage.r1.g2.i3': 'Stools',
     'rentalsPage.r1.g2.i4': 'Folding tables',
     'rentalsPage.r1.g2.i5': 'Table stretch cloths',
@@ -357,7 +357,7 @@ const TRANSLATIONS = {
 
     // Services (homepage preview)
     'services.label':    'Υπηρεσίες',
-    'services.title':    'Ολοκληρωμένη υποστήριξη παραγωγών\nγια διεθνή και εγχώρια γυρίσματα στην Ελλάδα.',
+    'services.title':    'Υπηρεσίες υποστήριξης παραγωγής στην Ελλάδα.',
     'services.s1.title': 'Διαχείριση και Εγκατάσταση Προσωρινών Υποδομών Υποστήριξης Παραγωγής & Διαχείρισης Στόλου Τεχνικών Οχημάτων',
     'services.s1.desc':  'Επιχειρησιακός συντονισμός και πλήρης οργάνωση βάσεων παραγωγής, διασφαλίζοντας αποδοτικά και πλήρως εξοπλισμένα περιβάλλοντα εργασίας από την προετοιμασία έως την ολοκλήρωση.',
     'services.s2.title': 'Διαχείριση Παραγωγής & Τοποθεσιών',
@@ -610,7 +610,7 @@ const TRANSLATIONS = {
     'contactPage.body':     'Η παραγωγή δεν σταματά ποτέ. Ούτε κι εμείς.\nΥποστήριξη 24/7, όπου και όποτε χρειαστεί.',
     'contactPage.formLabel':'Στείλτε μήνυμα',
     'contactPage.formTitle':'Πείτε μας για\nτο έργο σας.',
-    'contactPage.formSub':  'Θα επικοινωνήσουμε μαζί σας με σαφή, δομημένη απάντηση το συντομότερο δυνατό.',
+    'contactPage.formSub':  'Θα επικοινωνήσουμε μαζί σας σύντομα.',
     'contactPage.trust':    'Μας εμπιστεύονται ομάδες παραγωγής σε όλη την Ελλάδα',
     'contactPage.label.name':    'Όνομα',
     'contactPage.label.email':   'Email',
@@ -640,6 +640,7 @@ const TRANSLATIONS = {
 
 /* Keys with official Greek copy in the client PDF (THE LOCBUSTERS SITE MAP GR_ENG.pdf) */
 const PDF_GR_KEYS = new Set([
+  'nav.services', 'nav.rentals', 'nav.about', 'nav.contact',
   'hero.eyebrow', 'hero.cta1', 'hero.cta2',
   'hero.line1', 'hero.line3', 'hero.subtitle', 'hero.body1', 'hero.body2', 'hero.body3',
   'trust.statement',
@@ -901,7 +902,18 @@ function setLanguage(lang) {
   applyTranslations(lang);
 }
 
+function refreshLanguageFromStorage() {
+  currentLang = getStoredLang();
+  setLangButtons(currentLang);
+  applyTranslations(currentLang);
+}
+
+let languageButtonsBound = false;
+
 function bindLanguageButtons() {
+  if (languageButtonsBound) return;
+  languageButtonsBound = true;
+
   document.querySelectorAll('.lang-switch__btn').forEach(btn => {
     btn.addEventListener('click', () => {
       const mobileMenu = document.getElementById('mobileMenu');
@@ -922,13 +934,6 @@ function bindLanguageButtons() {
       }
     });
   });
-}
-
-function initLanguageSwitch() {
-  currentLang = getStoredLang();
-  setLangButtons(currentLang);
-  applyTranslations(currentLang);
-  bindLanguageButtons();
 }
 
 /* ----------------------------------------------------------
@@ -954,12 +959,17 @@ function initSmoothScroll() {
 /* ----------------------------------------------------------
    INIT
    ---------------------------------------------------------- */
+let appInitialized = false;
+
 function init() {
+  if (appInitialized) return;
+  appInitialized = true;
+
   initHeader();
   initMobileMenu();
   initScrollReveal();
   initHeroAnimation();
-  initLanguageSwitch();
+  bindLanguageButtons();
   initSmoothScroll();
 }
 
@@ -971,13 +981,18 @@ window.getLocbustersLang = function () {
   return currentLang;
 };
 
+/* Re-sync after back/forward cache restore (in-memory state can be stale). */
+window.addEventListener('pageshow', (event) => {
+  if (event.persisted) {
+    refreshLanguageFromStorage();
+  }
+});
+
+/* Script is at end of <body> — apply stored language before DOMContentLoaded. */
+refreshLanguageFromStorage();
+
 if (document.readyState === 'loading') {
   document.addEventListener('DOMContentLoaded', init);
 } else {
   init();
 }
-
-// Script is at end of <body> - apply stored language immediately on navigation
-currentLang = getStoredLang();
-setLangButtons(currentLang);
-applyTranslations(currentLang);

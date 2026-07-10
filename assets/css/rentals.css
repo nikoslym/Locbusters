@@ -25,6 +25,17 @@
   background-color: var(--c-surface);
 }
 
+/* Text-only category (no image / item overlay) */
+#vehicles {
+  padding-bottom: var(--sp-8);
+}
+
+#vehicles .rnt-block__header {
+  margin-bottom: 0;
+  padding-bottom: 0;
+  border-bottom: none;
+}
+
 /* Header: number + title + desc */
 .rnt-block__header {
   display: grid;

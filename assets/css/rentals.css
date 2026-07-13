@@ -36,6 +36,19 @@
   border-bottom: none;
 }
 
+/* Basecamp: taller frame so more of the scene is visible */
+#basecamp .rnt-block__visual {
+  height: clamp(400px, 48vw, 580px);
+}
+
+#basecamp .rnt-placeholder__img {
+  object-position: center 42%;
+}
+
+#onset-ops .rnt-placeholder__img {
+  object-position: center 60%;
+}
+
 /* Header: number + title + desc */
 .rnt-block__header {
   display: grid;
@@ -122,6 +135,13 @@
 .rnt-block__visual .rnt-block__groups {
   width: 100%;
   grid-template-columns: repeat(3, minmax(0, 1fr));
+}
+
+/* Technical & Power has only two boxes — keep column size, center the pair */
+#technical-power .rnt-block__visual .rnt-block__groups {
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  width: min(100%, 66.666%);
+  margin-inline: auto;
 }
 
 .rnt-block__visual .rnt-group {
@@ -347,6 +367,10 @@
     overflow: visible;
   }
 
+  #basecamp .rnt-block__visual {
+    height: auto;
+  }
+
   .rnt-block__visual::after {
     display: none;
   }
@@ -355,6 +379,10 @@
     position: relative;
     height: clamp(200px, 46vw, 300px);
     margin-bottom: var(--sp-4);
+  }
+
+  #basecamp .rnt-block__visual-bg {
+    height: clamp(240px, 56vw, 360px);
   }
 
   .rnt-block__visual-bg:last-child {
@@ -373,6 +401,10 @@
   .rnt-block__groups {
     grid-template-columns: 1fr;
     gap: var(--sp-3);
+  }
+
+  #technical-power .rnt-block__visual .rnt-block__groups {
+    width: 100%;
   }
 
   .rnt-block__visual .rnt-group {

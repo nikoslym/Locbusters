@@ -299,7 +299,7 @@ const TRANSLATIONS = {
     'contactPage.body':     'Production doesn\'t stop. Neither do we.\n24/7 support, wherever and whenever it\'s needed.',
     'contactPage.formLabel':'Send a Message',
     'contactPage.formTitle':'Tell us about\nyour project.',
-    'contactPage.formSub':  'We\'ll come back with a clear, structured response fast.',
+    'contactPage.formSub':  'We\'ll get back to you shortly.',
     'contactPage.trust':    'Production & Partners',
     'contactPage.label.name':    'Name',
     'contactPage.label.email':   'Email',

@@ -88,7 +88,7 @@ const TRANSLATIONS = {
     'cta.btn':   'Get in Touch',
 
     // Footer
-    'footer.tagline':       'Production Support in Greece.\nFrom prep to strike.',
+    'footer.tagline':       'Production Support Services\nFrom prep to strike.',
     'footer.servicesTitle': 'Services',
     'footer.rentalsTitle':  'Rentals',
     'footer.companyTitle':  'Company',
@@ -403,7 +403,7 @@ const TRANSLATIONS = {
     'cta.btn':   'Επικοινωνήστε',
 
     // Footer
-    'footer.tagline':       'Υποστήριξη Παραγωγής στην Ελλάδα.\nΑπό την προετοιμασία έως την ολοκλήρωση.',
+    'footer.tagline':       'Υπηρεσίες Υποστήριξης Παραγωγής\nΑπό την προετοιμασία έως την ολοκλήρωση.',
     'footer.servicesTitle': 'Υπηρεσίες',
     'footer.rentalsTitle':  'Ενοικιάσεις',
     'footer.companyTitle':  'Εταιρεία',
@@ -640,7 +640,8 @@ const TRANSLATIONS = {
   }
 };
 
-/* Keys with official Greek copy in the client PDF (THE LOCBUSTERS SITE MAP GR_ENG.pdf) */
+/* Keys with official Greek copy in the client PDF (THE LOCBUSTERS SITE MAP GR_ENG.pdf).
+   Kept as a reference of PDF-sourced strings; Greek mode now applies all TRANSLATIONS.gr keys. */
 const PDF_GR_KEYS = new Set([
   'nav.services', 'nav.rentals', 'nav.about', 'nav.contact',
   'hero.eyebrow', 'hero.cta1', 'hero.cta2',
@@ -729,7 +730,8 @@ function getTranslation(lang, key) {
   if (GREEK_ONLY_KEYS.has(key)) {
     return gr[key] ?? en[key] ?? '';
   }
-  if (lang === 'gr' && PDF_GR_KEYS.has(key)) {
+  /* Prefer Greek whenever a translation exists (full site localization). */
+  if (lang === 'gr') {
     return gr[key] ?? en[key] ?? '';
   }
   return en[key] ?? '';
@@ -738,7 +740,21 @@ function getTranslation(lang, key) {
 /* ----------------------------------------------------------
    STATE
    ---------------------------------------------------------- */
+function getLangFromQuery() {
+  try {
+    const lang = new URLSearchParams(window.location.search).get('lang');
+    return lang === 'gr' || lang === 'en' ? lang : null;
+  } catch {
+    return null;
+  }
+}
+
 function getStoredLang() {
+  const fromQuery = getLangFromQuery();
+  if (fromQuery) {
+    storeLang(fromQuery);
+    return fromQuery;
+  }
   try {
     return localStorage.getItem(LANG_STORAGE_KEY) === 'gr' ? 'gr' : 'en';
   } catch {
@@ -751,6 +767,65 @@ function storeLang(lang) {
     localStorage.setItem(LANG_STORAGE_KEY, lang);
   } catch {
     /* localStorage unavailable */
+  }
+}
+
+/** Keep ?lang=gr on internal hrefs so language survives full page navigations. */
+function applyLangToHref(href, lang) {
+  const match = href.match(/^([^?#]*)(\?[^#]*)?(#.*)?$/);
+  if (!match) return href;
+
+  const path = match[1];
+  const hash = match[3] || '';
+  const params = new URLSearchParams((match[2] || '').replace(/^\?/, ''));
+
+  if (lang === 'gr') {
+    params.set('lang', 'gr');
+  } else {
+    params.delete('lang');
+  }
+
+  const query = params.toString();
+  return path + (query ? `?${query}` : '') + hash;
+}
+
+function isInternalNavHref(href) {
+  if (!href || href === '#') return false;
+  if (href.startsWith('#')) return false;
+  if (/^(mailto:|tel:|javascript:)/i.test(href)) return false;
+  if (/^(https?:)?\/\//i.test(href)) {
+    try {
+      return new URL(href, window.location.href).origin === window.location.origin;
+    } catch {
+      return false;
+    }
+  }
+  return true;
+}
+
+function syncInternalLinks(lang) {
+  document.querySelectorAll('a[href]').forEach((anchor) => {
+    const href = anchor.getAttribute('href');
+    if (!isInternalNavHref(href)) return;
+    anchor.setAttribute('href', applyLangToHref(href, lang));
+  });
+}
+
+function syncUrlLang(lang) {
+  try {
+    const url = new URL(window.location.href);
+    const current = url.searchParams.get('lang');
+    if (lang === 'gr') {
+      if (current === 'gr') return;
+      url.searchParams.set('lang', 'gr');
+    } else if (!current) {
+      return;
+    } else {
+      url.searchParams.delete('lang');
+    }
+    history.replaceState(null, '', url.pathname + url.search + url.hash);
+  } catch {
+    /* history / URL unavailable */
   }
 }
 
@@ -924,6 +999,8 @@ function applyTranslations(lang) {
   });
 
   document.documentElement.lang = lang === 'gr' ? 'el' : 'en';
+  syncInternalLinks(lang);
+  syncUrlLang(lang);
 }
 
 function setLanguage(lang) {

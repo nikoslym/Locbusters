@@ -1,0 +1,368 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <script src="/assets/js/i18n-boot.js?v=20260714a"></script>
+  <link rel="icon" type="image/png" href="/assets/images/favicon.png" />
+  <title>Contact The Locbusters | Production Support Greece</title>
+  <meta name="description" content="Contact The Locbusters for production support, unit services, and equipment rental across Greece." />
+
+  <!-- Open Graph -->
+  <meta property="og:title" content="Contact The Locbusters" />
+  <meta property="og:description" content="Get in touch for reliable production support and equipment solutions across Greece." />
+  <meta property="og:type" content="website" />
+  <meta property="og:site_name" content="The Locbusters" />
+  <meta property="og:url" content="https://thelocbusters.com/contact/" />
+  <meta property="og:image" content="https://thelocbusters.com/assets/images/OG_Locbusters.png?v=20260714" />
+  <meta property="og:image:alt" content="The Locbusters — Production Support Services in Greece" />
+
+  <!-- Twitter / X -->
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="Contact The Locbusters" />
+  <meta name="twitter:description" content="Get in touch for reliable production support and equipment solutions across Greece." />
+  <meta name="twitter:image" content="https://thelocbusters.com/assets/images/OG_Locbusters.png?v=20260714" />
+
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet" />
+
+  <link rel="stylesheet" href="/assets/css/styles.css" />
+  <link rel="stylesheet" href="/assets/css/services.css" />
+  <link rel="stylesheet" href="/assets/css/contact.css" />
+  <link rel="stylesheet" href="/assets/css/boutique.css" />
+</head>
+<body>
+
+  <!-- ================================================
+       SOCIAL FLOATING WIDGET
+  ================================================ -->
+  <div class="social-widget" aria-label="Social Media Links">
+    <a href="#" class="social-widget__link" aria-label="Instagram" target="_blank" rel="noopener noreferrer">
+      <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+        <rect x="2" y="2" width="20" height="20" rx="5" ry="5"/>
+        <path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"/>
+        <line x1="17.5" y1="6.5" x2="17.51" y2="6.5"/>
+      </svg>
+    </a>
+    <a href="#" class="social-widget__link" aria-label="LinkedIn" target="_blank" rel="noopener noreferrer">
+      <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+        <path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"/>
+        <rect x="2" y="9" width="4" height="12"/>
+        <circle cx="4" cy="4" r="2"/>
+      </svg>
+    </a>
+  </div>
+
+  <!-- ================================================
+       HEADER
+  ================================================ -->
+  <header class="header" id="header">
+    <div class="container">
+      <div class="header__inner">
+        <a href="/" class="header__logo" aria-label="The Locbusters Home">
+          <img src="/assets/images/logo.svg" alt="The Locbusters" class="header__logo-img" />
+        </a>
+        <nav class="header__nav" aria-label="Main navigation">
+          <a href="/services/" class="header__nav-link" data-i18n="nav.services">Services</a>
+          <a href="/rentals/" class="header__nav-link" data-i18n="nav.rentals">Rentals</a>
+          <a href="/about/" class="header__nav-link" data-i18n="nav.about">About</a>
+          <a href="/contact/" class="header__nav-link header__nav-link--active" data-i18n="nav.contact">Get in Touch</a>
+        </nav>
+        <div class="header__actions">
+          <div class="lang-switch">
+            <button class="lang-switch__btn active" data-lang="en">EN</button>
+            <span class="lang-switch__sep">/</span>
+            <button class="lang-switch__btn" data-lang="gr">GR</button>
+          </div>
+          <button class="hamburger" id="hamburger" aria-label="Toggle menu" aria-expanded="false">
+            <span class="hamburger__line"></span>
+            <span class="hamburger__line"></span>
+          </button>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <div class="mobile-menu" id="mobileMenu" aria-hidden="true">
+    <nav class="mobile-menu__nav">
+      <a href="/services/" class="mobile-menu__link" data-i18n="nav.services">Services</a>
+      <a href="/rentals/" class="mobile-menu__link" data-i18n="nav.rentals">Rentals</a>
+      <a href="/about/" class="mobile-menu__link" data-i18n="nav.about">About</a>
+      <a href="/contact/" class="mobile-menu__link" data-i18n="nav.contact">Get in Touch</a>
+    </nav>
+    <div class="mobile-menu__footer">
+      <div class="lang-switch">
+        <button class="lang-switch__btn active" data-lang="en">EN</button>
+        <span class="lang-switch__sep">/</span>
+        <button class="lang-switch__btn" data-lang="gr">GR</button>
+      </div>
+      <div class="mobile-menu__social">
+        <a href="#">IG</a><a href="#">LN</a>
+      </div>
+    </div>
+  </div>
+
+  <main>
+
+    <!-- ================================================
+         HERO
+    ================================================ -->
+    <section class="pg-hero pg-hero--contact">
+      <div class="pg-hero__bg-grid" aria-hidden="true"></div>
+      <div class="container">
+        <div class="cnt-hero__inner cnt-hero__inner--solo">
+          <div class="cnt-hero__content">
+            <p class="pg-hero__breadcrumb">
+              <a href="/" data-i18n="breadcrumb.home">Home</a>
+              <span aria-hidden="true">→</span>
+              <span data-i18n="breadcrumb.contact">Get in Touch</span>
+            </p>
+            <h1 class="pg-hero__title" data-i18n="contactPage.title">Get in Touch</h1>
+            <p class="pg-hero__subtitle" data-i18n="contactPage.subtitle">Always on.<br />Always present.</p>
+            <p class="pg-hero__body" data-i18n="contactPage.body">Production doesn't stop. Neither do we.<br />24/7 support, wherever and whenever it's needed.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ================================================
+         MAIN CONTACT SECTION
+    ================================================ -->
+    <section class="cnt-main" aria-labelledby="contact-heading">
+      <div class="container">
+        <div class="cnt-main__grid">
+
+          <!-- LEFT FORM -->
+          <div class="cnt-form-wrap">
+            <div class="cnt-form-header">
+              <p class="section-label" data-i18n="contactPage.formLabel">Send a Message</p>
+              <h2 class="cnt-form-title" id="contact-heading" data-i18n="contactPage.formTitle">Tell us about<br />your project.</h2>
+              <p class="cnt-form-sub" data-i18n="contactPage.formSub">We'll get back to you shortly.</p>
+            </div>
+
+            <!--
+              BACKEND INTEGRATION NOTES:
+              Webflow: add data-wf-form, name attributes + Webflow form settings
+              Custom backend: POST to your endpoint, handle in server-side
+              Email service: Formspree / Netlify Forms replace action="#"
+              Add honeypot field for spam protection when wiring up
+            -->
+            <form class="cnt-form" id="contactForm" action="#" method="POST" novalidate>
+
+              <div class="cnt-form__row cnt-form__row--half">
+                <div class="cnt-field">
+                  <label class="cnt-field__label" for="name"><span data-i18n="contactPage.label.name">Name</span> <span aria-hidden="true">*</span></label>
+                  <input
+                    class="cnt-field__input"
+                    type="text"
+                    id="name"
+                    name="name"
+                    autocomplete="name"
+                    data-i18n-placeholder="contactPage.placeholder.name"
+                    placeholder="Your name"
+                    required
+                    aria-required="true"
+                  />
+                </div>
+                <div class="cnt-field">
+                  <label class="cnt-field__label" for="email"><span data-i18n="contactPage.label.email">Email</span> <span aria-hidden="true">*</span></label>
+                  <input
+                    class="cnt-field__input"
+                    type="email"
+                    id="email"
+                    name="email"
+                    autocomplete="email"
+                    data-i18n-placeholder="contactPage.placeholder.email"
+                    placeholder="your@email.com"
+                    required
+                    aria-required="true"
+                  />
+                </div>
+              </div>
+
+              <div class="cnt-field">
+                <label class="cnt-field__label" for="company">
+                  <span data-i18n="contactPage.label.company">Production / Company</span>
+                  <span class="cnt-field__optional" data-i18n="contactPage.label.optional">(optional)</span>
+                </label>
+                <input
+                  class="cnt-field__input"
+                  type="text"
+                  id="company"
+                  name="company"
+                  autocomplete="organization"
+                  data-i18n-placeholder="contactPage.placeholder.company"
+                  placeholder="Production company or project name"
+                />
+              </div>
+
+              <div class="cnt-field cnt-field--grow">
+                <label class="cnt-field__label" for="message"><span data-i18n="contactPage.label.message">Message</span> <span aria-hidden="true">*</span></label>
+                <textarea
+                  class="cnt-field__input cnt-field__textarea"
+                  id="message"
+                  name="message"
+                  data-i18n-placeholder="contactPage.placeholder.message"
+                  placeholder="Tell us about your shoot dates, location, what you need."
+                  rows="6"
+                  required
+                  aria-required="true"
+                ></textarea>
+              </div>
+
+              <div class="cnt-form__footer">
+                <button class="cnt-submit btn btn--primary" type="submit">
+                  <span data-i18n="contactPage.submit">Send Message</span>
+                  <span class="cnt-submit__arrow" aria-hidden="true">→</span>
+                </button>
+                <p class="cnt-form__note" data-i18n="contactPage.note">We typically respond within a few hours.</p>
+              </div>
+
+              <!-- Success state (hidden by default, shown via JS) -->
+              <div class="cnt-form__success" id="formSuccess" aria-live="polite" hidden>
+                <span class="cnt-form__success-icon" aria-hidden="true">✓</span>
+                <p data-i18n="contactPage.success">Message received. We'll be in touch shortly.</p>
+              </div>
+
+            </form>
+          </div>
+
+          <!-- RIGHT INFO -->
+          <aside class="cnt-info" aria-label="Contact information">
+
+            <div class="cnt-info__block">
+              <p class="cnt-info__label" data-i18n="contactPage.info.direct">Direct Contact</p>
+              <a href="mailto:info@thelocbusters.com" class="cnt-info__email">
+                info@thelocbusters.com
+              </a>
+              <a href="tel:+302110085587" class="cnt-info__phone">
+                +30 211 008 5587
+              </a>
+            </div>
+
+            <div class="cnt-info__block">
+              <p class="cnt-info__label" data-i18n="contactPage.info.location">Location</p>
+              <p class="cnt-info__value" data-i18n="contactPage.info.locationVal">Athens, Greece</p>
+              <p class="cnt-info__text" data-i18n="contactPage.info.locationText">Operating nationwide across all Greek locations.</p>
+            </div>
+
+            <div class="cnt-info__block">
+              <p class="cnt-info__label" data-i18n="contactPage.info.follow">Follow</p>
+              <div class="cnt-social">
+                <a href="#" class="cnt-social__link" target="_blank" rel="noopener noreferrer">
+                  <span>Instagram</span>
+                  <span aria-hidden="true">↗</span>
+                </a>
+                <a href="#" class="cnt-social__link" target="_blank" rel="noopener noreferrer">
+                  <span>LinkedIn</span>
+                  <span aria-hidden="true">↗</span>
+                </a>
+              </div>
+            </div>
+
+          </aside>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ================================================
+         TRUST REINFORCER
+    ================================================ -->
+    <section class="cnt-trust" aria-labelledby="trust-heading">
+      <div class="container">
+        <p class="cnt-trust__line section-label" id="trust-heading" data-i18n="contactPage.trust">Production &amp; Partners</p>
+      </div>
+      <div class="clients__marquee-wrap" data-i18n-aria-label="clients.marqueeAria" aria-label="Productions we have supported">
+        <div class="clients__marquee" aria-hidden="true">
+          <div class="clients__track">
+            <div class="clients__logo-wrap"><img src="/assets/images/clients/clients-blonde.png" alt="Blonde" class="clients__logo" /></div>
+            <div class="clients__logo-wrap"><img src="/assets/images/clients/clients-heretic.png" alt="Heretic" class="clients__logo" /></div>
+            <div class="clients__logo-wrap"><img src="/assets/images/clients/clients-faliro_house.jpg" alt="Faliro House Productions" class="clients__logo" /></div>
+            <div class="clients__logo-wrap"><img src="/assets/images/clients/clients-central.png" alt="Central Athens" class="clients__logo" /></div>
+            <div class="clients__logo-wrap"><img src="/assets/images/clients/clients-foss.png" alt="Foss Productions" class="clients__logo" /></div>
+            <div class="clients__logo-wrap"><img src="/assets/images/clients/clients-avaton.jpg" alt="Avaton Films" class="clients__logo" /></div>
+            <div class="clients__logo-wrap"><img src="/assets/images/clients/clients-boo.png" alt="Boo Productions" class="clients__logo" /></div>
+            <div class="clients__logo-wrap"><img src="/assets/images/clients/clients-blonde.png" alt="Blonde" class="clients__logo" /></div>
+            <div class="clients__logo-wrap"><img src="/assets/images/clients/clients-heretic.png" alt="Heretic" class="clients__logo" /></div>
+            <div class="clients__logo-wrap"><img src="/assets/images/clients/clients-faliro_house.jpg" alt="Faliro House Productions" class="clients__logo" /></div>
+            <div class="clients__logo-wrap"><img src="/assets/images/clients/clients-central.png" alt="Central Athens" class="clients__logo" /></div>
+            <div class="clients__logo-wrap"><img src="/assets/images/clients/clients-foss.png" alt="Foss Productions" class="clients__logo" /></div>
+            <div class="clients__logo-wrap"><img src="/assets/images/clients/clients-avaton.jpg" alt="Avaton Films" class="clients__logo" /></div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- ================================================
+       FOOTER
+  ================================================ -->
+  <footer class="footer" aria-label="Site footer">
+    <div class="container">
+      <div class="footer__top">
+        <div class="footer__brand">
+          <a href="/" class="footer__logo">
+            <img src="/assets/images/logo.svg" alt="The Locbusters" class="footer__logo-img" />
+          </a>
+          <p class="footer__tagline" data-i18n="footer.tagline">Production Support Services<br />From prep to strike.</p>
+          <div class="footer__social">
+            <a href="#" class="footer__social-link" target="_blank" rel="noopener noreferrer">Instagram</a>
+            <a href="#" class="footer__social-link" target="_blank" rel="noopener noreferrer">LinkedIn</a>
+          </div>
+        </div>
+        <div class="footer__nav-group">
+          <p class="footer__nav-title" data-i18n="footer.servicesTitle">Services</p>
+          <nav>
+            <a href="/services/#unit-facilities" class="footer__nav-link" data-i18n="footer.s1">Unit &amp; Facilities Management</a>
+            <a href="/services/#location-logistics" class="footer__nav-link" data-i18n="footer.s2">Location &amp; Production Logistics</a>
+            <a href="/services/#set-location" class="footer__nav-link" data-i18n="footer.s3">Set &amp; Location Management</a>
+            <a href="/services/#traffic-control" class="footer__nav-link" data-i18n="footer.s4">Traffic Control</a>
+            <a href="/services/#green-filming" class="footer__nav-link" data-i18n="footer.s5">Green Filming &amp; Sustainability</a>
+            <a href="/services/#safety-risk" class="footer__nav-link" data-i18n="footer.s6">Safety &amp; Risk Intelligence</a>
+            <a href="/services/#event-planning" class="footer__nav-link" data-i18n="footer.s7">Event Planning</a>
+            <a href="/services/#custom-solutions" class="footer__nav-link" data-i18n="footer.s8">Custom Solutions</a>
+          </nav>
+        </div>
+        <div class="footer__nav-group">
+          <p class="footer__nav-title" data-i18n="footer.rentalsTitle">Rentals</p>
+          <nav>
+            <a href="/rentals/#basecamp" class="footer__nav-link" data-i18n="footer.r1">Basecamp</a>
+            <a href="/rentals/#on-set-ops" class="footer__nav-link" data-i18n="footer.r2">On-Set Operations</a>
+            <a href="/rentals/#technical-power" class="footer__nav-link" data-i18n="footer.r3">Technical &amp; Power</a>
+            <a href="/rentals/#vehicles" class="footer__nav-link" data-i18n="footer.r4">Production Vehicles</a>
+          </nav>
+        </div>
+        <div class="footer__nav-group">
+          <p class="footer__nav-title" data-i18n="footer.companyTitle">Company</p>
+          <nav>
+            <a href="/about/" class="footer__nav-link" data-i18n="footer.about">About Us</a>
+            <a href="/about/#team" class="footer__nav-link" data-i18n="footer.team">The Team</a>
+            <a href="/contact/" class="footer__nav-link" data-i18n="footer.contact">Get in Touch</a>
+          </nav>
+          <div class="footer__contact">
+            <a href="mailto:info@thelocbusters.com" class="footer__contact-link">info@thelocbusters.com</a>
+            <p class="footer__contact-text" data-i18n="footer.location">Athens, Greece</p>
+          </div>
+        </div>
+      </div>
+      <div class="footer__bottom">
+        <p class="footer__copy" data-i18n="footer.copy">&copy; 2026 The Locbusters. All rights reserved.</p>
+        <div class="footer__bottom-right">
+          <div class="lang-switch">
+            <button class="lang-switch__btn active" data-lang="en">EN</button>
+            <span class="lang-switch__sep">/</span>
+            <button class="lang-switch__btn" data-lang="gr">GR</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <script src="/assets/js/main.js?v=20260714a"></script>
+  <script src="/assets/js/contact.js?v=20260708b"></script>
+
+</body>
+</html>

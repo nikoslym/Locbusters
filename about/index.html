@@ -1,0 +1,384 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <script src="/assets/js/i18n-boot.js?v=20260714a"></script>
+  <link rel="icon" type="image/png" href="/assets/images/favicon.png" />
+  <title>About The Locbusters | Production Support Team</title>
+  <meta name="description" content="Meet The Locbusters — a Greece-based production support team delivering unit, location, and equipment solutions." />
+
+  <!-- Open Graph -->
+  <meta property="og:title" content="About The Locbusters" />
+  <meta property="og:description" content="A boutique production support company built from real on-set experience in international and domestic productions." />
+  <meta property="og:type" content="website" />
+  <meta property="og:site_name" content="The Locbusters" />
+  <meta property="og:url" content="https://thelocbusters.com/about/" />
+  <meta property="og:image" content="https://thelocbusters.com/assets/images/OG_Locbusters.png?v=20260714" />
+  <meta property="og:image:alt" content="The Locbusters — Production Support Services in Greece" />
+
+  <!-- Twitter / X -->
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="About The Locbusters" />
+  <meta name="twitter:description" content="A boutique production support company built from real on-set experience in international and domestic productions." />
+  <meta name="twitter:image" content="https://thelocbusters.com/assets/images/OG_Locbusters.png?v=20260714" />
+
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet" />
+
+  <link rel="stylesheet" href="/assets/css/styles.css" />
+  <link rel="stylesheet" href="/assets/css/services.css" />
+  <link rel="stylesheet" href="/assets/css/about.css" />
+  <link rel="stylesheet" href="/assets/css/boutique.css" />
+</head>
+<body>
+
+  <!-- ================================================
+       SOCIAL FLOATING WIDGET
+  ================================================ -->
+  <div class="social-widget" aria-label="Social Media Links">
+    <a href="#" class="social-widget__link" aria-label="Instagram" target="_blank" rel="noopener noreferrer">
+      <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+        <rect x="2" y="2" width="20" height="20" rx="5" ry="5"/>
+        <path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"/>
+        <line x1="17.5" y1="6.5" x2="17.51" y2="6.5"/>
+      </svg>
+    </a>
+    <a href="#" class="social-widget__link" aria-label="LinkedIn" target="_blank" rel="noopener noreferrer">
+      <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+        <path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"/>
+        <rect x="2" y="9" width="4" height="12"/>
+        <circle cx="4" cy="4" r="2"/>
+      </svg>
+    </a>
+  </div>
+
+  <!-- ================================================
+       HEADER
+  ================================================ -->
+  <header class="header" id="header">
+    <div class="container">
+      <div class="header__inner">
+        <a href="/" class="header__logo" aria-label="The Locbusters Home">
+          <img src="/assets/images/logo.svg" alt="The Locbusters" class="header__logo-img" />
+        </a>
+        <nav class="header__nav" aria-label="Main navigation">
+          <a href="/services/" class="header__nav-link" data-i18n="nav.services">Services</a>
+          <a href="/rentals/" class="header__nav-link" data-i18n="nav.rentals">Rentals</a>
+          <a href="/about/" class="header__nav-link header__nav-link--active" data-i18n="nav.about">About</a>
+          <a href="/contact/" class="header__nav-link header__nav-link--cta" data-i18n="nav.contact">Get in Touch</a>
+        </nav>
+        <div class="header__actions">
+          <div class="lang-switch">
+            <button class="lang-switch__btn active" data-lang="en">EN</button>
+            <span class="lang-switch__sep">/</span>
+            <button class="lang-switch__btn" data-lang="gr">GR</button>
+          </div>
+          <button class="hamburger" id="hamburger" aria-label="Toggle menu" aria-expanded="false">
+            <span class="hamburger__line"></span>
+            <span class="hamburger__line"></span>
+          </button>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <div class="mobile-menu" id="mobileMenu" aria-hidden="true">
+    <nav class="mobile-menu__nav">
+      <a href="/services/" class="mobile-menu__link" data-i18n="nav.services">Services</a>
+      <a href="/rentals/" class="mobile-menu__link" data-i18n="nav.rentals">Rentals</a>
+      <a href="/about/" class="mobile-menu__link" data-i18n="nav.about">About</a>
+      <a href="/contact/" class="mobile-menu__link" data-i18n="nav.contact">Get in Touch</a>
+    </nav>
+    <div class="mobile-menu__footer">
+      <div class="lang-switch">
+        <button class="lang-switch__btn active" data-lang="en">EN</button>
+        <span class="lang-switch__sep">/</span>
+        <button class="lang-switch__btn" data-lang="gr">GR</button>
+      </div>
+      <div class="mobile-menu__social">
+        <a href="#">IG</a><a href="#">LN</a>
+      </div>
+    </div>
+  </div>
+
+  <main>
+
+    <!-- ================================================
+         01 HERO
+    ================================================ -->
+    <section class="pg-hero pg-hero--about">
+      <div class="pg-hero__bg-grid" aria-hidden="true"></div>
+      <div class="container">
+        <div class="abt-hero__inner abt-hero__inner--solo">
+          <div class="abt-hero__content">
+            <h1 class="pg-hero__title" data-i18n="aboutPage.title">About Us</h1>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ================================================
+         03 ABOUT + STORY (MERGED)
+    ================================================ -->
+    <section class="abt-text section section--light" aria-labelledby="abt-heading">
+      <div class="container">
+        <div class="abt-text__inner">
+          <div class="abt-text__label reveal">
+            <h2 class="abt-text__heading" id="abt-heading" data-i18n="aboutPage.abtHeading">About Us</h2>
+          </div>
+          <div class="abt-text__body reveal">
+            <p data-i18n="aboutPage.abt.p1">We are a boutique film production support team based in Athens, Greece.</p>
+            <p data-i18n="aboutPage.abt.p2">We were built from within the industry, as professionals who have spent years working on international &amp; domestic sets in real production environments.</p>
+            <p data-i18n="aboutPage.abt.p3">Our focus is on integrating services. Unit support, equipment rental , location &amp; unit logistics - operating as one coordinated system.</p>
+            <p data-i18n="aboutPage.abt.p4">We work where production happens.</p>
+            <p data-i18n="aboutPage.abt.p5">Our role is to ensure that your production is supported with clarity, precision, and reliability, so that every decision on the ground translates into a smoother, more controlled production process.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="abt-story section" aria-labelledby="story-heading">
+      <div class="container">
+
+        <div class="abt-story__header reveal">
+          <h2 class="section-title" id="story-heading" data-i18n="aboutPage.storyLabel">Our Story</h2>
+        </div>
+
+      </div>
+
+      <div class="abt-story__media reveal">
+        <img src="/assets/images/story-aerial.jpg" alt="Aerial view of a production set in Greece" class="abt-story__media-img" loading="lazy" />
+      </div>
+
+      <div class="container">
+
+        <div class="abt-story__prose reveal">
+          <p class="abt-story__para" data-i18n="aboutPage.story.p1">Founded in 2024, The Locbusters was created from within the production world. Built on years of shared work across international and domestic productions, the founders have collaborated repeatedly - both as a full team and in varying configurations - on projects ranging from independent feature &amp; short films to large-scale studio productions.</p>
+          <p class="abt-story__para" data-i18n="aboutPage.story.p1b">This long-standing working relationship existed well before the company itself and was shaped through real production environments where time matters and pressure, complexity and precision define every decision.</p>
+          <p class="abt-story__para" data-i18n="aboutPage.story.p2">As Greece has become a major destination for global filming, and also domestic production has become more demanding, the need for a trusted operational layer has become essential. We built that layer.</p>
+          <p class="abt-story__para" data-i18n="aboutPage.story.p2b">What unified us was a consistent way of working: trust, respect, precision and a shared understanding of what production support must deliver on the ground.</p>
+          <p class="abt-story__para" data-i18n="aboutPage.story.p3">Each also operates independently within the industry, bringing specialized expertise across unit, production and location departments. The company is a natural extension of this existing network, combining complementary experience into a single coordinated structure.</p>
+          <p class="abt-story__para" data-i18n="aboutPage.story.p4">Our approach is simple: production works best when support is invisible, precise, and reliable.</p>
+          <p class="abt-story__para" data-i18n="aboutPage.story.p5">It is not a formation of convenience, but of practice - built from real production experience and shaped by the way we have always worked: focused on execution.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- ================================================
+         05 TEAM
+    ================================================ -->
+    <section class="abt-team section section--light" id="team" aria-labelledby="team-heading">
+      <div class="container">
+
+        <div class="section-header abt-team__header reveal">
+          <p class="section-label" data-i18n="aboutPage.teamLabel">The Team</p>
+          <div>
+            <h2 class="section-title section-title--dark" id="team-heading" data-i18n="aboutPage.teamHeading">Real on-set expertise.<br />Integrated execution.<br />Proven reliability.</h2>
+          </div>
+        </div>
+
+        <div class="team-grid">
+
+          <!-- Giorgos Georganas -->
+          <article class="team-member reveal" aria-label="Giorgos Georganas">
+            <div class="team-member__photo" aria-hidden="true">
+              <img src="/assets/images/Portraits/George.jpeg" alt="Giorgos Georganas" class="team-member__img" />
+              <div class="team-member__photo-grid"></div>
+            </div>
+            <div class="team-member__body">
+              <div class="team-member__header">
+                <h3 class="team-member__name" data-i18n="aboutPage.giorgos.name">Giorgos Georganas</h3>
+              </div>
+              <div class="team-member__bio">
+                <p data-i18n="aboutPage.giorgos.bio1">Giorgos is a highly experienced Unit Manager with a long track record in major international studio and service productions in Greece.</p>
+                <p data-i18n="aboutPage.giorgos.bio2">He has worked closely with leading global studios and production companies, managing complex on-location operations and large-scale shoots from prep through wrap. His expertise lies in high-level unit coordination, logistical execution, and on-set problem solving within fast-paced productions.</p>
+                <p data-i18n="aboutPage.giorgos.bio3">With a deep understanding of operational flow and production demands, he ensures that equipment, crew, and locations function as a single, efficient system. Known for reliability, efficiency, and precision, he is a trusted professional that delivers demanding work to the highest standards.</p>
+                <p data-i18n="aboutPage.giorgos.bio4">He is also a founding member of the Greek Society of Location and Unit Department (GSLUD).</p>
+              </div>
+            </div>
+          </article>
+
+          <!-- Maria Repousi -->
+          <article class="team-member reveal" aria-label="Maria Repousi">
+            <div class="team-member__photo" aria-hidden="true">
+              <img src="/assets/images/Portraits/Maria.jpeg" alt="Maria Repousi" class="team-member__img" />
+              <div class="team-member__photo-grid"></div>
+            </div>
+            <div class="team-member__body">
+              <div class="team-member__header">
+                <h3 class="team-member__name" data-i18n="aboutPage.maria.name">Maria Repousi</h3>
+              </div>
+              <div class="team-member__bio">
+                <p data-i18n="aboutPage.maria.bio1">Maria is a Production professional with more than 10 years of experience in complex domestic and international film productions. She has worked with leading global studios as well as international and domestic production companies, managing Productions from development through delivery.</p>
+                <p data-i18n="aboutPage.maria.bio2">Her expertise spans budgeting, scheduling, and production operations at scale, with a strong ability to anticipate risks, oversee production processes and coordinate teams and staff across demanding environments.</p>
+                <p data-i18n="aboutPage.maria.bio3">In recent years, she has participated in specialized masterclasses and training in sustainability for the audiovisual industry, focusing on developing and implementing environmental strategies to reduce production carbon footprint, waste, and resource consumption.</p>
+                <p data-i18n="aboutPage.maria.bio4"></p>
+                <p data-i18n="aboutPage.maria.bio5">She is also a founding member and Treasurer of the Board of the Greek Society of Location and Unit Department (GSLUD).</p>
+              </div>
+            </div>
+          </article>
+
+          <!-- Giannis Sotiropoulos -->
+          <article class="team-member reveal" aria-label="Giannis Sotiropoulos">
+            <div class="team-member__photo" aria-hidden="true">
+              <img src="/assets/images/Portraits/Giannis.jpeg" alt="Giannis Sotiropoulos" class="team-member__img" />
+              <div class="team-member__photo-grid"></div>
+            </div>
+            <div class="team-member__body">
+              <div class="team-member__header">
+                <h3 class="team-member__name" data-i18n="aboutPage.giannis.name">Giannis Sotiropoulos</h3>
+              </div>
+              <div class="team-member__bio">
+                <p data-i18n="aboutPage.giannis.bio1">Giannis Sotiropoulos is a Location Manager and Scouter working across major international film and television productions in Greece. Since 2018, he has supported high-profile studio productions for global platforms including Netflix, Amazon, and Disney.</p>
+                <p data-i18n="aboutPage.giannis.bio2">His expertise ensures precise location execution, smooth logistics, and full alignment with international production standards.</p>
+                <p data-i18n="aboutPage.giannis.bio3">He is an Associate Member of the Location Managers Guild International (LMGI) and an active member of the LMGI UK, Europe and Africa Committee. He is also a founding member and Vice President of the Greek Society of Location and Unit Department (GSLUD).</p>
+              </div>
+            </div>
+          </article>
+
+          <!-- Michalis Vrachliotis -->
+          <article class="team-member reveal" aria-label="Michalis Vrachliotis">
+            <div class="team-member__photo" aria-hidden="true">
+              <img src="/assets/images/Portraits/Michalis.jpeg" alt="Michalis Vrachliotis" class="team-member__img" />
+              <div class="team-member__photo-grid"></div>
+            </div>
+            <div class="team-member__body">
+              <div class="team-member__header">
+                <h3 class="team-member__name" data-i18n="aboutPage.michalis.name">Michalis Vrachliotis</h3>
+              </div>
+              <div class="team-member__bio">
+                <p data-i18n="aboutPage.michalis.bio1">Michalis is a Production professional with over 10 years of experience across Production and Location Departments in international and domestic audiovisual productions. He has contributed to feature films, television series, independent productions, and international photo shoots.</p>
+                <p data-i18n="aboutPage.michalis.bio2">His dual experience across production and location workflows, allows him to operate fluidly across departments, supporting complex shoots in dynamic environments.</p>
+                <p data-i18n="aboutPage.michalis.bio3">He brings adaptability, operational stability, and consistent on-set value to every production he supports.</p>
+                <p data-i18n="aboutPage.michalis.bio4">He is also a founding member of the Greek Society of Location and Unit Department (GSLUD).</p>
+              </div>
+            </div>
+          </article>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ================================================
+         CLIENT STRIP
+    ================================================ -->
+    <section class="clients" aria-labelledby="clients-heading">
+      <div class="container">
+        <p class="clients__label section-label" id="clients-heading" data-i18n="clients.label">Productions &amp; Partners</p>
+      </div>
+      <div class="clients__marquee-wrap" data-i18n-aria-label="clients.marqueeAria" aria-label="Productions we have supported">
+        <div class="clients__marquee" aria-hidden="true">
+          <div class="clients__track">
+            <div class="clients__logo-wrap"><img src="/assets/images/clients/clients-blonde.png" alt="Blonde" class="clients__logo" /></div>
+            <div class="clients__logo-wrap"><img src="/assets/images/clients/clients-heretic.png" alt="Heretic" class="clients__logo" /></div>
+            <div class="clients__logo-wrap"><img src="/assets/images/clients/clients-faliro_house.jpg" alt="Faliro House Productions" class="clients__logo" /></div>
+            <div class="clients__logo-wrap"><img src="/assets/images/clients/clients-central.png" alt="Central Athens" class="clients__logo" /></div>
+            <div class="clients__logo-wrap"><img src="/assets/images/clients/clients-foss.png" alt="Foss Productions" class="clients__logo" /></div>
+            <div class="clients__logo-wrap"><img src="/assets/images/clients/clients-avaton.jpg" alt="Avaton Films" class="clients__logo" /></div>
+            <div class="clients__logo-wrap"><img src="/assets/images/clients/clients-boo.png" alt="Boo Productions" class="clients__logo" /></div>
+            <!-- Duplicated for seamless loop -->
+            <div class="clients__logo-wrap"><img src="/assets/images/clients/clients-blonde.png" alt="Blonde" class="clients__logo" /></div>
+            <div class="clients__logo-wrap"><img src="/assets/images/clients/clients-heretic.png" alt="Heretic" class="clients__logo" /></div>
+            <div class="clients__logo-wrap"><img src="/assets/images/clients/clients-faliro_house.jpg" alt="Faliro House Productions" class="clients__logo" /></div>
+            <div class="clients__logo-wrap"><img src="/assets/images/clients/clients-central.png" alt="Central Athens" class="clients__logo" /></div>
+            <div class="clients__logo-wrap"><img src="/assets/images/clients/clients-foss.png" alt="Foss Productions" class="clients__logo" /></div>
+            <div class="clients__logo-wrap"><img src="/assets/images/clients/clients-avaton.jpg" alt="Avaton Films" class="clients__logo" /></div>
+            <div class="clients__logo-wrap"><img src="/assets/images/clients/clients-boo.png" alt="Boo Productions" class="clients__logo" /></div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ================================================
+         CTA
+    ================================================ -->
+    <section class="cta-section" id="contact" aria-labelledby="cta-heading">
+      <div class="container">
+        <div class="cta-section__inner reveal">
+          <p class="section-label" data-i18n="cta.label">Get in Touch</p>
+          <h2 class="cta-section__title" id="cta-heading" data-i18n="cta.title">
+            Precision. Experience. Execution.
+          </h2>
+          <p class="cta-section__sub" data-i18n="cta.sub">
+            For international &amp; domestic productions seeking reliable unit services, equipment support and on-set operational intelligence, we provide the structure that keeps production moving.
+          </p>
+          <p class="cta-section__body" data-i18n="cta.body">
+            From basecamp to execution, we ensure every production is fully supported, equipped, and under control.
+          </p>
+          <a href="/contact/" class="btn btn--primary" data-i18n="cta.btn">Get in Touch</a>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- ================================================
+       FOOTER
+  ================================================ -->
+  <footer class="footer" aria-label="Site footer">
+    <div class="container">
+      <div class="footer__top">
+        <div class="footer__brand">
+          <a href="/" class="footer__logo">
+            <img src="/assets/images/logo.svg" alt="The Locbusters" class="footer__logo-img" />
+          </a>
+          <p class="footer__tagline" data-i18n="footer.tagline">Production Support Services<br />From prep to strike.</p>
+          <div class="footer__social">
+            <a href="#" class="footer__social-link" target="_blank" rel="noopener noreferrer">Instagram</a>
+            <a href="#" class="footer__social-link" target="_blank" rel="noopener noreferrer">LinkedIn</a>
+          </div>
+        </div>
+        <div class="footer__nav-group">
+          <p class="footer__nav-title" data-i18n="footer.servicesTitle">Services</p>
+          <nav>
+            <a href="/services/#unit-facilities" class="footer__nav-link" data-i18n="footer.s1">Unit &amp; Facilities Management</a>
+            <a href="/services/#location-logistics" class="footer__nav-link" data-i18n="footer.s2">Location &amp; Production Logistics</a>
+            <a href="/services/#set-location" class="footer__nav-link" data-i18n="footer.s3">Set &amp; Location Management</a>
+            <a href="/services/#traffic-control" class="footer__nav-link" data-i18n="footer.s4">Traffic Control</a>
+            <a href="/services/#green-filming" class="footer__nav-link" data-i18n="footer.s5">Green Filming &amp; Sustainability</a>
+            <a href="/services/#safety-risk" class="footer__nav-link" data-i18n="footer.s6">Safety &amp; Risk Intelligence</a>
+            <a href="/services/#event-planning" class="footer__nav-link" data-i18n="footer.s7">Event Planning</a>
+            <a href="/services/#custom-solutions" class="footer__nav-link" data-i18n="footer.s8">Custom Solutions</a>
+          </nav>
+        </div>
+        <div class="footer__nav-group">
+          <p class="footer__nav-title" data-i18n="footer.rentalsTitle">Rentals</p>
+          <nav>
+            <a href="/rentals/#basecamp" class="footer__nav-link" data-i18n="footer.r1">Basecamp</a>
+            <a href="/rentals/#on-set-ops" class="footer__nav-link" data-i18n="footer.r2">On-Set Operations</a>
+            <a href="/rentals/#technical-power" class="footer__nav-link" data-i18n="footer.r3">Technical &amp; Power</a>
+            <a href="/rentals/#vehicles" class="footer__nav-link" data-i18n="footer.r4">Production Vehicles</a>
+          </nav>
+        </div>
+        <div class="footer__nav-group">
+          <p class="footer__nav-title" data-i18n="footer.companyTitle">Company</p>
+          <nav>
+            <a href="/about/" class="footer__nav-link" data-i18n="footer.about">About Us</a>
+            <a href="/about/#team" class="footer__nav-link" data-i18n="footer.team">The Team</a>
+            <a href="/contact/" class="footer__nav-link" data-i18n="footer.contact">Get in Touch</a>
+          </nav>
+          <div class="footer__contact">
+            <a href="mailto:info@thelocbusters.com" class="footer__contact-link">info@thelocbusters.com</a>
+            <p class="footer__contact-text" data-i18n="footer.location">Athens, Greece</p>
+          </div>
+        </div>
+      </div>
+      <div class="footer__bottom">
+        <p class="footer__copy" data-i18n="footer.copy">&copy; 2026 The Locbusters. All rights reserved.</p>
+        <div class="footer__bottom-right">
+          <div class="lang-switch">
+            <button class="lang-switch__btn active" data-lang="en">EN</button>
+            <span class="lang-switch__sep">/</span>
+            <button class="lang-switch__btn" data-lang="gr">GR</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <script src="/assets/js/main.js?v=20260714a"></script>
+
+</body>
+</html>

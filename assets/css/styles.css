@@ -1387,12 +1387,32 @@ button {
   }
 
   /* Header */
+  .header__inner {
+    gap: var(--sp-1);
+  }
+
+  .header__logo {
+    flex: 1 1 auto;
+    min-width: 0;
+  }
+
+  .header__logo-img {
+    width: min(100%, 280px);
+    height: auto;
+    max-height: 46px;
+  }
+
+  .header__actions {
+    flex: 0 0 auto;
+  }
+
   .header__nav {
     display: none;
   }
 
   .hamburger {
     display: flex;
+    margin-right: 0;
   }
 
   .header__actions .lang-switch {

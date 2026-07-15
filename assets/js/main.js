@@ -181,7 +181,7 @@ const TRANSLATIONS = {
 
     // Rentals page
     'rentalsPage.title':    'Production\nEquipment\nRental',
-    'rentalsPage.subtitle': 'Film equipment rental and production equipment rental in Athens — on-set equipment solutions supporting every stage of production.',
+    'rentalsPage.subtitle': 'Essential on-set equipment, supporting every stage of production.',
     'rentalsPage.indexLabel': 'Equipment Categories',
     'rentalsPage.r1.title': 'Basecamp',
     'rentalsPage.r1.desc':  'Infrastructure for crew support, comfort, and preparation.\nShelter, seating, dining, and make-up/wardrobe stations fully equipped for every production needs.',

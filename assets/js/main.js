@@ -108,7 +108,8 @@ const TRANSLATIONS = {
     'footer.team':     'The Team',
     'footer.contact':  'Get in Touch',
     'footer.location': 'Athens, Greece',
-    'footer.copy':     '© 2026 The Locbusters. All rights reserved.',
+    'footer.copy':      '© 2026 The Locbusters. All rights reserved.',
+    'footer.createdBy': 'Created by',
 
     // About page
     'aboutPage.title':    'About Us',
@@ -423,7 +424,8 @@ const TRANSLATIONS = {
     'footer.team':     'Η Ομάδα',
     'footer.contact':  'Επικοινωνία',
     'footer.location': 'Αθήνα, Ελλάδα',
-    'footer.copy':     '© 2026 The Locbusters. Με επιφύλαξη παντός δικαιώματος.',
+    'footer.copy':      '© 2026 The Locbusters. Με επιφύλαξη παντός δικαιώματος.',
+    'footer.createdBy': 'Δημιουργήθηκε από',
 
     // About page
     'aboutPage.title':    'Σχετικά με εμάς',

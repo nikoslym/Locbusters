@@ -37,7 +37,7 @@
 
   <link rel="stylesheet" href="/assets/css/styles.css?v=20260715a" />
   <link rel="stylesheet" href="/assets/css/services.css" />
-  <link rel="stylesheet" href="/assets/css/contact.css" />
+  <link rel="stylesheet" href="/assets/css/contact.css?v=20260821a" />
   <link rel="stylesheet" href="/assets/css/boutique.css" />
 </head>
 <body>
@@ -149,14 +149,9 @@
               <p class="cnt-form-sub" data-i18n="contactPage.formSub">We'll get back to you shortly.</p>
             </div>
 
-            <!--
-              BACKEND INTEGRATION NOTES:
-              Webflow: add data-wf-form, name attributes + Webflow form settings
-              Custom backend: POST to your endpoint, handle in server-side
-              Email service: Formspree / Netlify Forms replace action="#"
-              Add honeypot field for spam protection when wiring up
-            -->
-            <form class="cnt-form" id="contactForm" action="#" method="POST" novalidate>
+            <form class="cnt-form" id="contactForm" action="https://formspree.io/f/mgawdraw" method="POST" novalidate>
+              <input type="hidden" name="_subject" value="New website enquiry — The Locbusters" />
+              <input class="cnt-form__honeypot" type="text" name="_gotcha" tabindex="-1" autocomplete="off" aria-hidden="true" />
 
               <div class="cnt-form__row cnt-form__row--half">
                 <div class="cnt-field">
@@ -233,6 +228,10 @@
                 <p data-i18n="contactPage.success">Message received. We'll be in touch shortly.</p>
               </div>
 
+              <div class="cnt-form__error" id="formError" role="alert" hidden>
+                <p data-i18n="contactPage.error.submit">We couldn't send your message. Please try again or email us directly.</p>
+              </div>
+
             </form>
           </div>
 
@@ -241,11 +240,11 @@
 
             <div class="cnt-info__block">
               <p class="cnt-info__label" data-i18n="contactPage.info.direct">Direct Contact</p>
-              <a href="mailto:info@thelocbusters.com" class="cnt-info__email">
-                info@thelocbusters.com
+              <a href="mailto:thelocbusters@gmail.com" class="cnt-info__email">
+                thelocbusters@gmail.com
               </a>
-              <a href="tel:+302110085587" class="cnt-info__phone">
-                +30 211 008 5587
+              <a href="tel:+306972102102" class="cnt-info__phone">
+                +30 697 210 2102
               </a>
             </div>
 
@@ -351,7 +350,7 @@
             <a href="/contact/" class="footer__nav-link" data-i18n="footer.contact">Get in Touch</a>
           </nav>
           <div class="footer__contact">
-            <a href="mailto:info@thelocbusters.com" class="footer__contact-link">info@thelocbusters.com</a>
+            <a href="mailto:thelocbusters@gmail.com" class="footer__contact-link">thelocbusters@gmail.com</a>
             <p class="footer__contact-text" data-i18n="footer.location">Athens, Greece</p>
           </div>
         </div>
@@ -375,8 +374,8 @@
     </div>
   </footer>
 
-  <script src="/assets/js/main.js?v=20260715b"></script>
-  <script src="/assets/js/contact.js?v=20260708b"></script>
+  <script src="/assets/js/main.js?v=20260821a"></script>
+  <script src="/assets/js/contact.js?v=20260821a"></script>
 
 </body>
 </html>

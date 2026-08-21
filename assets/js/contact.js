@@ -1,7 +1,6 @@
 /**
  * THE LOCBUSTERS Contact Form
- * Handles client-side validation and success state.
- * Replace the submit handler with your backend/Webflow/Formspree integration.
+ * Handles client-side validation and Formspree submission.
  */
 
 'use strict';
@@ -10,6 +9,7 @@
 
   const form    = document.getElementById('contactForm');
   const success = document.getElementById('formSuccess');
+  const error   = document.getElementById('formError');
   if (!form) return;
 
   function t(key) {
@@ -97,7 +97,7 @@
   /* ----------------------------------------------------------
      SUBMIT HANDLER
      ---------------------------------------------------------- */
-  form.addEventListener('submit', function (e) {
+  form.addEventListener('submit', async function (e) {
     e.preventDefault();
 
     if (!validateForm()) return;
@@ -105,14 +105,32 @@
     const btn = form.querySelector('.cnt-submit');
     btn.disabled = true;
     btn.innerHTML = `<span>${t('contactPage.sending') || 'Sending…'}</span>`;
+    success.hidden = true;
+    error.hidden = true;
 
-    // Demo: simulate a short delay then show success
-    setTimeout(function () {
-      form.querySelectorAll('.cnt-field__input').forEach(el => el.value = '');
-      resetSubmitButton(btn);
+    try {
+      const response = await fetch(form.action, {
+        method: form.method,
+        body: new FormData(form),
+        headers: {
+          Accept: 'application/json'
+        }
+      });
+
+      if (!response.ok) {
+        throw new Error(`Formspree returned ${response.status}`);
+      }
+
+      form.reset();
       success.hidden = false;
       success.scrollIntoView({ behavior: 'smooth', block: 'nearest' });
-    }, 900);
+    } catch (submissionError) {
+      console.error('Contact form submission failed:', submissionError);
+      error.hidden = false;
+      error.scrollIntoView({ behavior: 'smooth', block: 'nearest' });
+    } finally {
+      resetSubmitButton(btn);
+    }
   });
 
 })();
